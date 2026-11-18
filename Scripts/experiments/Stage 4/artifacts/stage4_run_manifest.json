@@ -1,0 +1,472 @@
+{
+  "stage": "Stage 4 - Alternating Jointly-Optimised BGNN (v2, audit-hardened)",
+  "executed_at_utc": "2026-10-02T03:01:45+00:00",
+  "dataset_rows": 590540,
+  "mean_ap_real": 0.4996476908339847,
+  "std_ap_real": 0.02352939555297134,
+  "mean_ap_calibrated": 0.4761895782048334,
+  "mean_recall_at_0p1_fpr": 0.24393735783599602,
+  "mean_beta": 0.8726019362608591,
+  "stage1_available": true,
+  "stage3_available": true,
+  "stage_exit_decision": {
+    "decision": "DO_NOT_ADVANCE_BOOSTING_ARM",
+    "reason": "H3a improvement is not material"
+  },
+  "stage1_coverage_validation": {
+    "invalid_required": 0,
+    "blocks": {
+      "1": {
+        "required": 88581,
+        "exempt": 29527,
+        "invalid": 29527,
+        "invalid_required": 0
+      },
+      "2": {
+        "required": 118108,
+        "exempt": 0,
+        "invalid": 0,
+        "invalid_required": 0
+      },
+      "3": {
+        "required": 118108,
+        "exempt": 0,
+        "invalid": 0,
+        "invalid_required": 0
+      },
+      "4": {
+        "required": 118108,
+        "exempt": 0,
+        "invalid": 0,
+        "invalid_required": 0
+      },
+      "5": {
+        "required": 118108,
+        "exempt": 0,
+        "invalid": 0,
+        "invalid_required": 0
+      }
+    },
+    "status": "loaded",
+    "path": "/kaggle/input/notebooks/iemanihsan/stage-1-tabular-lightgbm-baseline/artifacts/stage1_oof_predictions.csv",
+    "probability_column": "stage1_prob_raw"
+  },
+  "upstream_artifacts": {
+    "stage1": {
+      "status": "loaded",
+      "path": "/kaggle/input/notebooks/iemanihsan/stage-1-tabular-lightgbm-baseline/artifacts/stage1_oof_predictions.csv",
+      "probability_column": "stage1_prob_raw"
+    },
+    "stage3": {
+      "status": "loaded",
+      "path": "/kaggle/input/notebooks/iemanihsan/stage-3-frozen-two-stage-res-gnn/artifacts/stage3_oof_predictions.csv",
+      "probability_column": "stage3_prob_raw"
+    }
+  },
+  "graph_audits": [
+    {
+      "scope": "fold1",
+      "entity": "card",
+      "extractor": {
+        "lookback_seconds": 2592000,
+        "strict_time": true,
+        "tie_edges_skipped": 11,
+        "total_edges": 446270
+      },
+      "audit": {
+        "label": "fold1/card",
+        "lookback_seconds": 2592000,
+        "sample_limit": 20000,
+        "seed": 42,
+        "strict_time": true,
+        "nodes_checked": 20000,
+        "edges_checked": 37481,
+        "passed": true
+      }
+    },
+    {
+      "scope": "fold1",
+      "entity": "device",
+      "extractor": {
+        "lookback_seconds": 2592000,
+        "strict_time": true,
+        "tie_edges_skipped": 4048,
+        "total_edges": 1150939
+      },
+      "audit": {
+        "label": "fold1/device",
+        "lookback_seconds": 2592000,
+        "sample_limit": 20000,
+        "seed": 42,
+        "strict_time": true,
+        "nodes_checked": 20000,
+        "edges_checked": 97457,
+        "passed": true
+      }
+    },
+    {
+      "scope": "fold2",
+      "entity": "card",
+      "extractor": {
+        "lookback_seconds": 2592000,
+        "strict_time": true,
+        "tie_edges_skipped": 75,
+        "total_edges": 687381
+      },
+      "audit": {
+        "label": "fold2/card",
+        "lookback_seconds": 2592000,
+        "sample_limit": 20000,
+        "seed": 42,
+        "strict_time": true,
+        "nodes_checked": 20000,
+        "edges_checked": 38279,
+        "passed": true
+      }
+    },
+    {
+      "scope": "fold2",
+      "entity": "device",
+      "extractor": {
+        "lookback_seconds": 2592000,
+        "strict_time": true,
+        "tie_edges_skipped": 6695,
+        "total_edges": 1729904
+      },
+      "audit": {
+        "label": "fold2/device",
+        "lookback_seconds": 2592000,
+        "sample_limit": 20000,
+        "seed": 42,
+        "strict_time": true,
+        "nodes_checked": 20000,
+        "edges_checked": 97666,
+        "passed": true
+      }
+    },
+    {
+      "scope": "fold3",
+      "entity": "card",
+      "extractor": {
+        "lookback_seconds": 2592000,
+        "strict_time": true,
+        "tie_edges_skipped": 111,
+        "total_edges": 940077
+      },
+      "audit": {
+        "label": "fold3/card",
+        "lookback_seconds": 2592000,
+        "sample_limit": 20000,
+        "seed": 42,
+        "strict_time": true,
+        "nodes_checked": 20000,
+        "edges_checked": 39299,
+        "passed": true
+      }
+    },
+    {
+      "scope": "fold3",
+      "entity": "device",
+      "extractor": {
+        "lookback_seconds": 2592000,
+        "strict_time": true,
+        "tie_edges_skipped": 8861,
+        "total_edges": 2306076
+      },
+      "audit": {
+        "label": "fold3/device",
+        "lookback_seconds": 2592000,
+        "sample_limit": 20000,
+        "seed": 42,
+        "strict_time": true,
+        "nodes_checked": 20000,
+        "edges_checked": 97595,
+        "passed": true
+      }
+    },
+    {
+      "scope": "b1_subfold1",
+      "entity": "card",
+      "extractor": {
+        "lookback_seconds": 2592000,
+        "strict_time": true,
+        "tie_edges_skipped": 0,
+        "total_edges": 65128
+      },
+      "audit": {
+        "label": "b1_subfold1/card",
+        "lookback_seconds": 2592000,
+        "sample_limit": 20000,
+        "seed": 42,
+        "strict_time": true,
+        "nodes_checked": 20000,
+        "edges_checked": 21725,
+        "passed": true
+      }
+    },
+    {
+      "scope": "b1_subfold1",
+      "entity": "device",
+      "extractor": {
+        "lookback_seconds": 2592000,
+        "strict_time": true,
+        "tie_edges_skipped": 1003,
+        "total_edges": 284050
+      },
+      "audit": {
+        "label": "b1_subfold1/device",
+        "lookback_seconds": 2592000,
+        "sample_limit": 20000,
+        "seed": 42,
+        "strict_time": true,
+        "nodes_checked": 20000,
+        "edges_checked": 96300,
+        "passed": true
+      }
+    },
+    {
+      "scope": "b1_subfold2",
+      "entity": "card",
+      "extractor": {
+        "lookback_seconds": 2592000,
+        "strict_time": true,
+        "tie_edges_skipped": 1,
+        "total_edges": 119446
+      },
+      "audit": {
+        "label": "b1_subfold2/card",
+        "lookback_seconds": 2592000,
+        "sample_limit": 20000,
+        "seed": 42,
+        "strict_time": true,
+        "nodes_checked": 20000,
+        "edges_checked": 27175,
+        "passed": true
+      }
+    },
+    {
+      "scope": "b1_subfold2",
+      "entity": "device",
+      "extractor": {
+        "lookback_seconds": 2592000,
+        "strict_time": true,
+        "tie_edges_skipped": 1397,
+        "total_edges": 426819
+      },
+      "audit": {
+        "label": "b1_subfold2/device",
+        "lookback_seconds": 2592000,
+        "sample_limit": 20000,
+        "seed": 42,
+        "strict_time": true,
+        "nodes_checked": 20000,
+        "edges_checked": 96150,
+        "passed": true
+      }
+    },
+    {
+      "scope": "b1_subfold3",
+      "entity": "card",
+      "extractor": {
+        "lookback_seconds": 2592000,
+        "strict_time": true,
+        "tie_edges_skipped": 2,
+        "total_edges": 184171
+      },
+      "audit": {
+        "label": "b1_subfold3/card",
+        "lookback_seconds": 2592000,
+        "sample_limit": 20000,
+        "seed": 42,
+        "strict_time": true,
+        "nodes_checked": 20000,
+        "edges_checked": 31139,
+        "passed": true
+      }
+    },
+    {
+      "scope": "b1_subfold3",
+      "entity": "device",
+      "extractor": {
+        "lookback_seconds": 2592000,
+        "strict_time": true,
+        "tie_edges_skipped": 1716,
+        "total_edges": 569847
+      },
+      "audit": {
+        "label": "b1_subfold3/device",
+        "lookback_seconds": 2592000,
+        "sample_limit": 20000,
+        "seed": 42,
+        "strict_time": true,
+        "nodes_checked": 20000,
+        "edges_checked": 96626,
+        "passed": true
+      }
+    },
+    {
+      "scope": "frozen_oot",
+      "entity": "card",
+      "extractor": {
+        "lookback_seconds": 2592000,
+        "strict_time": true,
+        "tie_edges_skipped": 117,
+        "total_edges": 1194313
+      },
+      "audit": {
+        "label": "frozen_oot/card",
+        "lookback_seconds": 2592000,
+        "sample_limit": 20000,
+        "seed": 42,
+        "strict_time": true,
+        "nodes_checked": 20000,
+        "edges_checked": 40538,
+        "passed": true
+      }
+    },
+    {
+      "scope": "frozen_oot",
+      "entity": "device",
+      "extractor": {
+        "lookback_seconds": 2592000,
+        "strict_time": true,
+        "tie_edges_skipped": 10704,
+        "total_edges": 2881955
+      },
+      "audit": {
+        "label": "frozen_oot/device",
+        "lookback_seconds": 2592000,
+        "sample_limit": 20000,
+        "seed": 42,
+        "strict_time": true,
+        "nodes_checked": 20000,
+        "edges_checked": 97585,
+        "passed": true
+      }
+    }
+  ],
+  "oof_validation": {
+    "checks_passed": true,
+    "missing_rows": 29527,
+    "missing_fill_value": 0.028787212446331978,
+    "prior_scope": "first chronological B1 seed slice target mean",
+    "calibrated_export_enabled": true
+  },
+  "fingerprints": {
+    "script_file": {
+      "path": null,
+      "sha256": null,
+      "explanation": "Notebook execution has no __file__; script file SHA-256 is unavailable."
+    },
+    "notebook_code_source": {
+      "sha256": "5b4c067d09cae83ed8bdb2678312c5c3b318ebfcef19fa26c1998474e2070cb1",
+      "scope": "Published notebook ordered code-cell source list, canonical JSON UTF-8 (ensure_ascii=False, separators=(',', ':')); excludes the entire CODE_FINGERPRINT_DECLARATION block in the first code cell.",
+      "verification": "Externally computed and verified against final published code sources; not a hash of live edited kernel history. Regenerate on code changes; execute Fresh Kernel / Run All."
+    },
+    "consumed_inputs": {
+      "raw_transactions": {
+        "path": "/kaggle/input/competitions/ieee-fraud-detection/train_transaction.csv",
+        "status": "loaded",
+        "sha256": "3a5c83ab6b3cc13dcabe5ffa9f522307fd5f7f7b6e6f6a60c32284ca6283d642"
+      },
+      "optional_identity": {
+        "path": "/kaggle/input/competitions/ieee-fraud-detection/train_identity.csv",
+        "status": "loaded",
+        "sha256": "b63c725d8377be90a995268d97f347c17d456b95db45807adcf9f59cd603c37c"
+      },
+      "feature_decision_ledger": {
+        "path": "/kaggle/input/notebooks/iemanihsan/ieee-cis-eda-leakage-audit/artifacts/feature_risk_table.csv",
+        "status": "loaded",
+        "sha256": "d2cbf3b245662cdc69cca24002135b9ea29e1f555e0a0657d5b0312e752ef496"
+      },
+      "stage1_oof": {
+        "path": "/kaggle/input/notebooks/iemanihsan/stage-1-tabular-lightgbm-baseline/artifacts/stage1_oof_predictions.csv",
+        "status": "loaded",
+        "sha256": "7898b79740d38a750cb18c13dbc12a6e062358ce696c7f0279f997b8ab2d731a"
+      },
+      "stage3_oof": {
+        "path": "/kaggle/input/notebooks/iemanihsan/stage-3-frozen-two-stage-res-gnn/artifacts/stage3_oof_predictions.csv",
+        "status": "loaded",
+        "sha256": "c3217adbca244f9ddb08fc191c3b1ae75ae43e383f8e318b2d8f9a9ea89beb18"
+      },
+      "stage1_reference_results": {
+        "path": "/kaggle/input/notebooks/iemanihsan/stage-1-tabular-lightgbm-baseline/artifacts/stage1_fold_results.csv",
+        "status": "loaded",
+        "sha256": "5a8af8f893c9866fd3558bc1f7df71fdb6329971ab1840d5d7932f06b5232f8a"
+      },
+      "stage3_reference_results": {
+        "path": "/kaggle/input/notebooks/iemanihsan/stage-3-frozen-two-stage-res-gnn/artifacts/stage3_fold_results.csv",
+        "status": "loaded",
+        "sha256": "adab4c8e637cfc4ed04bd3876e6883a27f6270a24796eb62107e52116793dd93"
+      }
+    }
+  },
+  "oof_coverage_by_block": {
+    "1": 0.75,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0
+  },
+  "oof_missing_rows": 29527,
+  "artifacts": {
+    "oof_predictions": "./artifacts/stage4_oof_predictions.csv",
+    "fold_results": "./artifacts/stage4_fold_results.csv",
+    "arm_summary": "./artifacts/stage4_arm_summary.csv",
+    "diagnostics": "./artifacts/stage4_diagnostics.csv",
+    "hypothesis_tests": "./artifacts/stage4_hypothesis_tests.csv"
+  },
+  "config": {
+    "SEED": 42,
+    "N_SEEDS": 2,
+    "TIME_COLUMN": "TransactionDT",
+    "TARGET_COLUMN": "isFraud",
+    "ID_COLUMN": "TransactionID",
+    "AMOUNT_COLUMN": "TransactionAmt",
+    "N_BLOCKS": 5,
+    "DEV_BLOCKS": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "OOT_BLOCK": 5,
+    "SECONDS_PER_DAY": 86400,
+    "EMBARGO_SECONDS": 86400,
+    "LOOKBACK_WINDOW_SECS": 2592000,
+    "EMBARGO_IN_FEATURE_PASS": false,
+    "INNER_VAL_FRAC": 0.2,
+    "MIN_STOP_ROWS": 5000,
+    "MIN_STOP_POSITIVES": 50,
+    "B1_SUBFOLDS": 4,
+    "FINAL_ROUNDS_RULE": "median",
+    "CALIBRATION": "isotonic",
+    "EXPORT_CALIBRATED_OOF": true,
+    "C_REVIEW": 10.0,
+    "C_FRICTION": 25.0,
+    "INVESTIGATION_CAPACITY": 0.01,
+    "N_BOOTSTRAP": 400,
+    "BOOTSTRAP_ALPHA": 0.05,
+    "ACCEPTANCE_DELTA": 0.005,
+    "FDR_ALPHA": 0.05,
+    "OUTER_ROUNDS": 4,
+    "INNER_EPOCHS": 2,
+    "PATIENCE": 2,
+    "BATCH_SIZE": 4096,
+    "HIDDEN_DIM": 64,
+    "DROPOUT": 0.2,
+    "LR": 0.003,
+    "WEIGHT_DECAY": 0.0001,
+    "N_PCA": 15,
+    "BOOSTING_LR": 0.1,
+    "DISPLACEMENT_CLIP": 0.2,
+    "CARD_MAX_NEIGHBORS": 10,
+    "DEVICE_MAX_NEIGHBORS": 5,
+    "FOCAL_ALPHA": 0.25,
+    "FOCAL_GAMMA": 2.0,
+    "STRICT_TIME_CAUSALITY": true,
+    "SHIFT_TOLERANCE": 0.75,
+    "RUN_NO_BOOST_ABLATION": true,
+    "OUTPUT_DIR": "./artifacts"
+  }
+}

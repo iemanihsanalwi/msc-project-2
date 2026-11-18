@@ -1,0 +1,7 @@
+Step,Stage,Mechanism,AP,Cal_AP,Delta_Prev,Delta_Base,Hypothesis,Verdict,Diagnosis
+0. Baseline Tabular,1 - Tabular GBDT,Pure tabular LightGBM over 371 base features,0.48144,0.46142,0.0,0.0,Reference Baseline,BASELINE,Strong tree-based partitioner; benchmark standard
+1. Hand-Crafted Relational,2 - Graph-Augmented GBDT,+19 causal expanding entity-history aggregations,0.52522,0.50876,0.04378,0.04378,H1,SUPPORTED (p=0.00175),Peak pipeline performance (+9.1% AP); velocity & delta ratios dominate
+2. Decoupled Neural GNN,3 - Frozen Res-GNN,2-stage Res-GNN over continuous PCA + neighborhood means,0.47719,0.4612,-0.04803,-0.00425,H2 [Confounded],EXPLORATORY / DROPPED,Severe degradation (-9.1% vs S2); PCA compression & mean smoothing dilute signals
+3. Message Passing Ablation,"3n - Res-GNN, No Graph",Identical Res-GNN architecture with adjacency graph zeroed,0.47627,0.47627,-0.00092,-0.00517,H2a (S3 vs S3n),NOT SUPPORTED (p=0.723),"Message passing provides zero statistical benefit (Δ=+0.0009, p=0.62)"
+4. Monotonic Gating Alone,"4n - Joint BGNN, No Boost",Softplus blending gate enforcing exact tabular fallback,0.48111,0.48111,0.00392,-0.00033,H3b (S4n vs S3),REAL BUT < THRESHOLD,"Gating recovers tabular signal (+0.0039), but still below materiality threshold"
+5. Alternating Joint BGNN,4 - Joint BGNN,Full alternating boosting updates on latent representations Z,0.46336,0.44785,-0.01775,-0.01808,H3a (S4 vs S4n) & H4,NOT SUPPORTED (p=0.00175),Boosting updates corrupt latent manifold; performs worse than baseline S1 (-0.0181)

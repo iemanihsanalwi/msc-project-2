@@ -1,0 +1,192 @@
+{
+  "script_sha256": null,
+  "script_provenance": {
+    "path": null,
+    "status": "unavailable_no_script_file",
+    "algorithm": "SHA-256 over file bytes"
+  },
+  "notebook_code_sha256": "a2ef95b875f36194469341a03ce1b6af4d391a2ac36a25b6b080a1b2c148c78c",
+  "notebook_code_hash_scope": "SHA-256 of UTF-8 json.dumps(code_sources, ensure_ascii=False, separators=(',', ':')); code_sources is the ordered list of joined code-cell sources, excluding cells with metadata.provenance_fingerprint == true. Excludes markdown, outputs and all metadata. Embedded build-time snapshot independently validated before publication; recompute after code edits.",
+  "decision_ledger_sha256": "d2cbf3b245662cdc69cca24002135b9ea29e1f555e0a0657d5b0312e752ef496",
+  "stage1_artifact_sha256": {
+    "stage1_results": "5a8af8f893c9866fd3558bc1f7df71fdb6329971ab1840d5d7932f06b5232f8a",
+    "stage1_oof": "7898b79740d38a750cb18c13dbc12a6e062358ce696c7f0279f997b8ab2d731a"
+  },
+  "resolved_input_paths": {
+    "data_dir": "/kaggle/input/competitions/ieee-fraud-detection",
+    "id_path": "/kaggle/input/competitions/ieee-fraud-detection/train_identity.csv",
+    "decision_file": "/kaggle/input/notebooks/iemanihsan/ieee-cis-eda-leakage-audit/artifacts/feature_risk_table.csv",
+    "stage1_results_path": "/kaggle/input/notebooks/iemanihsan/fork-of-stage-1-standalone-tabular-lightgbm-basel/artifacts/stage1_fold_results.csv",
+    "stage1_oof_path": "/kaggle/input/notebooks/iemanihsan/fork-of-stage-1-standalone-tabular-lightgbm-basel/artifacts/stage1_oof_predictions.csv",
+    "train_transaction_path": "/kaggle/input/competitions/ieee-fraud-detection/train_transaction.csv"
+  },
+  "input_provenance": {
+    "train_transaction": {
+      "path": "/kaggle/input/competitions/ieee-fraud-detection/train_transaction.csv",
+      "status": "read",
+      "sha256": "3a5c83ab6b3cc13dcabe5ffa9f522307fd5f7f7b6e6f6a60c32284ca6283d642"
+    },
+    "train_identity": {
+      "path": "/kaggle/input/competitions/ieee-fraud-detection/train_identity.csv",
+      "status": "read",
+      "sha256": "b63c725d8377be90a995268d97f347c17d456b95db45807adcf9f59cd603c37c"
+    },
+    "decision_ledger": {
+      "path": "/kaggle/input/notebooks/iemanihsan/ieee-cis-eda-leakage-audit/artifacts/feature_risk_table.csv",
+      "status": "read",
+      "sha256": "d2cbf3b245662cdc69cca24002135b9ea29e1f555e0a0657d5b0312e752ef496"
+    },
+    "stage1_results": {
+      "path": "/kaggle/input/notebooks/iemanihsan/fork-of-stage-1-standalone-tabular-lightgbm-basel/artifacts/stage1_fold_results.csv",
+      "status": "read",
+      "sha256": "5a8af8f893c9866fd3558bc1f7df71fdb6329971ab1840d5d7932f06b5232f8a"
+    },
+    "stage1_oof": {
+      "path": "/kaggle/input/notebooks/iemanihsan/fork-of-stage-1-standalone-tabular-lightgbm-basel/artifacts/stage1_oof_predictions.csv",
+      "status": "read",
+      "sha256": "7898b79740d38a750cb18c13dbc12a6e062358ce696c7f0279f997b8ab2d731a"
+    }
+  },
+  "library_versions": {
+    "python": "3.12.13",
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "lightgbm": "4.6.0",
+    "sklearn": "1.6.1"
+  },
+  "stage": "Stage 2 - Graph-Augmented GBDT (v2, audit-hardened)",
+  "executed_at_utc": "2026-09-30T09:38:29+00:00",
+  "dataset_rows": 590540,
+  "base_features": 371,
+  "relational_features": 19,
+  "stage2_features": 390,
+  "categorical_features": 0,
+  "arms_executed": [
+    "real (base+relational)",
+    "base_only [internal control]",
+    "shuffled [N1 null]",
+    "relational_only"
+  ],
+  "mean_ap_real": 0.5034138454606771,
+  "std_ap_real": 0.03190333601217767,
+  "mean_ap_base_only": 0.5132107537321485,
+  "mean_ap_shuffled": 0.4908578170831095,
+  "mean_ap_relational_only": 0.23229691729387922,
+  "mean_recall_at_0p1_fpr_real": 0.2506824047829181,
+  "fraud_base_rate": 0.03499000914417313,
+  "relational_gain_share": 0.29794830457679633,
+  "importance_rank_corr": {
+    "gain_fold1": {
+      "gain_fold1": 1.0,
+      "gain_fold2": 0.8916,
+      "gain_fold3": 0.8624
+    },
+    "gain_fold2": {
+      "gain_fold1": 0.8916,
+      "gain_fold2": 1.0,
+      "gain_fold3": 0.9095
+    },
+    "gain_fold3": {
+      "gain_fold1": 0.8624,
+      "gain_fold2": 0.9095,
+      "gain_fold3": 1.0
+    }
+  },
+  "best_iterations_real": {
+    "1": 429,
+    "2": 142,
+    "3": 258
+  },
+  "frozen_oot_model_rounds": 299,
+  "frozen_oot_selection_fit_rows": 377945,
+  "frozen_oot_selection_stop_rows": 94487,
+  "frozen_oot_selection_early_stopped": true,
+  "frozen_oot_refit_rows": 472432,
+  "frozen_oot_refit_performed": true,
+  "frozen_oot_calibration": {
+    "method": "isotonic",
+    "fitted": true,
+    "source": "selection_model_held_out_stop_slice",
+    "n_calibration_rows": 94487,
+    "transferred_to_refit": true,
+    "refit_calibration_revalidated": false
+  },
+  "oof_coverage_by_block": {
+    "1": 0.75,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0
+  },
+  "oof_missing_rows": 29527,
+  "oof_missing_fill_value": 0.028787211704541606,
+  "stage1_oof_available": true,
+  "fdr_alpha": 0.05,
+  "acceptance_delta": 0.005,
+  "artifacts": {
+    "oof_predictions": "./artifacts/stage2_oof_predictions.csv",
+    "fold_results": "./artifacts/stage2_fold_results.csv",
+    "arm_summary": "./artifacts/stage2_arm_summary.csv",
+    "hypothesis_tests": "./artifacts/stage2_hypothesis_tests.csv",
+    "feature_importance": "./artifacts/stage2_feature_importance.csv",
+    "frozen_model": "./artifacts/stage2_frozen_model.txt"
+  },
+  "config": {
+    "SEED": 42,
+    "TIME_COLUMN": "TransactionDT",
+    "TARGET_COLUMN": "isFraud",
+    "ID_COLUMN": "TransactionID",
+    "AMOUNT_COLUMN": "TransactionAmt",
+    "N_BLOCKS": 5,
+    "DEV_BLOCKS": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "OOT_BLOCK": 5,
+    "SECONDS_PER_DAY": 86400,
+    "EMBARGO_SECONDS": 86400,
+    "EMBARGO_IN_FEATURE_PASS": false,
+    "INNER_VAL_FRAC": 0.2,
+    "MIN_STOP_ROWS": 5000,
+    "MIN_STOP_POSITIVES": 50,
+    "B1_SUBFOLDS": 4,
+    "FINAL_ROUNDS_RULE": "median",
+    "CALIBRATION": "isotonic",
+    "EXPORT_CALIBRATED_OOF": true,
+    "C_REVIEW": 10.0,
+    "C_FRICTION": 25.0,
+    "INVESTIGATION_CAPACITY": 0.01,
+    "N_BOOTSTRAP": 400,
+    "BOOTSTRAP_ALPHA": 0.05,
+    "ACCEPTANCE_DELTA": 0.005,
+    "FDR_ALPHA": 0.05,
+    "RUN_BASE_ONLY": true,
+    "RUN_SHUFFLE_CONTROL": true,
+    "RUN_RELATIONAL_ONLY": true,
+    "LGB_PARAMS": {
+      "objective": "binary",
+      "metric": "average_precision",
+      "boosting_type": "gbdt",
+      "learning_rate": 0.03,
+      "num_leaves": 256,
+      "max_depth": -1,
+      "min_child_samples": 50,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 1,
+      "feature_fraction": 0.7,
+      "seed": 42,
+      "bagging_seed": 42,
+      "feature_fraction_seed": 42,
+      "data_random_seed": 42,
+      "deterministic": true,
+      "force_row_wise": true,
+      "n_jobs": -1,
+      "verbose": -1
+    },
+    "NUM_BOOST_ROUND": 2000,
+    "EARLY_STOPPING_ROUNDS": 50,
+    "OUTPUT_DIR": "./artifacts"
+  }
+}

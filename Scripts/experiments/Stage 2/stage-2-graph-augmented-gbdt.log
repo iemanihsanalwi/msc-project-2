@@ -1,0 +1,200 @@
+[{"stream_name":"stderr","time":9.624187762,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.625440127,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.625448714000001,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.625453781000001,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":10.506699949,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.506739619,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.506746509,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.506751745999999,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":19.69519095,"data":"[1] Resolving environment and loading raw data...\n"}
+,{"stream_name":"stdout","time":19.695263318,"data":"    Selected data directory: /kaggle/input/competitions/ieee-fraud-detection\n"}
+,{"stream_name":"stdout","time":48.566405991,"data":"    Joining train_identity.csv via left join...\n"}
+,{"stream_name":"stdout","time":51.270948889,"data":"    Memory downcast [raw]: 1955.4 MB -\u003e 1044.7 MB (46.6% saved)\n"}
+,{"stream_name":"stdout","time":51.271017335,"data":"[2] Enforcing deterministic chronological sort and block construction...\n"}
+,{"stream_name":"stdout","time":58.674697779,"data":"    Block 5 OOT quarantine: PASSED (sealed; scored later, never trained on).\n"}
+,{"stream_name":"stdout","time":58.674750503,"data":"    Block profile (prevalence drift check):\n"}
+,{"stream_name":"stdout","time":58.674758482,"data":"                rows  fraud_rate  first_day  last_day\n"}
+,{"stream_name":"stdout","time":58.674764479,"data":"chrono_block                                         \n"}
+,{"stream_name":"stdout","time":58.674770251,"data":"1             118108    0.023927          0        25\n"}
+,{"stream_name":"stdout","time":58.674775866,"data":"2             118108    0.040065         25        63\n"}
+,{"stream_name":"stdout","time":58.674781703,"data":"3             118108    0.037508         63       100\n"}
+,{"stream_name":"stdout","time":58.674787655,"data":"4             118108    0.039041        100       140\n"}
+,{"stream_name":"stdout","time":58.674793089,"data":"5             118108    0.034409        140       181\n"}
+,{"stream_name":"stdout","time":58.832015736,"data":"[3] Ingesting feature-decision ledger and Stage 1 artifacts...\n"}
+,{"stream_name":"stdout","time":58.832060505,"data":"    Loaded decisions ledger: /kaggle/input/notebooks/iemanihsan/ieee-cis-eda-leakage-audit/artifacts/feature_risk_table.csv\n"}
+,{"stream_name":"stdout","time":58.832067896,"data":"    Retained 371 base features from audit screening.\n"}
+,{"stream_name":"stdout","time":58.832073522,"data":"    Loaded Stage 1 reference APs: {1: 0.5254, 2: 0.4812, 3: 0.533}\n"}
+,{"stream_name":"stdout","time":61.137219407,"data":"    Merged Stage 1 OOF from 'stage1_prob_raw' | dev coverage 93.8% | OOT coverage 100.0%\n"}
+,{"stream_name":"stdout","time":61.344536432,"data":"[4] Engineering time-causal relational features (expanding history only)...\n"}
+,{"stream_name":"stdout","time":62.925409632,"data":"      causality audit [uid_card]: PASSED (37.7% first-seen, max history 1413)\n"}
+,{"stream_name":"stdout","time":62.925464847,"data":"      causality audit [uid_device]: PASSED (1.1% first-seen, max history 449950)\n"}
+,{"stream_name":"stdout","time":62.925487984,"data":"    Memory downcast [relational]: 42.8 MB -\u003e 42.8 MB (0.0% saved)\n"}
+,{"stream_name":"stdout","time":64.046768151,"data":"    Added 19 relational features.\n"}
+,{"stream_name":"stdout","time":64.04683376,"data":"    Stage 2 feature space: 390 (371 base + 19 relational).\n"}
+,{"stream_name":"stdout","time":64.046842434,"data":"    Building shuffled-entity null control (entity topology destroyed, feature count preserved)...\n"}
+,{"stream_name":"stdout","time":66.391181051,"data":"    Memory downcast [relational_shuffled]: 42.8 MB -\u003e 42.8 MB (0.0% saved)\n"}
+,{"stream_name":"stdout","time":67.456064288,"data":"    Control feature space: 390 columns (same cardinality as the real arm).\n"}
+,{"stream_name":"stdout","time":67.456112687,"data":"    Categorical features cast for LightGBM: 0\n"}
+,{"stream_name":"stdout","time":67.644387828,"data":"\n"}
+,{"stream_name":"stdout","time":67.644446782,"data":"================================================================================\n"}
+,{"stream_name":"stdout","time":67.644454467,"data":"PASS A: EXPANDING CHRONOLOGICAL FORWARD VALIDATION (EMBARGOED EVALUATION)\n"}
+,{"stream_name":"stdout","time":67.644460647,"data":"================================================================================\n"}
+,{"stream_name":"stdout","time":67.644466579,"data":"\n"}
+,{"stream_name":"stdout","time":67.644472225,"data":"\u003e\u003e\u003e Variant: REAL (390 features)\n"}
+,{"stream_name":"stdout","time":156.527050111,"data":"    Fold 1 (val B2): AP 0.4960 | ROC-AUC 0.8327 | R@0.1%FPR 26.94% | rounds 429\n"}
+,{"stream_name":"stdout","time":156.527107134,"data":"             cohorts: new 0.4990 / seen 0.4930 | card overlap 32.0% | ECE_q 0.02859 -\u003e 0.01452\n"}
+,{"stream_name":"stdout","time":206.667895941,"data":"    Fold 2 (val B3): AP 0.4759 | ROC-AUC 0.8545 | R@0.1%FPR 24.18% | rounds 142\n"}
+,{"stream_name":"stdout","time":206.667938433,"data":"             cohorts: new 0.5404 / seen 0.4485 | card overlap 34.3% | ECE_q 0.00625 -\u003e 0.00642\n"}
+,{"stream_name":"stdout","time":291.32861099,"data":"    Fold 3 (val B4): AP 0.5384 | ROC-AUC 0.8912 | R@0.1%FPR 24.08% | rounds 258\n"}
+,{"stream_name":"stdout","time":291.328681193,"data":"             cohorts: new 0.5658 / seen 0.5290 | card overlap 41.1% | ECE_q 0.01310 -\u003e 0.00290\n"}
+,{"stream_name":"stdout","time":291.328694675,"data":"\n"}
+,{"stream_name":"stdout","time":291.328703298,"data":"[5] Internal base-feature-only control — the valid paired comparator for H1.\n"}
+,{"stream_name":"stdout","time":291.32871421,"data":"    (Cross-stage comparison against a separate Stage 1 run confounds the\n"}
+,{"stream_name":"stdout","time":291.328723494,"data":"     feature set with run configuration; this arm does not.)\n"}
+,{"stream_name":"stdout","time":291.328732941,"data":"\n"}
+,{"stream_name":"stdout","time":291.328741774,"data":"\u003e\u003e\u003e Variant: BASE_ONLY (371 features)\n"}
+,{"stream_name":"stdout","time":317.62656712,"data":"    Fold 1 (val B2): AP 0.5254 | ROC-AUC 0.8674 | R@0.1%FPR 27.80% | rounds 103\n"}
+,{"stream_name":"stdout","time":317.626636729,"data":"             cohorts: new 0.5393 / seen 0.5182 | card overlap 32.0% | ECE_q 0.01489 -\u003e 0.01724\n"}
+,{"stream_name":"stdout","time":362.35755371,"data":"    Fold 2 (val B3): AP 0.4812 | ROC-AUC 0.8617 | R@0.1%FPR 23.92% | rounds 134\n"}
+,{"stream_name":"stdout","time":362.357609777,"data":"             cohorts: new 0.5417 / seen 0.4554 | card overlap 34.3% | ECE_q 0.01253 -\u003e 0.00639\n"}
+,{"stream_name":"stdout","time":424.220578854,"data":"    Fold 3 (val B4): AP 0.5330 | ROC-AUC 0.8887 | R@0.1%FPR 25.58% | rounds 179\n"}
+,{"stream_name":"stdout","time":424.220671427,"data":"             cohorts: new 0.5657 / seen 0.5193 | card overlap 41.1% | ECE_q 0.00965 -\u003e 0.00243\n"}
+,{"stream_name":"stdout","time":424.220680244,"data":"\n"}
+,{"stream_name":"stdout","time":424.220684808,"data":"[6] Shuffled-entity null control (N1).\n"}
+,{"stream_name":"stdout","time":424.220689338,"data":"\n"}
+,{"stream_name":"stdout","time":424.220693557,"data":"\u003e\u003e\u003e Variant: SHUFFLED (390 features)\n"}
+,{"stream_name":"stdout","time":467.79754892,"data":"    Fold 1 (val B2): AP 0.4934 | ROC-AUC 0.8298 | R@0.1%FPR 27.02% | rounds 189\n"}
+,{"stream_name":"stdout","time":467.797589093,"data":"             cohorts: new 0.4889 / seen 0.4935 | card overlap 32.0% | ECE_q 0.02351 -\u003e 0.01388\n"}
+,{"stream_name":"stdout","time":523.151373331,"data":"    Fold 2 (val B3): AP 0.4598 | ROC-AUC 0.8463 | R@0.1%FPR 23.45% | rounds 168\n"}
+,{"stream_name":"stdout","time":523.151450056,"data":"             cohorts: new 0.5284 / seen 0.4338 | card overlap 34.3% | ECE_q 0.00602 -\u003e 0.00663\n"}
+,{"stream_name":"stdout","time":597.868441957,"data":"    Fold 3 (val B4): AP 0.5194 | ROC-AUC 0.8828 | R@0.1%FPR 24.39% | rounds 221\n"}
+,{"stream_name":"stdout","time":597.868485552,"data":"             cohorts: new 0.5449 / seen 0.5088 | card overlap 41.1% | ECE_q 0.01250 -\u003e 0.00228\n"}
+,{"stream_name":"stdout","time":597.868492081,"data":"\n"}
+,{"stream_name":"stdout","time":597.868496911,"data":"[7] Relational features in isolation (standalone graph signal).\n"}
+,{"stream_name":"stdout","time":597.868502014,"data":"\n"}
+,{"stream_name":"stdout","time":597.868507151,"data":"\u003e\u003e\u003e Variant: RELATIONAL_ONLY (19 features)\n"}
+,{"stream_name":"stdout","time":605.320427385,"data":"    Fold 1 (val B2): AP 0.1492 | ROC-AUC 0.6624 | R@0.1%FPR 4.13% | rounds 154\n"}
+,{"stream_name":"stdout","time":605.320478093,"data":"             cohorts: new 0.1000 / seen 0.1707 | card overlap 32.0% | ECE_q 0.02206 -\u003e 0.02017\n"}
+,{"stream_name":"stdout","time":621.678481926,"data":"    Fold 2 (val B3): AP 0.2488 | ROC-AUC 0.7666 | R@0.1%FPR 7.39% | rounds 282\n"}
+,{"stream_name":"stdout","time":621.678534064,"data":"             cohorts: new 0.2731 / seen 0.2389 | card overlap 34.3% | ECE_q 0.01406 -\u003e 0.00717\n"}
+,{"stream_name":"stdout","time":636.920591739,"data":"    Fold 3 (val B4): AP 0.2989 | ROC-AUC 0.8125 | R@0.1%FPR 8.48% | rounds 196\n"}
+,{"stream_name":"stdout","time":636.920709781,"data":"             cohorts: new 0.2604 / seen 0.3147 | card overlap 41.1% | ECE_q 0.00771 -\u003e 0.00270\n"}
+,{"stream_name":"stdout","time":636.971170742,"data":"\n"}
+,{"stream_name":"stdout","time":636.971225519,"data":"[8] Auditing cross-fold feature-importance stability (real arm)...\n"}
+,{"stream_name":"stdout","time":636.971233524,"data":"    Spearman rank correlation of gain importance across folds:\n"}
+,{"stream_name":"stdout","time":636.971239466,"data":"            gain_fold1  gain_fold2  gain_fold3\n"}
+,{"stream_name":"stdout","time":636.971245212,"data":"gain_fold1      1.0000      0.8916      0.8624\n"}
+,{"stream_name":"stdout","time":636.971251272,"data":"gain_fold2      0.8916      1.0000      0.9095\n"}
+,{"stream_name":"stdout","time":636.971256654,"data":"gain_fold3      0.8624      0.9095      1.0000\n"}
+,{"stream_name":"stdout","time":636.971262493,"data":"    Relational share of total gain: 29.8% (19/390 = 4.9% of columns)\n"}
+,{"stream_name":"stdout","time":636.971268511,"data":"    Top-10 by mean gain: V258, C1, P_emaildomain_seen_before, card2_seen_before, card1_seen_before, C13, C14, addr1_seen_before, D2, uid_device_seen_before\n"}
+,{"stream_name":"stdout","time":636.97127466,"data":"    Saved: ./artifacts/stage2_feature_importance.csv\n"}
+,{"stream_name":"stdout","time":637.11589149,"data":"\n"}
+,{"stream_name":"stdout","time":637.115945132,"data":"[9] Generating Stage-2 scores for every block (feature-generation pass)...\n"}
+,{"stream_name":"stdout","time":637.115953095,"data":"    Fallback rounds (median of [429, 142, 258]): 258\n"}
+,{"stream_name":"stdout","time":637.115958549,"data":"    Block 1: expanding sub-folds K=4 (sizes [29527, 29527, 29527, 29527]) -\u003e 75% coverage vs. 50% under the v1 half-split.\n"}
+,{"stream_name":"stdout","time":661.390300962,"data":"      sub-fold 1: train 29,527 -\u003e score 29,527 | rounds 323 (ES)\n"}
+,{"stream_name":"stdout","time":711.825813998,"data":"      sub-fold 2: train 59,054 -\u003e score 29,527 | rounds 341 (ES)\n"}
+,{"stream_name":"stdout","time":740.905831096,"data":"      sub-fold 3: train 88,581 -\u003e score 29,527 | rounds 153 (ES)\n"}
+,{"stream_name":"stdout","time":740.905908354,"data":"      slice 0 (29,527 rows) intentionally unscored — no prior data exists. Flagged, not silently NaN.\n"}
+,{"stream_name":"stdout","time":748.465366398,"data":"    Block 2: scored 118,108 rows with the Fold-1 model.\n"}
+,{"stream_name":"stdout","time":750.300902969,"data":"    Block 3: scored 118,108 rows with the Fold-2 model.\n"}
+,{"stream_name":"stdout","time":753.885838939,"data":"    Block 4: scored 118,108 rows with the Fold-3 model.\n"}
+,{"stream_name":"stdout","time":753.885912039,"data":"    Block 5 (sealed OOT): fitting frozen production model on Blocks 1-4...\n"}
+,{"stream_name":"stdout","time":947.027892131,"data":"      Round selection: fit 377,945 / stop 94,487 rows | rounds 299 (ES).\n"}
+,{"stream_name":"stdout","time":947.02794593,"data":"      Frozen model: fit 472,432 development rows at fixed rounds | scored 118,108 OOT rows.\n"}
+,{"stream_name":"stdout","time":947.027953858,"data":"      Selection-model calibration transferred to refit when fitted; not revalidated.\n"}
+,{"stream_name":"stdout","time":947.027959845,"data":"      OOT target NOT read. No OOT metric is computed in Stage 2.\n"}
+,{"stream_name":"stdout","time":960.763197846,"data":"\n"}
+,{"stream_name":"stdout","time":960.763261138,"data":"[10] Missingness policy: 29,527 unscored rows filled with seed-slice prior 0.02879 and flagged.\n"}
+,{"stream_name":"stdout","time":960.763268335,"data":"     Never fill with 0.0 — that asserts 'certainly legitimate', which is false and will distort downstream graph aggregation.\n"}
+,{"stream_name":"stdout","time":963.667981122,"data":"     Saved: ./artifacts/stage2_oof_predictions.csv\n"}
+,{"stream_name":"stdout","time":963.668037934,"data":"     Stage-2 score coverage by block:\n"}
+,{"stream_name":"stdout","time":963.668043524,"data":"       Block 1: 75.0%\n"}
+,{"stream_name":"stdout","time":963.668047361,"data":"       Block 2: 100.0%\n"}
+,{"stream_name":"stdout","time":963.668051975,"data":"       Block 3: 100.0%\n"}
+,{"stream_name":"stdout","time":963.668057277,"data":"       Block 4: 100.0%\n"}
+,{"stream_name":"stdout","time":963.668063518,"data":"       Block 5: 100.0% (Sealed OOT — frozen model)\n"}
+,{"stream_name":"stdout","time":963.852581979,"data":"\n"}
+,{"stream_name":"stdout","time":963.852635038,"data":"[11] Executing paired bootstrap hypothesis tests...\n"}
+,{"stream_name":"stdout","time":1630.110937847,"data":"\n"}
+,{"stream_name":"stdout","time":1630.110987353,"data":"==================================================================================================================================\n"}
+,{"stream_name":"stdout","time":1630.110995178,"data":"STAGE 2 GRAPH-AUGMENTED GBDT — EXPANDING FORWARD VALIDATION REPORT (EMBARGOED)\n"}
+,{"stream_name":"stdout","time":1630.111015459,"data":"==================================================================================================================================\n"}
+,{"stream_name":"stdout","time":1630.111021631,"data":"        variant  fold  val_block  n_features  best_iter  n_val       AP  AP_calibrated  AP_new_entity  AP_seen_entity  card_overlap_rate  ROC_AUC      ECE  ECE_quantile    Brier  Recall@0.1%FPR  Recall@1.0%FPR  Prec@1.0%cap  Loss_no_model  Loss_cost_rule  AlertRate\n"}
+,{"stream_name":"stdout","time":1630.111028736,"data":"           real     1          2         390        429 114488 0.495992       0.473901       0.498965        0.492977           0.320339 0.832706 0.028844      0.028588 0.029489        0.269380        0.410637      0.943182  642186.539124   489686.843252   0.010813\n"}
+,{"stream_name":"stdout","time":1630.111034412,"data":"           real     2          3         390        142 114355 0.475876       0.458965       0.540367        0.448494           0.343431 0.854548 0.007175      0.006254 0.025058        0.241829        0.405495      0.899388  622400.308933   394941.792977   0.028193\n"}
+,{"stream_name":"stdout","time":1630.111039669,"data":"           real     3          4         390        258 115420 0.538374       0.525283       0.565758        0.529032           0.410709 0.891177 0.014031      0.013104 0.025235        0.240839        0.445695      0.909012  780690.530868   492414.200781   0.022059\n"}
+,{"stream_name":"stdout","time":1630.111044981,"data":"      base_only     1          2         371        103 114488 0.525428       0.499091       0.539348        0.518239           0.320339 0.867417 0.014891      0.014891 0.026574        0.277993        0.426141      0.950175  642186.539124   428183.208296   0.022596\n"}
+,{"stream_name":"stdout","time":1630.111050591,"data":"      base_only     2          3         371        134 114355 0.481182       0.462679       0.541710        0.455405           0.343431 0.861742 0.012494      0.012526 0.025374        0.239223        0.399337      0.894138  622400.308933   407608.648917   0.021652\n"}
+,{"stream_name":"stdout","time":1630.111057651,"data":"      base_only     3          4         371        179 115420 0.533023       0.511227       0.565707        0.519335           0.410709 0.888680 0.010288      0.009652 0.025148        0.255850        0.436424      0.917678  780690.530868   459063.208631   0.024831\n"}
+,{"stream_name":"stdout","time":1630.111063043,"data":"       shuffled     1          2         390        189 114488 0.493386       0.460312       0.488900        0.493525           0.320339 0.829795 0.023514      0.023514 0.028404        0.270241        0.406761      0.946678  642186.539124   473396.350277   0.013128\n"}
+,{"stream_name":"stdout","time":1630.111068253,"data":"       shuffled     2          3         390        168 114355 0.459829       0.448824       0.528395        0.433811           0.343431 0.846280 0.006775      0.006022 0.025594        0.234486        0.372099      0.888889  622400.308933   414511.560936   0.029338\n"}
+,{"stream_name":"stdout","time":1630.111073525,"data":"       shuffled     3          4         390        221 115420 0.519358       0.500212       0.544903        0.508844           0.410709 0.882760 0.012977      0.012501 0.025708        0.243929        0.420971      0.913345  780690.530868   483642.272721   0.021357\n"}
+,{"stream_name":"stdout","time":1630.111078734,"data":"relational_only     1          2          19        154 114488 0.149175       0.136000       0.100045        0.170664           0.320339 0.662396 0.022077      0.022065 0.037627        0.041344        0.119294      0.396853  642186.539124   585495.787114   0.003398\n"}
+,{"stream_name":"stdout","time":1630.111083849,"data":"relational_only     2          3          19        282 114355 0.248767       0.234640       0.273134        0.238912           0.343431 0.766560 0.014071      0.014063 0.031622        0.073899        0.199432      0.538058  622400.308933   508509.174730   0.016720\n"}
+,{"stream_name":"stdout","time":1630.111093694,"data":"relational_only     3          4          19        196 115420 0.298949       0.286720       0.260370        0.314682           0.410709 0.812466 0.008395      0.007706 0.032094        0.084768        0.230684      0.633449  780690.530868   588921.559065   0.022656\n"}
+,{"stream_name":"stdout","time":1630.111098944,"data":"\n"}
+,{"stream_name":"stdout","time":1630.111103482,"data":"--- Mean across expanding folds, by arm ---\n"}
+,{"stream_name":"stdout","time":1630.111108236,"data":"                         arm     AP  AP_sd  R@0.1%FPR  R@1.0%FPR  ROC_AUC  ECE_q  Loss_cost_rule\n"}
+,{"stream_name":"stdout","time":1630.111113254,"data":"      real (base+relational) 0.5034 0.0319     0.2507     0.4206   0.8595 0.0160     459014.2790\n"}
+,{"stream_name":"stdout","time":1630.111121585,"data":"base_only [internal control] 0.5132 0.0280     0.2577     0.4206   0.8726 0.0124     431618.3553\n"}
+,{"stream_name":"stdout","time":1630.111127367,"data":"          shuffled [N1 null] 0.4909 0.0298     0.2496     0.3999   0.8529 0.0140     457183.3946\n"}
+,{"stream_name":"stdout","time":1630.111166995,"data":"             relational_only 0.2323 0.0762     0.0667     0.1831   0.7471 0.0146     560975.5070\n"}
+,{"stream_name":"stdout","time":1630.111171962,"data":"\n"}
+,{"stream_name":"stdout","time":1630.111176351,"data":"Fraud base rate (random-ranker AP floor): 0.0350\n"}
+,{"stream_name":"stdout","time":1630.111180824,"data":"Stage 1 mean AP [CROSS-RUN reference]:   0.5132\n"}
+,{"stream_name":"stdout","time":1630.111185308,"data":"Stage 2 real mean AP:                    0.5034\n"}
+,{"stream_name":"stdout","time":1630.111190105,"data":"Point-estimate difference:               -0.0098\n"}
+,{"stream_name":"stdout","time":1630.111194354,"data":"  Cross-run point estimates are NOT evidence. Use the internal\n"}
+,{"stream_name":"stdout","time":1630.11119848,"data":"  base_only arm (H0) for the confirmatory claim.\n"}
+,{"stream_name":"stdout","time":1630.111202714,"data":"\n"}
+,{"stream_name":"stdout","time":1630.111206818,"data":"----------------------------------------------------------------------------------------------------------------------------------\n"}
+,{"stream_name":"stdout","time":1630.111211574,"data":"HYPOTHESIS TESTS — PAIRED BOOTSTRAP, BENJAMINI-HOCHBERG FDR @ 0.05\n"}
+,{"stream_name":"stdout","time":1630.111216418,"data":"----------------------------------------------------------------------------------------------------------------------------------\n"}
+,{"stream_name":"stdout","time":1630.111221043,"data":"Test                                       Scope                       N   Delta AP                 95% CI       p   p_adj  Verdict\n"}
+,{"stream_name":"stdout","time":1630.111225945,"data":"H0  Relational vs Base-Only [INTERNAL]     fold_1                 114488    -0.0294     [-0.0356, -0.0236]  0.0025  0.0044  REAL BUT \u003c THRESH\n"}
+,{"stream_name":"stdout","time":1630.111231175,"data":"H0  Relational vs Base-Only [INTERNAL]     fold_2                 114355    -0.0053     [-0.0113, +0.0001]  0.0550  0.0677  NOT SUPPORTED\n"}
+,{"stream_name":"stdout","time":1630.111235927,"data":"H0  Relational vs Base-Only [INTERNAL]     fold_3                 115420    +0.0054     [+0.0010, +0.0102]  0.0300  0.0400  SUPPORTED\n"}
+,{"stream_name":"stdout","time":1630.111240525,"data":"H0  Relational vs Base-Only [INTERNAL]     pooled_dev (B2-B4)     344263    -0.0399     [-0.0439, -0.0355]  0.0025  0.0044  REAL BUT \u003c THRESH\n"}
+,{"stream_name":"stdout","time":1630.111245339,"data":"H0a Seen-Before Cards [INTERNAL]           fold_1                  72457    -0.0253     [-0.0323, -0.0170]  0.0025  0.0044  REAL BUT \u003c THRESH\n"}
+,{"stream_name":"stdout","time":1630.111255022,"data":"H0a Seen-Before Cards [INTERNAL]           fold_2                  74333    -0.0069     [-0.0126, -0.0011]  0.0200  0.0291  REAL BUT \u003c THRESH\n"}
+,{"stream_name":"stdout","time":1630.111260064,"data":"H0a Seen-Before Cards [INTERNAL]           fold_3                  79098    +0.0097     [+0.0046, +0.0154]  0.0025  0.0044  SUPPORTED\n"}
+,{"stream_name":"stdout","time":1630.111265709,"data":"H0a Seen-Before Cards [INTERNAL]           pooled_dev (B2-B4)     225888    -0.0361     [-0.0415, -0.0314]  0.0025  0.0044  REAL BUT \u003c THRESH\n"}
+,{"stream_name":"stdout","time":1630.111270554,"data":"H0b First-Seen Cards [INTERNAL]            fold_1                  42031    -0.0404     [-0.0521, -0.0290]  0.0025  0.0044  REAL BUT \u003c THRESH\n"}
+,{"stream_name":"stdout","time":1630.111275322,"data":"H0b First-Seen Cards [INTERNAL]            fold_2                  40022    -0.0013     [-0.0114, +0.0088]  0.7100  0.7573  NOT SUPPORTED\n"}
+,{"stream_name":"stdout","time":1630.111279925,"data":"H0b First-Seen Cards [INTERNAL]            fold_3                  36322    +0.0001     [-0.0073, +0.0092]  0.9700  0.9700  NOT SUPPORTED\n"}
+,{"stream_name":"stdout","time":1630.111285048,"data":"H0b First-Seen Cards [INTERNAL]            pooled_dev (B2-B4)     118375    -0.0471     [-0.0543, -0.0398]  0.0025  0.0044  REAL BUT \u003c THRESH\n"}
+,{"stream_name":"stdout","time":1630.111290333,"data":"N1  Real vs Shuffled Entities              fold_1                 114488    +0.0026     [-0.0032, +0.0078]  0.2850  0.3257  NOT SUPPORTED\n"}
+,{"stream_name":"stdout","time":1630.111295664,"data":"N1  Real vs Shuffled Entities              fold_2                 114355    +0.0160     [+0.0101, +0.0215]  0.0025  0.0044  SUPPORTED\n"}
+,{"stream_name":"stdout","time":1630.111300832,"data":"N1  Real vs Shuffled Entities              fold_3                 115420    +0.0190     [+0.0144, +0.0242]  0.0025  0.0044  SUPPORTED\n"}
+,{"stream_name":"stdout","time":1630.111305878,"data":"N1  Real vs Shuffled Entities              pooled_dev (B2-B4)     344263    -0.0049     [-0.0078, -0.0017]  0.0050  0.0080  REAL BUT \u003c THRESH\n"}
+,{"stream_name":"stdout","time":1630.111310934,"data":"H1  Stage2 vs Stage1 [CROSS-RUN]           fold_1                 114488    -0.0294     [-0.0356, -0.0236]  0.0025       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":1630.111316095,"data":"H1  Stage2 vs Stage1 [CROSS-RUN]           fold_2                 114355    -0.0053     [-0.0113, +0.0001]  0.0550       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":1630.111321125,"data":"H1  Stage2 vs Stage1 [CROSS-RUN]           fold_3                 115420    +0.0054     [+0.0010, +0.0102]  0.0300       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":1630.111343491,"data":"H1  Stage2 vs Stage1 [CROSS-RUN]           pooled_dev (B2-B4)     344263    -0.0399     [-0.0439, -0.0355]  0.0025       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":1630.11135253,"data":"H1a Seen-Before Cards [CROSS-RUN]          fold_1                  72457    -0.0253     [-0.0323, -0.0170]  0.0025       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":1630.11135768,"data":"H1a Seen-Before Cards [CROSS-RUN]          fold_2                  74333    -0.0069     [-0.0126, -0.0011]  0.0200       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":1630.11136337,"data":"H1a Seen-Before Cards [CROSS-RUN]          fold_3                  79098    +0.0097     [+0.0046, +0.0154]  0.0025       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":1630.11137981,"data":"H1a Seen-Before Cards [CROSS-RUN]          pooled_dev (B2-B4)     225888    -0.0361     [-0.0415, -0.0314]  0.0025       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":1630.111385165,"data":"H1b First-Seen Cards [CROSS-RUN]           fold_1                  42031    -0.0404     [-0.0521, -0.0290]  0.0025       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":1630.111394514,"data":"H1b First-Seen Cards [CROSS-RUN]           fold_2                  40022    -0.0013     [-0.0114, +0.0088]  0.7100       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":1630.111399878,"data":"H1b First-Seen Cards [CROSS-RUN]           fold_3                  36322    +0.0001     [-0.0073, +0.0092]  0.9700       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":1630.111404654,"data":"H1b First-Seen Cards [CROSS-RUN]           pooled_dev (B2-B4)     118375    -0.0471     [-0.0543, -0.0398]  0.0025       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":1630.111409348,"data":"\n"}
+,{"stream_name":"stdout","time":1630.111413319,"data":"Decision rule: SUPPORTED requires BH-adjusted p \u003c= 0.05 AND delta AP \u003e= 0.005.\n"}
+,{"stream_name":"stdout","time":1630.111418467,"data":"Tests marked [CROSS-RUN] are EXPLORATORY: they compare against a separately\n"}
+,{"stream_name":"stdout","time":1630.111423538,"data":"executed Stage 1 and confound feature set with run configuration. They are\n"}
+,{"stream_name":"stdout","time":1630.111428383,"data":"excluded from the FDR family and must not carry a confirmatory claim.\n"}
+,{"stream_name":"stdout","time":1630.111433263,"data":"\n"}
+,{"stream_name":"stdout","time":1630.11143743,"data":"Artifacts written to ./artifacts/\n"}
+,{"stream_name":"stdout","time":1630.111442097,"data":"Stage 2 complete. Block 5 is scored, sealed, and unevaluated by design — reserved for the final joint-model comparison.\n"}
+,{"stream_name":"stderr","time":1634.331445495,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1634.331486486,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1634.56008269,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1634.56011475,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1635.465944468,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1635.928910376,"data":"[NbConvertApp] Writing 115984 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1639.452228601,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1640.926551951,"data":"[NbConvertApp] Writing 619877 bytes to __results__.html\n"}
+]

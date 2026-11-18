@@ -1,0 +1,42 @@
+Akli, H., Hamrioui, S., & Stéphan, I. (2026). Heterophily-outlier-temporal-aware graph neural network for credit card fraud detection. Expert Systems With Applications, 331, 133278.
+
+Arik, S. O., & Pfister, T. (2019, August 20). TABNET: Attentive Interpretable Tabular Learning. arXiv.org. Retrieved July 20, 2026, from https://arxiv.org/abs/1908.07442
+
+Chen, T., & Guestrin, C. (2016). XGBOOST: a scalable tree boosting System. arXiv (Cornell University). https://doi.org/10.48550/arxiv.1603.02754
+
+Dou, Y., Liu, Z., Sun, L., Deng, Y., Peng, H., & Yu, P. S. (2020). Enhancing Graph Neural Network-based Fraud Detectors against Camouflaged Fraudsters. Conference on Information and Knowledge Management, 315–324. https://doi.org/10.1145/3340531.3411903
+
+Hamilton, W. L., Ying, R., & Leskovec, J. (2017). Inductive representation learning on large graphs. arXiv (Cornell University), 30, 1024–1034. https://doi.org/10.48550/arxiv.1706.02216
+
+Ivanov, S., & Prokhorenkova, L. (2021). Boost then Convolve: Gradient Boosting Meets Graph Neural Networks. arXiv (Cornell University). https://doi.org/10.48550/arxiv.2101.08543.
+
+Ke, G., Meng, Q., Finley, T., Wang, T., Chen, W., Ma, W., Ye, Q., & Liu, T. (2017). LightGBM: a highly efficient gradient boosting decision tree. HAL (Le Centre Pour La Communication Scientifique Directe). https://hal.science/hal-03953007
+
+Kipf, T. N., & Welling, M. (2016). Semi-Supervised Classification with Graph Convolutional Networks. arXiv (Cornell University). https://doi.org/10.48550/arxiv.1609.02907
+
+Lahcen, T., Amadiaz, Y., Bahbib, M., & Nait Sidi Moh, A. (2026). A heterogeneous graph representation learning approach for fraud detection in supply chain networks. Intelligent Systems with Applications, 31, 200686.
+
+Liu, Y., Ao, X., Qin, Z., Chi, J., Feng, J., Yang, H., & He, Q. (2021). Pick and Choose: A GNN-based Imbalanced Learning Approach for Fraud Detection. WWW ’21: Proceedings of the Web Conference 2021, 3168–3177. https://doi.org/10.1145/3442381.3449989
+
+Mohawesh, R., Maqsood, S., Bany Salameh, H., & Elrefae, G. (2026). Leveraging GraphSAGE and large language models with cross-attention for transaction fraud detection: Evidence from credit card and PaySim datasets. Information Processing and Management, 63(1), 104860. https://doi.org/10.1016/j.ipm.2026.104860
+
+Natalia Ponomareva, Petros Mol, & Zhenyu Tan. (2020). The Tree Ensemble Layer: Differentiability meets Conditional Computation. In Proceedings of the 37th International Conference on Machine Learning. https://proceedings.mlr.press/v119/hazimeh20a/hazimeh20a.pdf
+
+Onwudebelu, U., Fasola, O. O., Ugonna, E. C., & Woods, N. C. (2026). A behavior-aware intelligent decision framework for credit card fraud detection. Engineering Applications of Artificial Intelligence, 181, 115641. https://doi.org/10.1016/j.engappai.2026.115641
+
+Popov, S., Morozov, S., & Babenko, A. (2019). Neural oblivious decision ensembles for deep learning on tabular data. arXiv (Cornell University), 1–12. https://doi.org/10.48550/arxiv.1909.06312
+
+Prokhorenkova, L., Gusev, G., Vorobev, A., Dorogush, A. V., & Gulin, A. (2017). CatBoost: unbiased boosting with categorical features. arXiv (Cornell University), 31, 6639–6649. https://doi.org/10.48550/arxiv.1706.09516
+
+Rossi, E., Chamberlain, B., Frasca, F., Eynard, D., Monti, F., & Bronstein, M. (2020). Temporal Graph networks for deep learning on dynamic graphs. arXiv (Cornell University). https://doi.org/10.48550/arxiv.2006.10637
+
+Tang, Y., & Liang, Y. (2024). Credit card fraud detection based on federated graph learning. Expert Systems With Applications, 256, 124979.
+
+Van Belle, R., Baesens, B., & De Weerdt, J. (2023). CATCHM: A novel network-based credit card fraud detection method using node representation learning. Decision Support Systems, 164, 113866. https://doi.org/10.1016/j.dss.2022.113866
+
+Veličković, P., Cucurull, G., Casanova, A., Romero, A., Liò, P., & Bengio, Y. (2017, October 30). Graph attention networks. arXiv.org. Retrieved July 20, 2026, from https://arxiv.org/abs/1710.10903v3
+
+Zhang, J., Fang, Z., Tang, Y., & Ni, L. (2026). TS-GNN: Modeling temporal-semantic discrepancy for graph-based credit card fraud detection. Expert Systems With Applications, 331, 133233.
+
+Appendices
+

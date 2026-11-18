@@ -1,0 +1,10 @@
+# Architectural Ablation & Performance Drop Summary
+
+| Step | Architectural Stage | Mechanism Evaluated | Block 5 OOT AP | Δ vs Baseline | Δ vs Prior Step | Hypothesis & Verdict | Key Technical Diagnostic |
+| :--- | :--- | :--- | :---: | :---: | :---: | :--- | :--- |
+| **0. Baseline Tabular** | `1 - Tabular GBDT` | Pure tabular LightGBM over 371 base features | **0.4814** | +0.0000 | +0.0000 | **Reference Baseline**: BASELINE | Strong tree-based partitioner; benchmark standard |
+| **1. Hand-Crafted Relational** | `2 - Graph-Augmented GBDT` | +19 causal expanding entity-history aggregations | **0.5252** | +0.0438 | +0.0438 | **H1**: SUPPORTED (p=0.00175) | Peak pipeline performance (+9.1% AP); velocity & delta ratios dominate |
+| **2. Decoupled Neural GNN** | `3 - Frozen Res-GNN` | 2-stage Res-GNN over continuous PCA + neighborhood means | **0.4772** | -0.0043 | -0.0480 | **H2 [Confounded]**: EXPLORATORY / DROPPED | Severe degradation (-9.1% vs S2); PCA compression & mean smoothing dilute signals |
+| **3. Message Passing Ablation** | `3n - Res-GNN, No Graph` | Identical Res-GNN architecture with adjacency graph zeroed | **0.4763** | -0.0052 | -0.0009 | **H2a (S3 vs S3n)**: NOT SUPPORTED (p=0.723) | Message passing provides zero statistical benefit (Δ=+0.0009, p=0.62) |
+| **4. Monotonic Gating Alone** | `4n - Joint BGNN, No Boost` | Softplus blending gate enforcing exact tabular fallback | **0.4811** | -0.0003 | +0.0039 | **H3b (S4n vs S3)**: REAL BUT < THRESHOLD | Gating recovers tabular signal (+0.0039), but still below materiality threshold |
+| **5. Alternating Joint BGNN** | `4 - Joint BGNN` | Full alternating boosting updates on latent representations Z | **0.4634** | -0.0181 | -0.0177 | **H3a (S4 vs S4n) & H4**: NOT SUPPORTED (p=0.00175) | Boosting updates corrupt latent manifold; performs worse than baseline S1 (-0.0181) |

@@ -1,0 +1,152 @@
+[{"stream_name":"stderr","time":8.248612709,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.248701528,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.248708571,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.24871229,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.889762409,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.889819604,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.889826089,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.889830699000001,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":18.561384753,"data":"[1] Resolving environment and loading raw data...\n"}
+,{"stream_name":"stdout","time":18.561455447,"data":"    Selected data directory: /kaggle/input/competitions/ieee-fraud-detection\n"}
+,{"stream_name":"stdout","time":48.974498427,"data":"    Joining train_identity.csv via left join...\n"}
+,{"stream_name":"stdout","time":51.042595106,"data":"    Memory downcasting: 1955.4 MB -\u003e 1044.7 MB (46.6% saved)\n"}
+,{"stream_name":"stdout","time":51.042656706,"data":"[2] Enforcing deterministic chronological sort and block construction...\n"}
+,{"stream_name":"stdout","time":55.854386114,"data":"    Block 5 OOT quarantine: PASSED (sealed; scored later, never trained on).\n"}
+,{"stream_name":"stdout","time":55.854431057,"data":"    Block profile (prevalence drift check):\n"}
+,{"stream_name":"stdout","time":55.854439417,"data":"                rows  fraud_rate  first_day  last_day\n"}
+,{"stream_name":"stdout","time":55.85444482,"data":"chrono_block                                         \n"}
+,{"stream_name":"stdout","time":55.854449936,"data":"1             118108    0.023927          0        25\n"}
+,{"stream_name":"stdout","time":55.854454445,"data":"2             118108    0.040065         25        63\n"}
+,{"stream_name":"stdout","time":55.854458913,"data":"3             118108    0.037508         63       100\n"}
+,{"stream_name":"stdout","time":55.854463396,"data":"4             118108    0.039041        100       140\n"}
+,{"stream_name":"stdout","time":55.854468176,"data":"5             118108    0.034409        140       181\n"}
+,{"stream_name":"stdout","time":55.933244462,"data":"[3] Ingesting feature-decision ledger and applying audit filters...\n"}
+,{"stream_name":"stdout","time":55.9332751,"data":"    Loaded decisions ledger: /kaggle/input/notebooks/iemanihsan/ieee-cis-eda-leakage-audit/artifacts/feature_risk_table.csv\n"}
+,{"stream_name":"stdout","time":55.933282289,"data":"    Features retained after audit screening: 371\n"}
+,{"stream_name":"stdout","time":55.933287087,"data":"    Categorical features cast for LightGBM: 0\n"}
+,{"stream_name":"stdout","time":56.021468862,"data":"\n"}
+,{"stream_name":"stdout","time":56.021510428,"data":"================================================================================\n"}
+,{"stream_name":"stdout","time":56.021705401,"data":"PASS A: EXPANDING CHRONOLOGICAL FORWARD VALIDATION (EMBARGOED EVALUATION)\n"}
+,{"stream_name":"stdout","time":56.02171732,"data":"================================================================================\n"}
+,{"stream_name":"stdout","time":56.021720984,"data":"\n"}
+,{"stream_name":"stdout","time":56.021737773,"data":"\u003e\u003e\u003e Fold 1: train [1] -\u003e validate Block 2\n"}
+,{"stream_name":"stdout","time":76.911303523,"data":"    Fit rows: 94,486 | inner-stop rows: 23,622 | embargoed val rows: 114,488 (dropped 3,620 inside embargo)\n"}
+,{"stream_name":"stdout","time":76.911369507,"data":"    Boosting rounds selected on inner split: 103 (early stopping)\n"}
+,{"stream_name":"stdout","time":107.698794417,"data":"    AP 0.5254 | ROC-AUC 0.8674 | R@0.1%FPR 27.80%\n"}
+,{"stream_name":"stdout","time":107.69884486,"data":"    vs Random 0.0405 (delta +0.4849, 95% CI [0.4713, 0.4999], p_win 1.000)\n"}
+,{"stream_name":"stdout","time":107.698852504,"data":"    vs Amount 0.0430 (delta +0.4825, 95% CI [0.4690, 0.4979], p_win 1.000)\n"}
+,{"stream_name":"stdout","time":107.698858226,"data":"    Cohorts: first-seen AP 0.5391 | seen-before AP 0.5184 (first-seen share 36.6%)\n"}
+,{"stream_name":"stdout","time":107.698863434,"data":"    Entity overlap train-\u003eval: card 32.3% | device 98.7%\n"}
+,{"stream_name":"stdout","time":107.698868513,"data":"    Calibration: ECE 0.01489 -\u003e 0.01728 | ECE_q 0.01489 -\u003e 0.01724 | Brier 0.02657 -\u003e 0.02700\n"}
+,{"stream_name":"stdout","time":107.698873602,"data":"\n"}
+,{"stream_name":"stdout","time":107.698878284,"data":"\u003e\u003e\u003e Fold 2: train [1, 2] -\u003e validate Block 3\n"}
+,{"stream_name":"stdout","time":141.746268898,"data":"    Fit rows: 188,972 | inner-stop rows: 47,244 | embargoed val rows: 114,355 (dropped 3,753 inside embargo)\n"}
+,{"stream_name":"stdout","time":141.746308151,"data":"    Boosting rounds selected on inner split: 134 (early stopping)\n"}
+,{"stream_name":"stdout","time":173.748400344,"data":"    AP 0.4812 | ROC-AUC 0.8617 | R@0.1%FPR 23.92%\n"}
+,{"stream_name":"stdout","time":173.748443694,"data":"    vs Random 0.0378 (delta +0.4434, 95% CI [0.4274, 0.4601], p_win 1.000)\n"}
+,{"stream_name":"stdout","time":173.748452222,"data":"    vs Amount 0.0406 (delta +0.4406, 95% CI [0.4249, 0.4568], p_win 1.000)\n"}
+,{"stream_name":"stdout","time":173.748459632,"data":"    Cohorts: first-seen AP 0.5442 | seen-before AP 0.4546 (first-seen share 34.0%)\n"}
+,{"stream_name":"stdout","time":173.748466628,"data":"    Entity overlap train-\u003eval: card 35.8% | device 97.5%\n"}
+,{"stream_name":"stdout","time":173.748474839,"data":"    Calibration: ECE 0.01249 -\u003e 0.00480 | ECE_q 0.01253 -\u003e 0.00639 | Brier 0.02537 -\u003e 0.02525\n"}
+,{"stream_name":"stdout","time":173.748481683,"data":"\n"}
+,{"stream_name":"stdout","time":173.748488446,"data":"\u003e\u003e\u003e Fold 3: train [1, 2, 3] -\u003e validate Block 4\n"}
+,{"stream_name":"stdout","time":220.281848413,"data":"    Fit rows: 283,459 | inner-stop rows: 70,865 | embargoed val rows: 115,420 (dropped 2,688 inside embargo)\n"}
+,{"stream_name":"stdout","time":220.281897739,"data":"    Boosting rounds selected on inner split: 179 (early stopping)\n"}
+,{"stream_name":"stdout","time":252.752899573,"data":"    AP 0.5330 | ROC-AUC 0.8887 | R@0.1%FPR 25.58%\n"}
+,{"stream_name":"stdout","time":252.752958525,"data":"    vs Random 0.0397 (delta +0.4933, 95% CI [0.4789, 0.5078], p_win 1.000)\n"}
+,{"stream_name":"stdout","time":252.752966513,"data":"    vs Amount 0.0477 (delta +0.4853, 95% CI [0.4708, 0.4995], p_win 1.000)\n"}
+,{"stream_name":"stdout","time":252.752972008,"data":"    Cohorts: first-seen AP 0.5669 | seen-before AP 0.5189 (first-seen share 31.0%)\n"}
+,{"stream_name":"stdout","time":252.752977057,"data":"    Entity overlap train-\u003eval: card 41.7% | device 92.1%\n"}
+,{"stream_name":"stdout","time":252.752989379,"data":"    Calibration: ECE 0.01029 -\u003e 0.00378 | ECE_q 0.00965 -\u003e 0.00243 | Brier 0.02515 -\u003e 0.02497\n"}
+,{"stream_name":"stdout","time":252.790567437,"data":"\n"}
+,{"stream_name":"stdout","time":252.790593927,"data":"[4] Auditing cross-fold feature-importance stability...\n"}
+,{"stream_name":"stdout","time":252.790599183,"data":"    Spearman rank correlation of gain importance across folds:\n"}
+,{"stream_name":"stdout","time":252.79060281,"data":"            gain_fold1  gain_fold2  gain_fold3\n"}
+,{"stream_name":"stdout","time":252.790606355,"data":"gain_fold1      1.0000      0.8800      0.8553\n"}
+,{"stream_name":"stdout","time":252.790609922,"data":"gain_fold2      0.8800      1.0000      0.9056\n"}
+,{"stream_name":"stdout","time":252.790613173,"data":"gain_fold3      0.8553      0.9056      1.0000\n"}
+,{"stream_name":"stdout","time":252.790616449,"data":"    Top-10 features by mean gain: V258, C13, C14, TransactionAmt, C1, D2, D15, V294, C12, V189\n"}
+,{"stream_name":"stdout","time":252.790620333,"data":"    Saved: ./artifacts/stage1_feature_importance.csv\n"}
+,{"stream_name":"stderr","time":252.791697264,"data":"/tmp/ipykernel_23/894181042.py:20: RuntimeWarning: 53 features have gain_cv \u003e 1.0 across folds.\n"}
+,{"stream_name":"stderr","time":252.791721816,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":252.791727633,"data":"\n"}
+,{"stream_name":"stderr","time":252.791731634,"data":"/tmp/ipykernel_23/894181042.py:20: RuntimeWarning: 53 features have gain_cv \u003e 1.0 across folds.\n"}
+,{"stream_name":"stderr","time":252.79173565,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":252.947196382,"data":"\n"}
+,{"stream_name":"stdout","time":252.947256992,"data":"[5] Generating Stage-1 scores for every block (feature-generation pass)...\n"}
+,{"stream_name":"stdout","time":252.947263714,"data":"    Fallback boosting rounds (median of [103, 134, 179]): 134\n"}
+,{"stream_name":"stdout","time":252.947268114,"data":"    Block 1: expanding sub-fold scheme with K=4 (slice sizes [29527, 29527, 29527, 29527])\n"}
+,{"stream_name":"stdout","time":263.595588185,"data":"      sub-fold 1: train 29,527 -\u003e score 29,527 | rounds 155 (ES)\n"}
+,{"stream_name":"stdout","time":283.188693051,"data":"      sub-fold 2: train 59,054 -\u003e score 29,527 | rounds 171 (ES)\n"}
+,{"stream_name":"stdout","time":301.983091557,"data":"      sub-fold 3: train 88,581 -\u003e score 29,527 | rounds 111 (ES)\n"}
+,{"stream_name":"stdout","time":301.983139465,"data":"      slice 0 (29,527 rows) intentionally unscored - no prior data exists. Flagged, not silently NaN.\n"}
+,{"stream_name":"stdout","time":303.152132667,"data":"    Block 2: scored 118,108 rows with the Fold-1 model (trained strictly on earlier blocks).\n"}
+,{"stream_name":"stdout","time":304.632818571,"data":"    Block 3: scored 118,108 rows with the Fold-2 model (trained strictly on earlier blocks).\n"}
+,{"stream_name":"stdout","time":306.62737353,"data":"    Block 4: scored 118,108 rows with the Fold-3 model (trained strictly on earlier blocks).\n"}
+,{"stream_name":"stdout","time":306.627450218,"data":"    Block 5 (sealed OOT): fitting frozen production model on Blocks 1-4...\n"}
+,{"stream_name":"stdout","time":370.188580555,"data":"      Frozen model: fit 377,945 rows | rounds 216 (ES) | scored 118,108 OOT rows.\n"}
+,{"stream_name":"stdout","time":370.188615557,"data":"      OOT target NOT read. No OOT metric is computed in Stage 1.\n"}
+,{"stream_name":"stdout","time":370.35423133,"data":"\n"}
+,{"stream_name":"stdout","time":370.354267846,"data":"[6] Missingness policy: 29,527 unscored rows filled with seed-slice prior 0.02879 and flagged.\n"}
+,{"stream_name":"stdout","time":373.138075988,"data":"    Saved: ./artifacts/stage1_oof_predictions.csv\n"}
+,{"stream_name":"stdout","time":373.138122668,"data":"    Stage-1 score coverage by block:\n"}
+,{"stream_name":"stdout","time":373.138148074,"data":"      Block 1: 75.0%\n"}
+,{"stream_name":"stdout","time":373.138152663,"data":"      Block 2: 100.0%\n"}
+,{"stream_name":"stdout","time":373.138155989,"data":"      Block 3: 100.0%\n"}
+,{"stream_name":"stdout","time":373.138159375,"data":"      Block 4: 100.0%\n"}
+,{"stream_name":"stdout","time":373.138163078,"data":"      Block 5: 100.0% (Sealed OOT - frozen model)\n"}
+,{"stream_name":"stdout","time":373.138166687,"data":"    Coverage by generation source:\n"}
+,{"stream_name":"stdout","time":373.13817042,"data":"stage1_source\n"}
+,{"stream_name":"stdout","time":373.138173688,"data":"b1_seed_unscored     29527\n"}
+,{"stream_name":"stdout","time":373.138177151,"data":"b1_subfold_1         29527\n"}
+,{"stream_name":"stdout","time":373.138180763,"data":"b1_subfold_2         29527\n"}
+,{"stream_name":"stdout","time":373.13818375,"data":"b1_subfold_3         29527\n"}
+,{"stream_name":"stdout","time":373.138186815,"data":"forward_fold_1      118108\n"}
+,{"stream_name":"stdout","time":373.138189995,"data":"forward_fold_2      118108\n"}
+,{"stream_name":"stdout","time":373.138193324,"data":"forward_fold_3      118108\n"}
+,{"stream_name":"stdout","time":373.13819634,"data":"frozen_oot_model    118108\n"}
+,{"stream_name":"stdout","time":373.138199618,"data":"    Pooled development-block OOF AP (sanity, not the headline metric): 0.4703\n"}
+,{"stream_name":"stdout","time":373.19030785,"data":"\n"}
+,{"stream_name":"stdout","time":373.19033246,"data":"======================================================================================================================\n"}
+,{"stream_name":"stdout","time":373.19033787,"data":"STAGE 1 TABULAR BASELINE - EXPANDING FORWARD VALIDATION REPORT (EMBARGOED)\n"}
+,{"stream_name":"stdout","time":373.190341686,"data":"======================================================================================================================\n"}
+,{"stream_name":"stdout","time":373.190348976,"data":" fold  val_block  best_iter  n_val  val_fraud_rate       AP  AP_calibrated  AP_random  AP_amount_only  AP_first_seen  AP_seen_before  card_overlap_rate  ROC_AUC      ECE  ECE_quantile  ECE_calibrated    Brier  Recall@0.1%FPR  Recall@1.0%FPR  Prec@1.0%cap  Loss_no_model  Loss_cost_rule  Loss_flat_0.5  AlertRate\n"}
+,{"stream_name":"stdout","time":373.19035405,"data":"    1          2        103 114488        0.040563 0.525428       0.499091   0.040519        0.042962       0.539075        0.518370           0.322820 0.867417 0.014891      0.014891        0.017281 0.026574        0.277993        0.426141      0.950175  642186.539124   428183.208296  517710.344263   0.022596\n"}
+,{"stream_name":"stdout","time":373.190358376,"data":"    2          3        134 114355        0.036920 0.481182       0.462679   0.037828        0.040580       0.544191        0.454574           0.358087 0.861742 0.012494      0.012526        0.004799 0.025374        0.239223        0.399337      0.894138  622400.308933   407608.648917  526995.368003   0.021652\n"}
+,{"stream_name":"stdout","time":373.190362459,"data":"    3          4        179 115420        0.039248 0.533023       0.511227   0.039736        0.047731       0.566925        0.518867           0.417111 0.888680 0.010288      0.009652        0.003776 0.025148        0.255850        0.436424      0.917678  780690.530868   459063.208631  663812.124715   0.024831\n"}
+,{"stream_name":"stdout","time":373.190366811,"data":"\n"}
+,{"stream_name":"stdout","time":373.19037014,"data":"--- Mean across expanding folds ---\n"}
+,{"stream_name":"stdout","time":373.190374069,"data":"Average Precision (AP):              0.5132 +/- 0.0280\n"}
+,{"stream_name":"stdout","time":373.190387564,"data":"  AP after isotonic calibration:     0.4910\n"}
+,{"stream_name":"stdout","time":373.190391085,"data":"  Random floor:                      0.0394\n"}
+,{"stream_name":"stdout","time":373.190394436,"data":"  Amount-only floor:                 0.0438\n"}
+,{"stream_name":"stdout","time":373.19039764,"data":"  First-seen cohort AP:              0.5501\n"}
+,{"stream_name":"stdout","time":373.190400944,"data":"  Seen-before cohort AP:             0.4973\n"}
+,{"stream_name":"stdout","time":373.190404208,"data":"  Card overlap train-\u003eval:           36.6%\n"}
+,{"stream_name":"stdout","time":373.190408092,"data":"ROC-AUC:                             0.8726\n"}
+,{"stream_name":"stdout","time":373.190411581,"data":"ECE (equal-width):                   0.01256 -\u003e calibrated 0.00862\n"}
+,{"stream_name":"stdout","time":373.190416064,"data":"ECE (quantile bins):                 0.01236 -\u003e calibrated 0.00869\n"}
+,{"stream_name":"stdout","time":373.190419435,"data":"Brier:                               0.02570 -\u003e calibrated 0.02574\n"}
+,{"stream_name":"stdout","time":373.190422817,"data":"Recall @ 0.1% FPR:                   25.77%\n"}
+,{"stream_name":"stdout","time":373.190426051,"data":"Recall @ 1.0% FPR:                   42.06%\n"}
+,{"stream_name":"stdout","time":373.190429665,"data":"Precision @ 1.0% capacity:           92.07%\n"}
+,{"stream_name":"stdout","time":373.190432862,"data":"Loss - do nothing:                   $681,759.13\n"}
+,{"stream_name":"stdout","time":373.19043603,"data":"Loss - cost rule (raw p):            $431,618.36\n"}
+,{"stream_name":"stdout","time":373.19043944,"data":"Loss - cost rule (calibrated p):     $419,242.70\n"}
+,{"stream_name":"stdout","time":373.190442992,"data":"Loss - flat 0.5 cutoff:              $569,505.95\n"}
+,{"stream_name":"stdout","time":373.190446284,"data":"Alert rate:                          2.30%\n"}
+,{"stream_name":"stdout","time":373.190449578,"data":"\n"}
+,{"stream_name":"stdout","time":373.190452944,"data":"Acceptance gate vs. amount-only floor (min delta 0.4406, min CI low 0.4249, threshold 0.005): PASS\n"}
+,{"stream_name":"stdout","time":373.190456144,"data":"Saved fold metrics to: ./artifacts/stage1_fold_results.csv\n"}
+,{"stream_name":"stdout","time":373.190460348,"data":"Saved provenance manifest to: ./artifacts/stage1_run_manifest.json\n"}
+,{"stream_name":"stdout","time":373.190464216,"data":"\n"}
+,{"stream_name":"stdout","time":373.190467618,"data":"Stage 1 complete. Block 5 remains unevaluated by design - it is scored, sealed, and reserved for the final joint-model comparison.\n"}
+,{"stream_name":"stderr","time":377.730034486,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":377.730076778,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":377.889044785,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":377.889082364,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":378.558577973,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":378.853306176,"data":"[NbConvertApp] Writing 80335 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":381.290547489,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":382.23747363,"data":"[NbConvertApp] Writing 517395 bytes to __results__.html\n"}
+]

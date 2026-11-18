@@ -1,0 +1,2247 @@
+--- PAGE 1 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+MASTER BY COURSEWORK 
+ 
+ PROJECT GUIDELINES 
+ 
+FOR 
+ 
+SUPERVISORS AND STUDENTS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+FACULTY OF SCIENCE AND INFORMATION TECHNOLOGY 
+UNIVERSITI TEKNOLOGI PETRONAS 
+Seri Iskandar, 32610, Perak Darul Ridzuan 
+ 
+ 
+Doc. Ref. No.  : UTP-FSIT-MASTER-CW-PROJECT 
+Issue Version  : 1.0 
+Date  : AUGUST 2024  
+
+--- PAGE 2 ---
+   
+ ii 
+TABLE OF CONTENTS 
+ 
+ 
+1. INTRODUCTION   1 
+ 
+2. PURPOSE   1 
+ 
+3. SCOPE OF WORK   2 
+ 
+4. RESPONSIBILITIES   2 
+4.1 Master by Coursework Project Committee 
+4.2 Supervisor 
+4.3 Co-supervisor 
+4.4 Panel of Examiners 
+4.5 Students (Master by Coursework Candidates) 
+ 
+5. PROJECT PROCESS FLOW   6 
+5.1 Submission of Titles and Project Synopsis 
+5.2 Approval on Project Proposal and Assignment of Supervisor 
+5.3 Selection of Project Titles (if applicable) 
+5.4 Allocation of Approved Project Title / Assigned Supervisors 
+5.5 Extended Proposal 
+5.6 Proposal Defence  
+5.7 Progress Assessment 
+5.8 Technical Paper 
+5.9 Dissertation (Final Draft) 
+5.10 Final Presentation (Viva) 
+5.11 Submission of Master by Coursework Project Dissertation 
+5.12 Master by Coursework Project Grading 
+ 
+6. WRITING FORMAT         9 
+6.1 Extended Proposal 
+6.2 Technical Paper 
+6.3 Dissertation 
+6.4 General Writing Format 
+6.5 General Content 
+ 
+7.  EVALUATION   16 
+
+--- PAGE 3 ---
+   
+ iii 
+ 
+8.  PLAGIARISM   17 
+ 
+9. COPYRIGHT   17 
+ 
+10.  APPENDICES   18 
+Appendix 1: Organisation Chart for Master by Coursework Project Committee 
+Appendix 2: Master by Coursework Project (Part 1) Process Flow 
+Appendix 3: Master by Coursework Project (Part 2) Process Flow 
+Appendix 4: Timelines for Master by Coursework Project (Part 1) 
+Appendix 5: Timelines for Master by Coursework Project (Part 2) 
+Appendix 6: Master by Coursework Marking Scheme: Proposal Defense 
+Appendix 7: Master by Coursework Marking Scheme: Extended Proposal 
+Appendix 8: Master by Coursework Marking Scheme: Progress Assessment 
+Appendix 9: Master by Coursework Marking Scheme: Technical Paper 
+Appendix 10: Master by Coursework Marking Scheme: Final Presentation 
+Appendix 11: Master by Coursework Marking Scheme: Dissertation 
+Appendix 12: Sample of Technical Paper Setup 
+Appendix 13: Sample of Dissertation Setup 
+Appendix 14: Sample of Table and Figure 
+Appendix 15: Sample of Documenting Sources 
+Appendix 16: Sample of Reference Formats 
+
+--- PAGE 4 ---
+   
+ 1 
+1. INTRODUCTION 
+All Master by Coursework (M-CW) programme students in UTP are required to 
+take and complete a research / project-based course. This course is a compulsory 
+element in the Master by Coursework programme offered at UTP. 
+The project requires students to perform research and/or development work in 
+their respective discipline, especially on real-world problems which would motivate 
+them to produce practical solutions. It is an opportunity for students to use the 
+tools and techniques of problem -solving to solve the problems they have 
+encountered. With this approach, the learning process is gained through 'by-doing' 
+(practical) experience. Management concepts which provide students with skills 
+required for managing a project are also incorporated. Thus, the students are 
+expected to be well rounded by mastering various useful disciplines, which will 
+enable them to participate and prepare for their career projection. 
+Working under the guidance of a supervisor / supervisors, students may shape 
+the direction of what they want to be, as well as gain better understanding of the 
+responsibilities they have to shoulder when they undertake a research / project. 
+The undertaken research / project can also be used as a basis for job employment 
+by fully exploiting the learning process they have gone through, the skills they have 
+gathered and the experience they have gained from the research / project.  
+This guideline is prepared for students and supervisors to enable them to execute 
+their respective roles and responsibilities in an effective manner, hence benefiting 
+both parties, in successfully achieving the course learning outcome for the subject.  
+ 
+2. PURPOSE 
+The purpose of the project is to develop a framework, which will enhance students' 
+skills in the process of applying knowledge, expanding thoughts, solving problems 
+independently and presenting findings through minimum guidance and 
+supervision. 
+ 
+ 
+ 
+ 
+
+--- PAGE 5 ---
+   
+ 2 
+3. SCOPE OF WORK 
+The project can be in the form of laboratory experiments, computer programming, 
+modelling, simulations, analysis and product design. The area and scope of the 
+project should be narrowed down so that the project is feasible and could be 
+completed within the  allocated time frame. The project work must exhibit an 
+element of originality and indicates the maturity level for the Master by 
+Coursework degree programme. 
+ 
+4. RESPONSIBILITIES 
+A team of Master by Coursework project committee comprising the department 
+chair, programme manager, project supervisor, project co-supervisor (if any) and 
+panel of examiners is formed to manage  the Master by Coursework project 
+(Appendix 1) . They should work clo sely with each other in managing and 
+monitoring students’ work progression . It is  the responsibility of each party to 
+ensure that the project is completed and delivered within the project time frame. 
+The team responsibilities are as indicated in the Master by Coursework Project 
+Process Flow in Appendix 2 and Appendix 3. 
+ 
+4.1  Master by Coursework Project Committee 
+The chairman of the project committee for each Master by Coursework 
+programme is the respective Department Chair, while the project shall 
+be coordinated by respective Programme Manager. The chairman of the 
+project committee is responsible in appointing the committee members. 
+ 
+4.1.1 The main tasks and responsibilities of the Project Coordinator 
+are as follows: 
+(a) To identify the students who have registered for the Master 
+by Coursework project. 
+(b) To distribute the Master by Coursework guidelines to  
+students and supervisors. 
+(c) To plan and manage the Master by Coursework process. 
+(d) To collect the suggestions of project title proposals from 
+the lecturers, other staff and students. 
+
+--- PAGE 6 ---
+   
+ 3 
+(e) To submit all project proposals to the project committee for 
+approval and to assign supervisor(s). 
+(f) To release the list of approved projects for students' 
+selection. 
+(g) To collect the list of project titles selected by students. 
+(h) To release the project c ommittee's decision on project 
+titles and supervisor(s). 
+(i) To brief the students and supervisors on the project 
+requirements based on the guidelines. 
+(j) To co-ordinate a committee meeting to appoint a panel of 
+examiners.  
+(k) To arrange students’ oral presentation at the end of the 
+semester. 
+(l) To collect the proposal report / dissertation final drafts from 
+students and forward it to the examiner for evaluation 
+during oral presentation at the end of the semester. 
+(m) To compile the students’ assessment marks.  
+(n) To collect one soft copy ( formatted) of final dissertation 
+from students.  
+(o) To compile and retain marking forms for at least one year 
+after graduation for auditing purposes. 
+ 
+4.1.2 The tasks of the Project Committee Chairman and Committee 
+Members are as follows:  
+(a) The chairman is responsible for all final decision s based 
+on the committee’s recommendations. 
+(b) To ensure the initial project proposal is relevant to 
+student’s field of study. 
+(c) To approve project title proposals.  
+(d) To assign project supervisor(s). 
+(e) To assign project titles to students. 
+(f) To appoint panel of examiners. 
+(g) To approve proposal to purchase consumables and 
+equipment, technical support, nomination of advisors and 
+other resources related to projects. 
+ 
+
+--- PAGE 7 ---
+   
+ 4 
+4.2  Supervisor 
+Students will be supervised by one main supervisor, who is 
+knowledgeable in the relevant field of expertise. Their responsibilities 
+can be summarised as follows: 
+(a) To work together with students until the submission of the 
+final report. 
+(b) To assist students on the accessibility of the tools needed 
+for the project. 
+(c) To monitor the schedule and progress of the students and 
+their projects. 
+(d) To assist and guide students on the project and the 
+preparation interim report and dissertation according to the 
+approved format. 
+(e) To assess and evaluate students’ performance, including 
+conducting the continuous assessment.  
+(f) To nominate a co -supervisor (if required ) and notify the 
+project coordinator. 
+(g) To compile and retain all evaluation for at least one year 
+after graduation for auditing purposes. 
+ 
+4.3 Co-Supervisor 
+The co-supervisor may be nominated by the supervisor to assist 
+students in very specialized areas. The co-supervisor can be internal or 
+external (from outside UTP).  The external co-supervisor must be 
+officially appointed by the project c ommittee.  The co-supervisor’s 
+responsibility is to guide students in solving specific task s within his/her 
+expertise as and when necessary, within the project time frame. In 
+certain case s, the co-supervisor may represent the supervisor in oral 
+presentations, and evaluate the students’ progress and final dissertation. 
+ 
+4.4  Panel of Examiners 
+The project committee appoints the panel of examiners. The examiners 
+will function as project evaluators who are responsible to evaluate the 
+oral presentation and technical reports / dissertation. Refer to Table 2 
+and Table 3 in Section 7 for the grading structure . Examiners shall be 
+appointed from the industry (external examiner) and  / or among the 
+
+--- PAGE 8 ---
+   
+ 5 
+academic staff  (other than supervisor and co -supervisor) of the 
+programme (internal examiner). 
+ 
+4.5  Student (Master by Coursework Candidates) 
+In completing the project, students are required to demonstrate their 
+ability to integrate fundamental knowledge in developing techniques, 
+methods and analyses. Students should take their own initiative by 
+proposing a title for their project. They are also required to work 
+independently through exercising self -discipline, self-management and 
+job coordination while undertaking the project. If working in a group, the 
+students are expected to exercise teamwork,  co-operation, and 
+trustworthiness to ensure the success of the project.  
+It is compulsory for students to complete ALL assessment processes as 
+follows:  
+(a) Extended Proposal 
+(b) Proposal Defence 
+(c) Technical Paper 
+(d) Dissertation  
+(e) Final Presentation (Viva) 
+Student will be given a g rade of F for failing to do so.  Students’ 
+responsibilities include the following: 
+(a) To suggest a project topic on their own , or select from based 
+on suggestion by the supervisor/s. 
+(b) To produce a n extended proposal which clearly defines the 
+objective(s) and the scope of project work. 
+(d) To plan and adhere to the meeting schedule with the 
+supervisor/s for the purpose of updating the ir progress and 
+seeking advice on project matters. 
+(e) To be responsible in finding alternative solutions for problems 
+encountered throughout the project execution. 
+(f) To submit all reports on time with no exception. 
+ 
+ 
+ 
+ 
+ 
+
+--- PAGE 9 ---
+   
+ 6 
+5.  PROJECT PROCESS FLOW 
+The Master by Coursework project process flow is shown in Appendix 2 and 
+Appendix 3. 
+5.1  Submission of Titles and Project Synopsis 
+(a) Students are required to propose their own research project 
+based on their interest and experience. 
+(b) All project title and synopsis must be submitted to the project 
+coordinator before the start of the new semester. 
+ 
+5.2  Approval on Project Proposal and Assignment of Supervisor 
+(a) The project proposal will be reviewed by the project committee 
+to ensure the viability of the project. 
+(b) Once the project is approved, the project committee will assign 
+a supervisor for the project. 
+ 
+5.3 Selection of Project Titles (if applicable) 
+(a) If required, the project coordinator will request project title s 
+and project synopsis from academic staff as potential Master 
+by Coursework project. 
+(b) The shortlisted project titles and synopsis will be presented to 
+the project committee for approval. 
+(c) Students who d o not submit a project proposal or have their 
+proposals rejected by the project committee, will have to select 
+the project title from the given list. 
+ 
+5.4  Allocation of Approved Project Title / Assigned Supervisors  
+Students will be informed by the project coordinator on the awarded 
+project or assigned supervisors.  
+ 
+5.5  Extended Proposal 
+ Extended proposal is to assess the attainment of specific course learning 
+outcome, as well as helping supervisor to monitor the research / project 
+progress of students during the Master of Coursework Project (Part 1). 
+Student and supervisor need to agree on the research / project activities 
+at the start of the research / project work. It is recommended for students 
+
+--- PAGE 10 ---
+   
+ 7 
+to meet their supervisor (s) regularly (suggested duration of once every 
+two weeks) in ensuring good research / project work progress. 
+ 
+5.6 Proposal Defence 
+In this oral session, students should be able to verbally defence the 
+proposed research project and present on the progress to the supervisor 
+and appointed academic staff from the same programme (as internal 
+examiner). The session shall be conducted towards the end of Master of 
+Coursework Project (Part 1) and is also an avenue for the student to get 
+feedback on how  to improve their project.  The examiners will evaluate 
+the presentation and submit the marks to the project coordinator. If the 
+students fail to attend the oral presentation, the students shall be barred 
+and will not be able to continue the course. 
+ 
+5.7 Progress Assessment 
+Progress assessment is the stage-gate evaluation system to assess the 
+students’ performance . The assessment is to be conducted by the 
+supervisor in the middle of the semester during the Part 2 of the Master 
+by Coursework Project. 
+ 
+5.8  Technical Paper 
+Prior to final presentation and dissertation evaluation,  students are 
+required to submit a concise technical paper about the research project 
+outcomes. The technical paper  shall adopt IEEE formatting  as in 
+Appendix 12 and consist of abstract, introduction, background study, 
+methodology, results and conclusions. The flow for technical paper 
+development and submission are as follows: 
+(a) Students are encouraged to discuss and evaluate their 
+research outcomes with the supervisor prior to writing the 
+technical paper. 
+(b) Upon completion, students to submit the technical paper to the 
+project coordinator. 
+(c) The project coordinator will distribute the technical paper  to 
+the appointed examiners.  
+(d) The examiners will evaluate and submit the marks to the 
+project coordinator. 
+
+--- PAGE 11 ---
+   
+ 8 
+5.9 Dissertation (Final Draft) 
+Towards the end of Master of Coursework Project (Part 2), students 
+should be able to explain in writing about the contents of the project and 
+its significance, the problem statement, objectives, scope, literature 
+review, methodology used, results, conclusions and recommendations.  
+The flow and procedures for the dissertation submission are as follows: 
+(a) Students are  required to obtain the supervisor signature on 
+the dissertation prior to the submission. 
+(b) Students to submit the dissertation to the project coordinator. 
+(c) The project coordinator will distribute to the panel of  
+examiners.  
+(d) The supervisor and examiners will evaluate the dissertation 
+and submit the marks to the project coordinator using after the 
+final presentation. 
+ 
+5.10  Final Presentation (Viva) 
+In this session, students should be able to: 
+(a) Verbally report the outcome of their Master by Coursework 
+project. 
+(b) Demonstrate how well they are able to explain and understand 
+the project that they have been working on. 
+(c) Utilize their skills in oral presentation. 
+ 
+The procedures are as follows: 
+(a) The final presentation evaluation will be conducted at the pre-
+arrange time.  
+(b) The supervisor and examiners will give comments on the 
+dissertation and the oral presentation of the project. 
+(c) Students have to defend their findings in the dissertation and 
+make necessary amendments as suggested by the 
+supervisors and examiners before submitting the final 
+dissertation. 
+(d) The presentation contents may focus on the following items: 
+▪ Problem statement 
+▪ Objectives and scope of study 
+▪ Literature review 
+
+--- PAGE 12 ---
+   
+ 9 
+▪ Procedure / methodology 
+▪ Results and findings 
+▪ Conclusion and recommendation 
+(e) This oral session shall comprise supervisor and examiners.  
+(f) The supervisor and examiners will evaluate the final 
+presentation and submit the marks to the project coordinator 
+after the session concluded. 
+ 
+5.11 Submission of Master by Coursework Project Dissertation 
+(a) Students must submit softcopy (in PDF format) of the project 
+dissertation to the project coordinator. 
+ 
+5.12  Master by Coursework Project Grading 
+(a) The project c oordinator will compile all the marks  upon 
+receiving the evaluation forms from supervisor and examiners. 
+(b) The project coordinator to obtain endorsement of the project 
+results during the  result vetting session at the department 
+level. 
+ 
+6. WRITING FORMAT 
+The writing of the interim report and dissertation should adhere to the following 
+format. The report consists of many parts arranged in a certain order. It is 
+recommended that the contents be arranged in the following order: 
+ 
+6.1 Extended Proposal 
+(a) Title page 
+(b) Abstract  
+(c) Chapter 1: Introduction 
+• Background 
+• Problem statement 
+• Objectives and scope of study 
+(d) Chapter 2: Literature review and/or theory 
+(e) Chapter 3: Methodology / project work 
+(f) Chapter 4: Conclusion and future work 
+(g) References  
+(h) Appendices 
+
+--- PAGE 13 ---
+   
+ 10 
+6.2 Technical Paper 
+(a) Title 
+(b) Abstract  
+(c) Introduction 
+• Background 
+• Problem statement 
+• Objectives 
+(d) Background / literature review 
+(e) Methodology / project work 
+(f) Conclusion 
+(g) References  
+ 
+6.3 Dissertation 
+(a) Title page 
+(b) Certification  
+(c) Abstract  
+(d) Acknowledgements  
+(e) Table of contents  
+(f) List of figures  
+(g) List of tables  
+(h) Abbreviations and nomenclatures  
+(i) Chapter 1: Introduction 
+• Background 
+• Problem statement 
+• Objectives and scope of study 
+(j) Chapter 2: Literature review and/or theory 
+(k) Chapter 3: Methodology / project work 
+(l) Chapter 4: Results and discussion  
+(m) Chapter 5: Conclusion and recommendation 
+(n) References  
+(o) Appendices 
+ 
+ 
+ 
+ 
+
+--- PAGE 14 ---
+   
+ 11 
+6.4 General Writing Format 
+Students must follow specific guidelines for writing the extended 
+proposal, technical paper and dissertation. For technical paper 
+component, student must adopt IEEE formatting as in Appendix 12. 
+(a) Language 
+The dissertation must be written in acceptable and formal 
+English. Use the passive voice. 
+ 
+(b) Font and Spacing 
+All text should be 1.5 spacing between lines and 3 spacing 
+between paragraphs (Times New Roman regular font -style, 
+size 12) typed on a white A4 paper.  
+The following however should be single spaced: 
+▪ Tables and figures 
+▪ Computer programs/source codes (must be reduced to font 
+size 8) 
+ 
+(c) Length 
+The minimum word limit of the students’ technical paper and 
+dissertation ( excluding references and appendices ) is as 
+follows: 
+Technical Paper 2,000 words 
+Dissertation 10,000 words 
+Students are encouraged to use bri ef and straightforward 
+wordings, use passive voice and avoid using jargon as much 
+as possible. 
+ 
+(d) Pagination 
+All pages must  be numbered in proper sequence  from 
+introduction to the end of the report including pages on figures, 
+tables, computer programs and appendices. All front materials 
+are numbered in small Roman numerals (e.g. i, ii, iii).  Page 
+numbers appear by themselves and are not to be enclosed in 
+parenthesis, hyphens or other decorative symbols. Page 
+
+--- PAGE 15 ---
+   
+ 12 
+numbers must be positioned at the bottom and must be 
+centred. 
+ 
+(e) Margin 
+The top, bottom and right margins are 25 mm except the left 
+margin, which is 40 mm. All paragraphs should start from the 
+left margin. 
+ 
+(f) Mathematical Equations 
+Mathematical equations must be spaced out; superscript and 
+subscript must be clearly shown and numbered. 
+ 
+(g) Heading 
+The report should not have more than three levels of 
+numbered headings as follows: 
+ 
+1. FIRST-LEVEL HEAD 
+ 
+1.1 Second-Level Head 
+1.1.1 Third-Level Head 
+All headings should be in Times New Roman and bold. 
+Chapter and major headings should be in capitals and in 14 
+font size and 12 font size, respectively. Secondary and tertiary 
+headings should be in title case and in 12 font size.  
+ 
+(h) Tables and Figures 
+Tables and figures are considered part of the report if it is 
+within the main text. If it is of the size that is less than a page, 
+it should be inserted into the text near the point of reference 
+with a 3 spacing from the text. Tables should be on the same 
+page. Margin limits of figures and tables should be the same 
+as the full -page text. All tables and figures should be 
+numbered consecutively. Table heading should be positioned 
+at the top and centred . The numbers for figure should be 
+positioned at the botto m and centred. Refer to each table or 
+
+--- PAGE 16 ---
+   
+ 13 
+figure clearly in the text before placing it on the page. (For 
+example, “Figure 1 shows ….)  
+ 
+(i) Documenting Sources 
+Students are required to cite the sources from which  ideas 
+were taken. The documentation system to be used is the 
+American Psychological Association (APA) format.  
+ 
+(j) References 
+The method of writing references must follow the standard 
+APA format. 
+       
+(k) Title Page  
+The title page of the extended proposal  and dissertation 
+should be set out in accordance  with the attached sample 
+sheet and should include the following: 
+• The title of the proposal / dissertation. 
+• The name of the candidate in FULL. 
+• The degree for which he/she is submitting the proposal / 
+dissertation. 
+• The semester in which the proposal / dissertation is 
+submitted. 
+• The University name and address. 
+ 
+Students must submit softcopy of their final dissertation to the Master 
+by Coursework project coordinator. 
+ 
+ 
+6.5 General Content 
+This section will elaborate the general content needed in each part for 
+each report format.  
+(a) Title Page  
+The title of the report should reflect the focus on core issues 
+of the project work or issued related to it. 
+ 
+(b) Certification 
+
+--- PAGE 17 ---
+   
+ 14 
+This section is divided into two: certification of approval and 
+certification of originality. The certification of approval should 
+be signed by the Supervisor after he/she is satisfied with the 
+corrections or amendments done by the student. 
+ 
+(c) Abstract  
+An abstract is a short version of a report. It covers the report’s 
+purpose, scope, methodology, results and conclusion. 
+Abstracts should be no longer than one page. 
+ 
+(d) Acknowledgements 
+Acknowledgements should include the names of the 
+contributors to the project work, including the supervisors and 
+the members of the group, preferably not more than one page. 
+ 
+(e) Table of Contents 
+Table of contents lists all headings and sub-headings, tables, 
+figures, appendices and, bibliography with page numbers. It 
+also includes the certification, abstract and acknowledgement 
+(if applicable). 
+ 
+(f) Introduction 
+The Introduction must include the background of the project, 
+the problem statement, the objective(s) and scope of the 
+study. The Problem statement needs to focus on the situation 
+of the problem and research question s which lead to the 
+objective(s) of the study. Students are required to clarify the 
+boundary of the project work to ensure its feasibility within the 
+given time frame. 
+ 
+(g) Literature Review and/or Theory 
+The Literature review is the analytical, critical and objective 
+review of written materials on the chosen topic and area. It 
+provides the background information on the research question 
+and identifies what others have said and/or discovered about 
+the question. It contains all relevant theories, hypotheses, 
+
+--- PAGE 18 ---
+   
+ 15 
+facts and data which are relevant to the objective and findings 
+of the project. 
+ 
+(h) Methodology / Project Work 
+The Methodology refers to methods/procedure s used by the 
+student to achieve the objective(s) of the project. The 
+methods/procedures must be relevant and acceptable. 
+ 
+(i) Results and Discussion 
+This section presents the finding s or outcomes of the project 
+work. All gathered data from the project work must be 
+presented in the form of tables and figures such as graph s, 
+diagrams or appropriate formats . The data need s to be 
+analysed, and the results need to be discussed. 
+ 
+(j) Conclusion and Recommendation 
+The conclusion highlights the most significant findings in 
+relation to the objective(s) of the project. This section should 
+also include recommendations for future project work. 
+ 
+(k) References 
+This section is the list of references used in the project. The 
+method of writing references must follow the standard format. 
+ 
+(l) Appendices 
+Lengthy calculations, figures, raw data, computer 
+programs/source codes, outputs, etc. are to be enclosed as 
+appendices. They should be titled and numbered in 
+chronological order and capital letters. The appendices and 
+their titles need to be listed in the Table of Contents. Provide 
+title for each appendix, for example “Appendix 1. 
+Questionnaire Sample”. 
+ 
+ 
+ 
+ 
+
+--- PAGE 19 ---
+   
+ 16 
+7.  EVALUATION 
+Students are evaluated based on their capability in undertaking the project, 
+producing the written report and presenting the results. Overall commitment, as 
+well as personal conduct, is also to be observed at all time s. The main 
+components of evaluation and the suggested grading structure are given in 
+Table 2 and Table 3. 
+ 
+Table 2:  Grading Structure for Master by Coursework Project (Part 1) 
+ 
+Assessment 
+Type 
+Assessment Contribution (%) 
+Supervisor Internal 
+Examiner 
+External 
+Examiner Total (%) 
+Proposal 
+Defense 20 30 - 50 
+Extended 
+Proposal 30 20 - 50 
+Total (Part 1) 50 50 - 100% 
+ 
+ 
+Table 3: Grading Structure for Master by Coursework Project (Part 2) 
+ 
+Assessment 
+Type 
+Assessment Contribution (%) 
+Supervisor Internal 
+Examiner 
+External 
+Examiner Total (%) 
+Progress 
+Assessment 10 - - 10 
+Technical 
+Paper - - 10 10 
+Dissertation 20 10 10 40 
+Final 
+Presentation 20 10 10  40 
+Total (Part 2) 50 20 30 100% 
+ 
+ 
+
+--- PAGE 20 ---
+   
+ 17 
+8. PLAGIARISM 
+Plagiarism is the act of obtaining or attempting to obtain credit for academic 
+work by representing the work of another as one's own without the necessary 
+and appropriate acknowledgment. More specifically, plagiarism is: 
+(a) The act of incorporating the ideas, words of sentences, paragraphs, or 
+parts thereof without appropriate acknowledgment and representing the 
+product as one's own work; and  
+(b) The act of representing another's intellectual work such as musical  
+composition, computer program, photographs, painting, drawing, 
+sculpture, or research or the likes as one's own. 
+(Source: www.sonoma.edu/uaffairs/policies/cheatingpolicy.htm)  
+If a student is in doubt of the nature of plagiarism, he/she should discuss the 
+matter with the supervisor.  If a student is caught committing plagiarism, stern 
+action will be taken against the student . This includes the student being given 
+zero marks and grade F for the particular assessment in Master by Coursework 
+project. 
+ 
+9.  COPYRIGHT 
+The university shall  be the owner for all findings, designs, patents, and other 
+intellectual property rights. 
+ 
+
+--- PAGE 21 ---
+   
+ 18 
+ORGANISATION CHART FOR MASTER BY COURSEWORK PROJECT COMMITTEE 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Project Coordinator / 
+Programme Manager 
+Examiner(s) 
+ Supervisor(s)  
+Chairman 
+(Department Chair) 
+APPENDIX 1  
+
+--- PAGE 22 ---
+   
+ 19 
+MASTER BY COURSEWORK PROJECT (PART 1) PROCESS FLOW 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+RESPONSIBILITY / ACTION 
+APPENDIX 2  
+PROCESS 
+Not 
+Accepted 
+Student 
+Project Committee  
+Student, Supervisor 
+Student, Supervisor,  
+Project Committee 
+Student, Supervisor, 
+Examiner, Coordinator 
+Supervisor, Examiner, 
+Coordinator 
+START 
+Submission of titles & 
+project synopsis 
+Selection of Project 
+Titles 
+Approval on 
+Project 
+Allocation of 
+Approved Project 
+Titles 
+A 
+Proposal Defence 
+Extended Proposal 
+
+--- PAGE 23 ---
+   
+ 20 
+ 
+MASTER BY COURSEWORK PROJECT (PART 2) PROCESS FLOW 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+APPENDIX 3  
+A 
+Supervisor, Coordinator Progress Assessment  
+Student, Coordinator 
+Submission of Dissertation 
+(Final Draft)  
+ 
+Final Presentation Student, Supervisor, 
+Examiner, Coordinator 
+ 
+Submission of Technical 
+Paper 
+Student, Supervisor,  
+Coordinator 
+Amendment on Dissertation 
+Submission of Final 
+Dissertation  
+Project Committee 
+Student, Coordinator 
+Grading of Project 
+END 
+Student 
+RESPONSIBILITY / ACTION PROCESS 
+
+--- PAGE 24 ---
+   
+ 
+21 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+No. Detail / Week -1 1 2 3 4 5 6 7 8 9 10 11 12 13 14 
+1 Selection of project topic                
+2 Proposal preparation and project execution                
+3 Submission of Extended Proposal                
+4 Proposal Defence                
+                 
+        Suggested milestone         
+        Process         
+ 
+Note: The process of topic selection should start prior to semester commencement. Topics should be finalised and assigned latest by Week 1 of the 
+semester. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+TIMELINES FOR MASTER BY COURSEWORK PROJECT (PART 1) 
+APPENDIX 4 
+
+--- PAGE 25 ---
+   
+ 
+22 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+No. Detail/ Week 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 
+1 Continuation of project execution                
+2 Progress Assessment Evaluation                
+3 Submission of Technical Paper                
+4 Submission of Dissertation (final draft)                
+5 Final Presentation (Viva)                
+6 Submission of Final Dissertation (soft bound)                
+                 
+          Suggested milestone      
+          Process          
+ 
+ 
+Note: Final draft of the dissertation is required as a pre-requisite to Final Presentation oral session. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+TIMELINES FOR MASTER BY COURSEWORK PROJECT (PART 2) 
+APPENDIX 5 
+
+--- PAGE 26 ---
+   
+ 
+23 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Student Name
+Student ID
+Project Title
+Supervisor Name
+Examiner Name
+Date
+No. Evaluation criteria Very Weak (1) Weak (2) Fair (3) Good (4) Very Good (5) Multiplier Marks
+1 Subject knowledge and content
+Not able to present research 
+ideas* and its implementation 
+clearly and require major 
+improvements
+Able to present research ideas* 
+and its implementation with 
+limited clarity and require further 
+improvements
+Able to present research ideas* 
+and implementation fairly clearly 
+and require minor improvements
+Able to present the research 
+ideas* professionally and clearly, 
+with some concern on its 
+implementation
+Able to present the research 
+ideas and its implementation 
+professionally and clearly, 
+showing mastery of the 
+materials.
+x 2
+2 Confident delivery of research ideas
+Not able to deliver research ideas 
+confidently, with poor language 
+choice and frequent use of filler 
+words
+Able to deliver research ideas 
+with limited confidence and 
+occasional use of filler word, thus 
+requiring major improvements
+Able to deliver research ideas 
+with fair confidence, with little 
+use of filler words, and require 
+minor improvements
+Able to deliver research ideas 
+confidently, with good language 
+choice and tone
+Able to deliver research ideas 
+with excellent confidence x 2
+3 Effective and articulate delivery of research ideas Not able to deliver research ideas 
+effectively
+Able to deliver research ideas 
+with limited effect and require 
+major improvements  
+Able to deliver research ideas 
+fairly effectively and require 
+minor improvements 
+Able to deliver research ideas 
+effectively and articulately 
+Able to deliver research ideas 
+with great effect and articulate x 2
+4 Use of visual aids and supportive materials
+Not able to use visual aids / 
+supporting materials effectively 
+(disorganised slides, unreadable 
+materials)
+Able to use visual aids / 
+supporting materials with 
+minimum impact, requiring 
+major improvement
+Able to use visual aids / 
+supporting materials that shows 
+general understanding of the 
+research ideas
+Able to use visual aids / 
+supporting materials that shows 
+enhanced understanding of the 
+research ideas.
+Able to use visual aids / 
+supporting materials that 
+significantly support the research 
+ideas and shows excellent 
+understanding on the research 
+x 2
+5 Response to questions Not able to understand and 
+respond to a question
+Able to understand and answer 
+questions but not able to 
+accurately answer the question
+Able to understand and answer 
+questions satisfactorily 
+Able to understand and answer 
+questions well
+Able to fully understand and 
+responds to questions extremely 
+well
+x 2
+50 0Total Marks
+Master by Coursework Project Part I - Proposal Defense
+APPENDIX 6 
+MASTER BY COURSEWORK MARKING SCHEME: PROPOSAL DEFENSE 
+
+--- PAGE 27 ---
+   
+ 
+24 
+ 
+ 
+ 
+ 
+ 
+Student Name
+Student ID
+Project Title
+Supervisor Name
+Examiner Name
+Date
+No. Evaluation criteria Very Weak (1) Weak (2) Fair (3) Good (4) Very Good (5) Multiplier Marks
+1 Abstract
+Abstract is irrelevant and does 
+not provide the summary of the 
+whole project
+Abstract is relevant but did not 
+include some of the elements 
+stated
+Abstract is relevant, and include 
+all elements, however, is vague 
+and fail to highlight appropriate 
+details about the research
+Abstract is relevant, include all 
+elements, and highlight 
+appropriate details about the 
+research.
+Abstract is relevant, clear and 
+concise description of all 
+elements, highlighting the 
+importance of the research.
+x 2
+2 Background of Study and problem statement Irrelevant background of study 
+and problem statement
+Background of study is partially 
+relevant, and unclear problem 
+statement
+Background of study is sufficient 
+to highlight the research work, 
+however, problem statement is 
+generic and unclear
+Good background of study that 
+shows connection to the problem 
+statement. Problem statement is 
+clearly presented.
+Well written, articulate and 
+concise background of study that 
+justifies the problem statement. 
+Problem statement is clearly 
+presented.
+x 4
+3 Objective
+Research objectives irrelevant to 
+the problem statement. 
+Unachievable within the time 
+frame
+Research objectives are unclear 
+and partially relevant to the 
+problem statement. 
+Unachievable within the time 
+frame 
+Research objectives are clear, 
+however, partially relevant to 
+problem statement.  Achievable 
+within the time frame 
+Research objectives are clear, 
+relevant to problem statement 
+and achievable within the time 
+frame 
+Research objectives are clearly 
+stated and justified towards 
+answering the problem 
+statement, and achievable within 
+the time frame
+x 2
+4 Scope of Study, including relevancy and feasibility Scope of Study are irrelevant to 
+research objectives 
+Scope of Study are partially 
+relevant to research objectives
+Scope of Study are relevant to 
+research objectives but poorly 
+described 
+Scope of Study are relevant to 
+research objectives and fairly 
+described
+Scope of Study are relevant to 
+research objective and clearly 
+stated, highlighting the feasibility 
+of the work within the time 
+frame
+x 2
+5 Summary of project progress and future work
+Insufficient conclusion and 
+irrelevant with objective. No 
+future work recommended
+Insufficient conclusion and 
+irrelevant with objective. 
+Insufficient future work 
+recommended
+Sufficient conclusion and 
+sufficiently relevant with 
+objective. Sufficient future work 
+recommended
+Provide good conclusion and 
+recommendation for future work, 
+relevant to the objective
+Provide excellent conclusion that 
+is comprehensive, and 
+recommended future work is 
+relevant to objective
+x 6
+6 Standard Guidelines and formatting
+Report does not follow the 
+standard guidelines and 
+formatting
+Report that has frequent major 
+mistakes with the standard 
+guidelines and format
+Report that has frequent minor 
+mistakes with the standard 
+guidelines and format
+Report that has some mistakes 
+with the standard guidelines and 
+format
+Report that complies with the 
+standard guidelines and format x 1
+7 English usage and writing skills (writing skills refers 
+to clear, coherent and systematic writing of ideas)
+Very poor English and writing 
+skills.
+Poor English and writing skills 
+with many spelling and grammar 
+mistake
+Fair English and writing skills with 
+noticeable spelling and grammar 
+mistake
+Good English and writing skills 
+with minimal spelling or 
+grammar mistake
+Excellent English and writing 
+skills with no spelling or grammar 
+mistakes
+x 1
+8 Referencing and citations
+Most reference are missing from 
+reference list and did not follow 
+style guide
+Many reference are missing from 
+reference list and did not follow 
+style guide
+Some reference are missing from 
+reference list and / or most did 
+not follow style guide
+Most references are cited in the 
+reference list, which follow the 
+style guide
+All references are cited in the 
+reference list, which follow the 
+style guide
+x 2
+100 0Total Marks
+Master by Coursework Project Part I - Extended Proposal
+APPENDIX 7 
+MASTER BY COURSEWORK MARKING SCHEME: EXTENDED PROPOSAL 
+
+--- PAGE 28 ---
+   
+ 
+25 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Student Name
+Student ID
+Project Title
+Supervisor Name
+Examiner Name
+Date
+No. Evaluation criteria Very Weak (1) Weak (2) Fair (3) Good (4) Very Good (5) Multiplier Marks
+1 Work Ethics
+Practice inappropriate working 
+culture such as bad behavior, no 
+punctuality as well as not being 
+efficient
+Practice less appropriate working 
+culture such as inconsistent 
+behavior, less punctuality as well 
+as being less efficient
+Practice good working culture 
+such as good moral, timeliness as 
+well as being efficient
+Practice good working culture 
+such as good moral, timeliness as 
+well as being efficient
+Always practice excellent 
+working culture such as good 
+moral, timeliness as well as being 
+efficient
+x 2
+2 Integrity
+Perform a task with lack of trust, 
+honesty, sincerity and 
+transparency
+Perform a task with limited trust, 
+honesty, sincerity and 
+transparency
+Perform a task with acceptable 
+trust, honesty, sincerity and 
+transparency
+Perform a task with trust, 
+honesty, sincerity and 
+transparency in most situations
+Always perform a task with trust, 
+honesty, sincerity and 
+transparency in any situation
+x 2
+3 Work Responsibility
+Does not perform assigned tasks 
+within the scope of work even 
+with close supervision
+Perform assigned tasks within the 
+scope of work with close 
+supervision
+Perform assigned tasks within the 
+scope of work and meet 
+expectation
+Perform assigned tasks within the 
+scope of work and exceed 
+expectation
+Perform assigned tasks beyond 
+the scope of work and exceed 
+expectation
+x 2
+4 Project implementation
+• Research / project work does 
+not follow the proposed 
+methodology
+• Less than 20% key milestone 
+achieved within timeline
+• Research / project work 
+follows the proposed 
+methodology with major 
+modification
+• 40% key milestone achieved 
+within timeline
+• Research / project work 
+follows the proposed 
+methodology with minor 
+modification
+• 60% key milestone achieved 
+within timeline
+• Research / project work 
+follows the proposed 
+methodology
+• 80% of key milestone 
+achieved within timeline
+• Research / project work follows 
+the proposed methodology
+• All key milestone achieved 
+within timeline
+x 2
+5 Risk Management
+Unable to identify any risk that 
+may delay the project 
+completion
+Risk identified, but no action 
+taken to mitigate risk
+Risk identified, and 50% of risk 
+are mitigated
+Risk identified, and 80% of risk 
+are mitigated
+Risk identified, and all risk are 
+mitigated x 2
+50 0Total Marks
+Master by Coursework Project Part II - Progress Assessment
+APPENDIX 8 
+MASTER BY COURSEWORK MARKING SCHEME: PROGRESS ASSESSMENT 
+
+--- PAGE 29 ---
+   
+ 
+26 
+ 
+ 
+ 
+ 
+ 
+Student Name
+Student ID
+Project Title
+Supervisor Name
+Examiner Name
+Date
+No. Evaluation criteria Very Weak (1) Weak (2) Fair (3) Good (4) Very Good (5) Multiplier Marks
+1 Abstract
+Abstract is irrelevant and does 
+not provide the summary of the 
+whole project
+Abstract is relevant but did not 
+include some of the elements 
+stated
+ Abstract is relevant, and include 
+all elements, however, is vague 
+and fail to highlight appropriate 
+details about the research
+Abstract is relevant, include all 
+elements, and highlight 
+appropriate details about the 
+research.
+Abstract is relevant, clear and concise 
+description of all elements, 
+highlighting the importance of the 
+research.
+X 2
+2 Introduction Irrelevant background of study 
+and problem statement
+Background of study is partially 
+relevant, and unclear problem 
+statement
+Background of study is sufficient 
+to highlight the research work, 
+however, problem statement is 
+generic and unclear
+Good background of study that 
+shows connection to the problem 
+statement. Problem statement is 
+clearly presented.
+Well written, articulate and concise 
+background of study that justifies the 
+problem statement. Problem 
+statement is clearly presented.
+X 2
+3 Literature Review Irrelevant literature review
+Literature review explains 
+previous study, without 
+connecting it to the current 
+study. Lack in critical analysis.
+Literature review explains 
+previous study relevant to the 
+current study, however, lack in 
+critical analysis.
+Literature review provides good 
+discussion on previous study 
+relevant to the current study, 
+and sufficiently highlight the 
+problem statement.
+Literature review is comprehensive, 
+critically analyse previous work 
+relevant to current studies, with 
+proper cross referencing. Clearly 
+established the importance of the 
+current work.
+X 2
+4 Research methodology Insufficient and poorly described 
+methodology
+Methodology is unsuitable to 
+achieve the objectives
+Methodology is partially relevant 
+to achieve the objectives
+Methodology is relevant to 
+achieve the objectives and fairly 
+described and achievable within 
+the time frame
+Methodology is relevant to achieve 
+the objectives and comprehensively 
+described, and highly achievable 
+within the time frame
+X 2
+5 Result and discussion All results do not meet the 
+research / project objectives
+•  Few results validate some of 
+the project objectives
+•  Analysis and discussion of the 
+results are poor or inaccurate
+•  Few, or most results validate 
+some of the project objectives.
+•  Analysis and discussion of the 
+results are correct
+Significance of results mentioned 
+but deviation from literature is 
+not properly discussed.
+Significance of results and its 
+deviation from literature is 
+sufficiently discussed.
+X 8
+6 Conclusion & recommendation Insufficient conclusion and 
+irrelevant with objective. 
+Insufficient conclusion and 
+irrelevant with objective.
+Most conclusion is relevant with 
+objective, but some are not 
+clearly written..
+Provide good conclusion relevant 
+to the objective. 
+Provide excellent conclusion that is 
+comprehensive X 2
+7 Standard Guidelines and formatting
+Report does not follow the 
+standard guidelines and 
+formatting
+Report that has frequent major 
+mistakes with the standard 
+guidelines and format
+Report that has frequent minor 
+mistakes with the standard 
+guidelines and format
+Report that has some mistakes 
+with the standard guidelines and 
+format
+Report that complies with the 
+standard guidelines and format X 1
+8 Referencing and citations
+Most reference are missing from 
+reference list and did not follow 
+style guide
+Many reference are missing from 
+reference list and did not follow 
+style guide
+Some reference are missing from 
+reference list and / or most did 
+not follow style guide
+Most references are cited in the 
+reference list, which follow the 
+style guide
+All references are cited in the 
+reference list, which follow the style 
+guide
+X 1
+100 0Total Marks
+Master by Coursework Project Part II - Technical Paper
+APPENDIX 9 
+MASTER BY COURSEWORK MARKING SCHEME: TECHNICAL PAPER 
+
+--- PAGE 30 ---
+   
+ 
+27 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Student Name
+Student ID
+Project Title
+Supervisor Name
+Examiner Name
+Date
+No. Evaluation criteria Very Weak (1) Weak (2) Fair (3) Good (4) Very Good (5) Multiplier Marks
+F Subject knowledge and content
+•  Not able to present research 
+outcome* clearly
+•  Presentation contains multiple 
+fact errors, some are major in 
+nature
+•  Able to present research 
+outcome* with limited clarity
+•  Presentation contains multiple 
+fact errors
+•  Able to present research 
+outcome* fairly clearly
+•  Presentation contains minimal 
+fact errors
+•  Able to present the research 
+outcome* professionally and 
+clearly
+•  Major facts are accurate
+•  Able to present the research 
+outcome* professionally and 
+clearly, showing mastery of the 
+materials.
+•  Facts presented are accurate
+X 2
+3 Confident delivery of research ideas
+Not able to deliver research 
+outcome* confidently, with poor 
+language choice and frequent 
+use of filler words
+Able to deliver research 
+outcome* with limited 
+confidence and occasional use of 
+filler word, thus requiring major 
+improvements
+Able to deliver research 
+outcome* with moderate 
+confidence, with little use of filler 
+word, thus require minor 
+improvements
+Able to deliver   research 
+outcome* confidently, with good 
+language choice and tone
+Able to deliver research 
+outcome* with excellent 
+confidence
+X 2
+4 Effective and articulate delivery of research ideas Not able to deliver research 
+outcome* effectively
+Able to deliver research 
+outcome* with limited effect and 
+require major improvements  
+Able to deliver research 
+outcome* with moderate effect 
+and require minor improvements 
+Able to deliver research 
+outcome* effectively and 
+articulately 
+Able to deliver research 
+outcome* with great effect and 
+articulate
+X 2
+5 Use of visual aids and supportive materials 
+(including product demo, if applicable)
+Not able to use visual aids / 
+supporting materials effectively 
+(disorganised slides, unreadable 
+materials)
+Able to use visual aids / 
+supporting materials with 
+minimum impact, requiring 
+major improvement
+Able to use visual aids / 
+supporting materials that shows 
+general understanding of the 
+research outcome* 
+Able to use visual aids / 
+supporting materials that shows 
+good understanding of the 
+research outcome* .
+Able to use visual aids / 
+supporting materials and shows 
+excellent understanding on the 
+research outcome* 
+X 2
+6 Response to questions Not able to understand and 
+respond to a question
+Able to understand and answer 
+questions but not able to 
+accurately answer the question
+Able to understand and answer 
+questions satisfactorily 
+Able to understand and answer 
+questions well
+Able to fully understand and 
+responds to questions extremely 
+well
+X 2
+50 0Total Marks
+Master by Coursework Project Part II - Final Presentation
+APPENDIX 10 
+MASTER BY COURSEWORK MARKING SCHEME: FINAL PRESENTATION 
+
+--- PAGE 31 ---
+   
+ 
+28 
+ 
+ 
+ 
+Student Name
+Student ID
+Project Title
+Supervisor Name
+Examiner Name
+Date
+No. Evaluation criteria Very Weak (1) Weak (2) Fair (3) Good (4) Very Good (5) Multiplier Marks
+1 Abstract
+Abstract is irrelevant and does 
+not provide the summary of the 
+whole project
+Abstract is relevant but did not 
+include some of the elements 
+stated
+ Abstract is relevant, and include 
+all elements, however, is vague 
+and fail to highlight appropriate 
+details about the research
+Abstract is relevant, include all 
+elements, and highlight 
+appropriate details about the 
+research.
+Abstract is relevant, clear and 
+concise description of all 
+elements, highlighting the 
+importance of the research.
+X 2
+2 Introduction Irrelevant background of study 
+and problem statement
+Background of study is partially 
+relevant, and unclear problem 
+statement
+Background of study is sufficient 
+to highlight the research work, 
+however, problem statement is 
+generic and unclear
+Good background of study that 
+shows connection to the problem 
+statement. Problem statement is 
+clearly presented.
+Well written, articulate and 
+concise background of study that 
+justifies the problem statement. 
+Problem statement is clearly 
+presented.
+X 2
+3 Literature Review Irrelevant literature review
+Literature review explains 
+previous study, without 
+connecting it to the current 
+study. Lack in critical analysis.
+Literature review explains 
+previous study relevant to the 
+current study, however, lack in 
+critical analysis.
+Literature review provides good 
+discussion on previous study 
+relevant to the current study, 
+and sufficiently highlight the 
+problem statement.
+Literature review is 
+comprehensive, critically analyse 
+previous work relevant to current 
+studies, with proper cross 
+referencing. Clearly established 
+X 2
+4 Research methodology Insufficient and poorly described 
+methodology
+Methodology is unsuitable to 
+achieve the objectives
+Methodology is partially relevant 
+to achieve the objectives
+Methodology is relevant to 
+achieve the objectives and fairly 
+described and achievable within 
+the time frame
+Methodology is relevant to 
+achieve the objectives and 
+comprehensively described, and 
+highly achievable within the time 
+frame
+X 2
+5 Result and discussion All results do not meet the 
+research / project objectives
+•  Few results validate some of 
+the project objectives
+•  Analysis and discussion of the 
+results are poor or inaccurate
+•  Few, or most results validate 
+some of the project objectives.
+•  Analysis and discussion of the 
+results are correct
+Significance of results mentioned 
+but deviation from literature is 
+not properly discussed.
+Significance of results and its 
+deviation from literature is 
+sufficiently discussed.
+X 8
+6 Conclusion & recommendation Insufficient conclusion and 
+irrelevant with objective. 
+Insufficient conclusion and 
+irrelevant with objective.
+Most conclusion is relevant with 
+objective, but some are not 
+clearly written..
+Provide good conclusion relevant 
+to the objective. 
+Provide excellent conclusion that 
+is comprehensive X 2
+7 Standard Guidelines and formatting
+Report does not follow the 
+standard guidelines and 
+formatting
+Report that has frequent major 
+mistakes with the standard 
+guidelines and format
+Report that has frequent minor 
+mistakes with the standard 
+guidelines and format
+Report that has some mistakes 
+with the standard guidelines and 
+format
+Report that complies with the 
+standard guidelines and format X 1
+8 Referencing and citations
+Most reference are missing from 
+reference list and did not follow 
+style guide
+Many reference are missing from 
+reference list and did not follow 
+style guide
+Some reference are missing from 
+reference list and / or most did 
+not follow style guide
+Most references are cited in the 
+reference list, which follow the 
+style guide
+All references are cited in the 
+reference list, which follow the 
+style guide
+X 1
+100 0Total Marks
+Master by Coursework Project Part II - Dissertation
+APPENDIX 11 
+MASTER BY COURSEWORK MARKING SCHEME: DISSERTATION 
+
+--- PAGE 32 ---
+   
+ 29 
+APPENDIX 12 
+SAMPLE OF TECHNICAL PAPER SETUP 
+ 
+ 
+ 
+ 
+
+
+--- PAGE 33 ---
+   
+ 30 
+APPENDIX 13 
+ 
+SAMPLE OF DISSERTATION SETUP 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+CHAPTER 1 
+TITLE OF THE CHAPTER 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1.0”          25mm 
+    1.0” 
+25mm 
+40 mm 
+ 
+Page number at center of 
+the footer section 
+Top margin 
+Right 
+Margin 
+Bottom Margin 
+Left 
+margin 
+1.5 spacing, 
+Times New 
+Roman, 12 
+font size 
+1.5 spacing,  
+Times New 
+Roman,  
+capital, 
+bold and  
+14 font size  
+50 mm 
+1. MAJOR HEADING 
+ 
+The main objective of this programme is to prepare all 
+students…. 
+ 
+In order to fulfil the need of ….. 
+ 
+1.1 Secondary Heading 
+ 
+The main objective of this programme is to prepare all 
+students…. 
+ 
+1.1.1 Tertiary Heading 
+ 
+The main objective of this programme is to prepare all 
+students…. 
+Double spacing,  
+Times New 
+Roman, 
+1.0” 2  
+
+--- PAGE 34 ---
+
+
+--- PAGE 35 ---
+   
+ 32 
+APPENDIX 14 
+SAMPLE OF TABLE AND FIGURE 
+ 
+ 
+ 
+ 
+FIGURE 1.  Pre-Test Survey Result 
+ 
+ 
+ 
+ 
+ 
+TABLE 1.  Table Type Styles 
+Table 
+Head 
+Table Column Head 
+Table column subhead Subhead Subhead 
+text text text text 
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+--- PAGE 36 ---
+   
+ 33 
+APPENDIX 15 
+SAMPLE OF DOCUMENTING SOURCES 
+ 
+The followings are the variations of APA Citations. For further reference, please refer to the 
+internet under Documenting Sources. 
+ 
+1. The author’s name appears as part of the introduction to the quotation or paraphrase. 
+Example: 
+Gilster (1993) is very definite: “Simply put, the Internet is changing so rapidly, with so 
+many new databases, services, addresses, and projects, that it can’t be neatly 
+encapsulated in any one set of commands or maxims” (p.2). 
+ 
+2. The author is not named in the introduction to the quotation or paraphrase. 
+Example: 
+ What is entirely clear is that the Internet “can’t be neatly encapsulated in any one set 
+of commands or maxims” (Gilster, 1993, p.2). 
+ 
+3. The author has several works listed in the References. If they have different dates, no 
+special treatment is necessary; if an author has two works dated the same year, 
+differentiate them in the text and in the References with a lower-case letter after each 
+date (1993a,1993b). 
+Example: 
+Gilster (1993a) points out that the Internet “ can’t be encapsulated in any one set of 
+commands or maxims” (p.2). 
+ 
+4. Paraphrases are handled like quotations. Give the author’s last name, the date, and 
+the appropriate page numbers. 
+Example: 
+ Gilster (1993) says that the Internet changes so fast that you must come to see your 
+experience with it as daily learning process. 
+ 
+5. When citing block quotations, the period is placed before the page parentheses. Do 
+not place quotation marks before and after a block quotation. Indent the left margin 5 
+spaces and double-space. Do not indent the right margin. 
+
+--- PAGE 37 ---
+   
+ 34 
+APPENDIX 16 
+SAMPLE OF REFERENCE FORMATS 
+ 
+A. APA  
+ 
+The formats of references for the respective sources are as follows: 
+ 
+1. Journal  
+ 
+Meguid, S.A. and Zhu, Z.H., 1995, "A novel finite element for treating inhomogeneous 
+solids," International Journal Numerical Methods Engineering 38 (2): 1579-1592 
+ 
+2. Book  
+ 
+Glister P. 1993, The Internet Navigator, New York, John Wiley & Sons 
+ 
+3. Book in series  
+ 
+Ochoa, O.O and Reddy, J.N. 1989. Finite Element Analysis of Composite Laminates, (7), 
+New York, Pergamon Press 
+ 
+4. Article in book/conference proceedings 
+ 
+Eskey, D and Grabe, W. 1988, "Interactive models for second language reading" in P. 
+Carrell, J. Devine and D. Eskey (Eds) Interactive approaches to Second Language 
+Reading , Cambridge; Cambridge University Press   
+ 
+5. Thesis  
+ 
+Mohd Shariff, A. 1995, Steam Regeneration of A Fixed Bed Adsorption System , Ph.D. 
+Thesis, Leeds University, United Kingdom 
+ 
+6. Interview 
+ 
+Abu Bakar, R. Manager of Technical Services. Intel, Penang. Personal Interview. Dec. 14. 
+2003. 
+ 
+ 
+7. Technical report  
+ 
+Wawrznek, P.A. and Ingraffea, A.R. 1991. Discrete modeling of crack propagation: 
+theoretical aspects and implementation issues in two and three  dimensions. Report 
+Number 91-5, Cornell University, New York, USA 
+
+--- PAGE 38 ---
+   
+ 35 
+ 
+8. Website  
+ 
+Duncan, Donna. 6 Sept 1998 <http://www.geocities.com/SoHo/Coffe/1652/>. 
+Klein-Smith, Sarah. 6 Sept 1998 <http://members.aol.com/~sklein2/> 
+ 
+ 
+B. IEEE 
+ 
+The formats of references for the respective sources are as follows 
+ 
+Sample IEEE Documentation Style for References 
+(Monash University (2012, May) Institute of Electrical and Electronics Engineers (IEEE) 
+style examples [online]. Available: http://www.lib.monash.edu.au/tutorials/citing/ieee.html) 
+ 
+References to sources should be numbered sequentially by order of mention in the text, 
+with the number placed in brackets and printed on line (not as a super- or subscript) like [1]. 
+The list of all references used in the text should appear in numerical order of mention at the 
+end of the document. Further examples in this style can be found in the Institute of Electrical 
+and Electronics Engineers site http://www.ieee.org/portal/site. 
+ 
+In-text references 
+Using this system, references are numbered in the order in which they are first cited in the 
+text. If the same reference is cited later in the text, the same number is given. For example, 
+"The theory was first put forward in 1987 [1]"  
+"Scholtz [2] has argued that......."  
+"Several recent studies [1], [3], [4], [15], [16] have suggested that..."  
+ 
+1. Books 
+Author(s) First name or initials. Surname, or name of organisation, Title of book followed 
+by fullstop if no edition statement, or comma if there is an edition statement, ed., Edition 
+(except the first). Place of publication City: Publisher, Year of Publication. 
+
+--- PAGE 39 ---
+   
+ 36 
+In addition, to the above citation details, provide page numbers if you have quoted 
+specific facts or materials e.g. pp. 28-30. 
+Example: 
+C. W. Lander, Power Electronics, 3rd. ed., London: McGraw-Hill, 1993. 
+ 
+2. Sections / chapters of books 
+Author(s) First name or initials. Surname, "Title of the chapter," in Title of the book , ed., 
+Edition (except the first) vol., volume if available, Ed. editor if available, Place of 
+publication: Publisher, Year of Publication, pp. Chapter/s or First and Last pages of the 
+article. 
+Example: 
+G. K. Knopf and A. S. Bassi, "Biological-based optical sensors and transducers," in Opto-
+mechatronic Systems Handbook: Techniques and Applications, Hyungsuck Cho, Ed. Boca 
+Raton, FL: CRC Press, 2003, pp. 195-210. 
+ 
+3. Papers from conferences 
+Author(s) First name or initials. Surname, "Title of paper," in Title of the Conference , 
+Editor/s firstname last name if available, Ed. Place of publication: Publisher if available, 
+Date of publication, pp. first and last pages of the paper. 
+Example: 
+A. H. Cookson and B. O. Pedersen, "Thermal measurements in a 1200kV compressed 
+gas insulated transmission line," in Seventh IEEE Power Engineering Society 
+Transmission and Distribution Conference and Exposition, 1979, pp. 163-167. 
+ 
+4. Journal articles 
+Author(s) First name or initials. Surname, "Title of article," Title of journal , vol. volume, 
+(issue number), pp. first and last pages of the article, Date of issue month if available year. 
+Example: 
+
+--- PAGE 40 ---
+   
+ 37 
+K. P. Dabke and K. M. Thomas, "Expert system guidance for library users," Library Hi 
+Tech, vol. 10, (1-2), pp. 53-60, 1992. 
+5. Dissertations 
+The following example is taken from the IEEE Computer Society Style Guide 
+<http://www.computer.org/author/style/index.htm> 
+Author(s) First name or initials. Surname, "Title of thesis," Type of thesis PhD dissertation 
+or doctoral dissertation or master's thesis, Department, University, Place, State, Country, 
+Year of Publication. 
+Example: 
+S. Birch, "Dolphin -human interaction effects: frequency mediated psychophysiological 
+responses in biological systems," doctoral dissertation, Dept. Electrical and Computer 
+Systems Engineering, Monash University, Victoria, Australia, 1997. 
+ 
+6. Electronic sources (Electronic book) 
+Author(s) First name or initials. Surname. (date of publication year, month day). Title. (ed. 
+edition except the first) [Type of medium]. volume number if needed. (issue number if 
+needed). Available: site/path/file 
+Example: 
+A. K. Salkintzis. (2004). Mobile Internet: enabling technologies and services . [Online]. 
+Available: http://www.engnetbase.com/books/1253/1631_fm.pdf 
+ 
+7. Online journal article 
+Author(s) First name or initials. Surname. (year, month). Title of article. Title of Journal . 
+[Type of medium]. volume number (issue number), pp. pages. Available: site/path/file 
+Example: 
+J. S. Fulda. (2000, Mar.). The Internet as an engine of scholarship. ACM SIGCAS 
+Computers and Society . [Online]. 30 (1), pp. 17 -27. Available: 
+http://doi.acm.org/10.1145/572217.572222 
+ 
+
+--- PAGE 41 ---
+   
+ 38 
+8. Electronic conference paper 
+Author(s) First name or initials. Surname. (year, month). Title. Presented at Conference 
+title. [Type of Medium]. Available: site/path/file 
+Example: 
+X. Yang. (2003, Aug.). NIRA: a new Internet routing architecture. Presented at ACM 
+SIGCOMM FDNA 2003 Workshop. [Online]. Available: 
+http://www.isi.edu/newarch/DOCUMENTS/yang.nira.pdf 
+ 
+9. Website 
+Author. (year, month). Title. [Type of Medium]. Available: site/path/file 
+Example: 
+Dr Jean Armstrong. (2007, March): Brief Biography [Online]. Available: 
+http://www.ecse.monash.edu.au/staff/jeana/aboutarmstrong.html 
+ 
+ 
+Reference list - sample format: 
+ 
+References must be listed in the order in which they were cited (numerical order) not in 
+alphabetical order. 
+ 
+[1]  C. W. Lander, Power Electronics, 3rd. ed., London: McGraw-Hill, 1993. 
+ 
+[2]  B. Hancock, Advanced Ethernet/802.3 Network Management and Performance . 
+Boston: Digital Press, 1994, pp. 5-8. 
+ 
+[3] G. K. Knopf and A. S. Bassi, "Biological -based optical sensors and transducers," in 
+Opto-mechatronic Systems Handbook: Techniques and Applications, Hyungsuck Cho, 
+Ed. Boca Raton, FL: CRC Press, 2003, pp. 195-210. 
+ 
+[4] A. H. Cookson and B. O. Pedersen, "Thermal measurements in a 1200kV compressed 
+gas insulated transmission line," in Seventh IEEE Power Engineering Society 
+Transmission  and Distribution Conference and Exposition, 1979, pp. 163-167. 
+ 
+[5] K. P. Dabke and K. M. Thomas, "Expert system guidance for library users," Library Hi 
+Tech, vol. 10, (1-2), pp. 53-60, 1992. 
+

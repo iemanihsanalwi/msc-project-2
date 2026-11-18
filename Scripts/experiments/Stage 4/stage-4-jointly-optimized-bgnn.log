@@ -1,0 +1,1018 @@
+[{"stream_name":"stderr","time":8.899732333,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.89980281,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.899824224,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.899830259,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.576783149,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.576823874,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.576830726,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.576834625,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":27.239166899,"data":"[1] Loading raw data and validating schemas...\n"}
+,{"stream_name":"stdout","time":27.239209622,"data":"    Data directory: /kaggle/input/competitions/ieee-fraud-detection | Hardware Device: cuda\n"}
+,{"stream_name":"stdout","time":57.560988144,"data":"    Memory downcast [raw]: 1955.4 MB -\u003e 1044.7 MB (46.6% saved)\n"}
+,{"stream_name":"stdout","time":64.174362896,"data":"    Block 5 OOT Holdout Quarantine: PASSED (Sealed).\n"}
+,{"stream_name":"stdout","time":64.375018092,"data":"[2] Loading feature decisions and multi-stage OOF artifacts...\n"}
+,{"stream_name":"stdout","time":64.3750625,"data":"    Continuous features: 32 | Compressed V-columns: 339\n"}
+,{"stream_name":"stdout","time":68.449042238,"data":"    Stage 1 OOF: loaded 'stage1_prob_raw' | original dev coverage 93.8% | OOT coverage 100.0%\n"}
+,{"stream_name":"stdout","time":71.574689598,"data":"    Stage 3 OOF: loaded 'stage3_prob_raw' | original dev coverage 93.8% | OOT coverage 100.0%\n"}
+,{"stream_name":"stdout","time":71.574727956,"data":"    Stage 1 coverage B1: {'required': 88581, 'exempt': 29527, 'invalid': 29527, 'invalid_required': 0}\n"}
+,{"stream_name":"stdout","time":71.574732354,"data":"    Stage 1 coverage B2: {'required': 118108, 'exempt': 0, 'invalid': 0, 'invalid_required': 0}\n"}
+,{"stream_name":"stdout","time":71.574735491,"data":"    Stage 1 coverage B3: {'required': 118108, 'exempt': 0, 'invalid': 0, 'invalid_required': 0}\n"}
+,{"stream_name":"stdout","time":71.574738427,"data":"    Stage 1 coverage B4: {'required': 118108, 'exempt': 0, 'invalid': 0, 'invalid_required': 0}\n"}
+,{"stream_name":"stdout","time":71.574741341,"data":"    Stage 1 coverage B5: {'required': 118108, 'exempt': 0, 'invalid': 0, 'invalid_required': 0}\n"}
+,{"stream_name":"stdout","time":71.731955253,"data":"\n"}
+,{"stream_name":"stdout","time":71.731995427,"data":"===============================================================================================\n"}
+,{"stream_name":"stdout","time":71.732003173,"data":"PASS A: EXPANDING CHRONOLOGICAL FORWARD VALIDATION (EMBARGOED EVALUATION)\n"}
+,{"stream_name":"stdout","time":71.73200853,"data":"===============================================================================================\n"}
+,{"stream_name":"stdout","time":71.732013757,"data":"\n"}
+,{"stream_name":"stdout","time":71.732018659,"data":"--- Fold 1: Train [1] -\u003e Validate Block 2 ---\n"}
+,{"stream_name":"stdout","time":75.675883183,"data":"    [WARNING] Representation shift (fold_1): max |mean diff| 3.653 | 2 dim(s) \u003e 0.75\n"}
+,{"stream_name":"stdout","time":77.79264109,"data":"      causality audit [fold1/card]: PASSED (20,000 nodes, 37,481 edges)\n"}
+,{"stream_name":"stdout","time":78.189954309,"data":"      causality audit [fold1/device]: PASSED (20,000 nodes, 97,457 edges)\n"}
+,{"stream_name":"stderr","time":86.863689642,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":86.863726991,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":86.863732791,"data":"\n"}
+,{"stream_name":"stderr","time":86.863736804,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":86.863741334,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":94.319349111,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":94.319422206,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":94.31943391,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":94.319439402,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":94.31944401,"data":"\n"}
+,{"stream_name":"stderr","time":94.319448293,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":94.31945319,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":94.31945755,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":94.31946581,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":96.803674599,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":96.803731535,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":96.803739402,"data":"\n"}
+,{"stream_name":"stderr","time":96.803744354,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":96.803749384,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":103.023947169,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":103.02397879,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":103.023985604,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":103.023991062,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":103.024007836,"data":"\n"}
+,{"stream_name":"stderr","time":103.024011874,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":103.024015696,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":103.024019782,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":103.024024049,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":105.361919853,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":105.361964884,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":105.361970342,"data":"\n"}
+,{"stream_name":"stderr","time":105.36197416,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":105.361979639,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":111.82900052,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":111.82904315,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":111.829049548,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":111.82905439,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":111.829058105,"data":"\n"}
+,{"stream_name":"stderr","time":111.829061808,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":111.829092753,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":111.829099708,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":111.829104918,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":114.312952248,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":114.312990653,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":114.312995344,"data":"\n"}
+,{"stream_name":"stderr","time":114.312998902,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":114.313020031,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":120.672990192,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":120.673079397,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":120.67308673,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":120.673090951,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":120.673095096,"data":"\n"}
+,{"stream_name":"stderr","time":120.673099029,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":120.673103626,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":120.673111606,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":120.673116128,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":124.527382481,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":124.527428813,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":124.527433532,"data":"\n"}
+,{"stream_name":"stderr","time":124.527437067,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":124.527441417,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":130.716379536,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":130.716425186,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":130.716432301,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":130.716437762,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":130.716442829,"data":"\n"}
+,{"stream_name":"stderr","time":130.716448488,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":130.716453744,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":130.716458806,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":130.716464607,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":132.753946349,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":132.754010225,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":132.754036386,"data":"\n"}
+,{"stream_name":"stderr","time":132.754040643,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":132.754044977,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":138.985889063,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":138.985935453,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":138.98594127,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":138.985946354,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":138.985950825,"data":"\n"}
+,{"stream_name":"stderr","time":138.985954613,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":138.985959216,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":138.985963836,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":138.985968659,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":141.021468771,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":141.021517288,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":141.021525044,"data":"\n"}
+,{"stream_name":"stderr","time":141.021529267,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":141.021534537,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":147.415307737,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":147.415400897,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":147.415409159,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":147.415440419,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":147.415446449,"data":"\n"}
+,{"stream_name":"stderr","time":147.415473419,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":147.415479363,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":147.415484276,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":147.415512371,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":149.876593051,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":149.876656054,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":149.876661427,"data":"\n"}
+,{"stream_name":"stderr","time":149.876665184,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":149.876669752,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":155.881473099,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":155.881517453,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":155.881523736,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":155.8815329,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":155.881536885,"data":"\n"}
+,{"stream_name":"stderr","time":155.88154033,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":155.881544458,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":155.881547953,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":155.881553658,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":158.45533604,"data":"    [REAL] Val B2: AP 0.4984 | Calibrated AP 0.4621 | R@0.1%FPR 25.47% | Mean Beta 0.871\n"}
+,{"stream_name":"stderr","time":160.233868289,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":160.233906729,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":160.233910892,"data":"\n"}
+,{"stream_name":"stderr","time":160.233914332,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":160.233918545,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":166.339862398,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":166.33991181,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":166.339917745,"data":"\n"}
+,{"stream_name":"stderr","time":166.339939236,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":166.339943397,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":172.170297362,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":172.170327998,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":172.170332165,"data":"\n"}
+,{"stream_name":"stderr","time":172.170335611,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":172.170339883,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":177.886270791,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":177.886339958,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":177.886346422,"data":"\n"}
+,{"stream_name":"stderr","time":177.886351356,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":177.886356933,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":185.477262822,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":185.477329219,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":185.477336131,"data":"\n"}
+,{"stream_name":"stderr","time":185.477339965,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":185.477344377,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":191.44924108,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":191.449313045,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":191.449320295,"data":"\n"}
+,{"stream_name":"stderr","time":191.449325481,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":191.449347321,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":197.027041062,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":197.027109215,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":197.027117417,"data":"\n"}
+,{"stream_name":"stderr","time":197.027122293,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":197.027128221,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":203.005047065,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":203.005104258,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":203.005113961,"data":"\n"}
+,{"stream_name":"stderr","time":203.005119541,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":203.005125466,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stdout","time":208.941269496,"data":"    [NO_BOOST] Val B2: AP 0.4973 | Calibrated AP 0.4690 | R@0.1%FPR 25.26% | Mean Beta 0.871\n"}
+,{"stream_name":"stdout","time":209.142397283,"data":"\n"}
+,{"stream_name":"stdout","time":209.142433027,"data":"--- Fold 2: Train [1, 2] -\u003e Validate Block 3 ---\n"}
+,{"stream_name":"stdout","time":215.154739544,"data":"    [WARNING] Representation shift (fold_2): max |mean diff| 2.336 | 2 dim(s) \u003e 0.75\n"}
+,{"stream_name":"stdout","time":218.622564049,"data":"      causality audit [fold2/card]: PASSED (20,000 nodes, 38,279 edges)\n"}
+,{"stream_name":"stdout","time":218.919447546,"data":"      causality audit [fold2/device]: PASSED (20,000 nodes, 97,666 edges)\n"}
+,{"stream_name":"stderr","time":221.954405681,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":221.954455081,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":221.954460561,"data":"\n"}
+,{"stream_name":"stderr","time":221.954464788,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":221.954469635,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":235.204017529,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":235.204063103,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":235.204105261,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":235.204110966,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":235.204115085,"data":"\n"}
+,{"stream_name":"stderr","time":235.204682983,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":235.204700228,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":235.20470597,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":235.204711159,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":238.846408153,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":238.84646287,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":238.846470333,"data":"\n"}
+,{"stream_name":"stderr","time":238.846475586,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":238.846488619,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":251.806633001,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":251.806677267,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":251.806682285,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":251.806687071,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":251.806690841,"data":"\n"}
+,{"stream_name":"stderr","time":251.806693743,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":251.806697796,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":251.806701838,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":251.806705612,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":254.941323637,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":254.941368042,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":254.941374035,"data":"\n"}
+,{"stream_name":"stderr","time":254.941377845,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":254.941400985,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":268.31182014,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":268.311865759,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":268.311872252,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":268.311877285,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":268.311882014,"data":"\n"}
+,{"stream_name":"stderr","time":268.311886569,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":268.311891291,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":268.311895457,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":268.311917309,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":271.571834425,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":271.571877674,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":271.571884362,"data":"\n"}
+,{"stream_name":"stderr","time":271.57188937,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":271.571895487,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":284.96100226,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":284.96106374,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":284.961083998,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":284.961090129,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":284.961094773,"data":"\n"}
+,{"stream_name":"stderr","time":284.9651055,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":284.965132992,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":284.965138587,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":284.965161904,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":290.973679216,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":290.973746049,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":290.9737514,"data":"\n"}
+,{"stream_name":"stderr","time":290.973755369,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":290.973760009,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":304.208707071,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":304.208736825,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":304.208932582,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":304.208939891,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":304.208944117,"data":"\n"}
+,{"stream_name":"stderr","time":304.208948067,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":304.208952372,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":304.208956249,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":304.209109497,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":307.380576055,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":307.380631084,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":307.380636295,"data":"\n"}
+,{"stream_name":"stderr","time":307.380639537,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":307.380643155,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":320.157774352,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":320.157842383,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":320.157848528,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":320.157853744,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":320.157858319,"data":"\n"}
+,{"stream_name":"stderr","time":320.15788052,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":320.157903682,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":320.157907653,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":320.157911952,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":323.620582916,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":323.620623181,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":323.620634178,"data":"\n"}
+,{"stream_name":"stderr","time":323.620637175,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":323.620640376,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":336.703422846,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":336.703464912,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":336.70347128,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":336.703476932,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":336.703481912,"data":"\n"}
+,{"stream_name":"stderr","time":336.703490829,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":336.703496267,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":336.703500976,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":336.703506512,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":339.916317486,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":339.916370325,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":339.916378383,"data":"\n"}
+,{"stream_name":"stderr","time":339.91638514,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":339.916392755,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":353.011746296,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":353.011799622,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":353.011822032,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":353.011826992,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":353.011831166,"data":"\n"}
+,{"stream_name":"stderr","time":353.013208528,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":353.013228081,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":353.013232784,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":353.013237637,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":356.409227883,"data":"    [REAL] Val B3: AP 0.4767 | Calibrated AP 0.4586 | R@0.1%FPR 23.42% | Mean Beta 0.874\n"}
+,{"stream_name":"stderr","time":359.582750525,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":359.582826896,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":359.582834217,"data":"\n"}
+,{"stream_name":"stderr","time":359.58283803,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":359.582842834,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":371.163258267,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":371.163293849,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":371.163301605,"data":"\n"}
+,{"stream_name":"stderr","time":371.163309135,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":371.163318136,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":383.026003844,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":383.026048939,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":383.02605562,"data":"\n"}
+,{"stream_name":"stderr","time":383.026060166,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":383.026106149,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":395.309658785,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":395.309717656,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":395.309722818,"data":"\n"}
+,{"stream_name":"stderr","time":395.309726647,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":395.309730835,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":409.564199203,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":409.564236729,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":409.564242876,"data":"\n"}
+,{"stream_name":"stderr","time":409.564247763,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":409.564253232,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":421.683518718,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":421.6836463,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":421.683654913,"data":"\n"}
+,{"stream_name":"stderr","time":421.683661948,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":421.683669732,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":433.586578053,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":433.586634955,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":433.586643434,"data":"\n"}
+,{"stream_name":"stderr","time":433.586650199,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":433.586658029,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":445.66487472,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":445.664924346,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":445.664929354,"data":"\n"}
+,{"stream_name":"stderr","time":445.664932921,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":445.664937202,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stdout","time":457.429827672,"data":"    [NO_BOOST] Val B3: AP 0.4808 | Calibrated AP 0.4695 | R@0.1%FPR 23.61% | Mean Beta 0.871\n"}
+,{"stream_name":"stdout","time":457.630829166,"data":"\n"}
+,{"stream_name":"stdout","time":457.630862749,"data":"--- Fold 3: Train [1, 2, 3] -\u003e Validate Block 4 ---\n"}
+,{"stream_name":"stdout","time":465.614259987,"data":"    [WARNING] Representation shift (fold_3): max |mean diff| 1.493 | 2 dim(s) \u003e 0.75\n"}
+,{"stream_name":"stdout","time":470.333750443,"data":"      causality audit [fold3/card]: PASSED (20,000 nodes, 39,299 edges)\n"}
+,{"stream_name":"stdout","time":470.646649084,"data":"      causality audit [fold3/device]: PASSED (20,000 nodes, 97,595 edges)\n"}
+,{"stream_name":"stderr","time":474.788044935,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":474.788112117,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":474.788120911,"data":"\n"}
+,{"stream_name":"stderr","time":474.788126005,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":474.788131998,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":493.288239348,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":493.288290475,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":493.288296782,"data":"\n"}
+,{"stream_name":"stderr","time":493.288301279,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":493.288306263,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":493.51645956,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":493.516529322,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":493.516539412,"data":"\n"}
+,{"stream_name":"stderr","time":493.516547596,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":493.51655539,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":498.214883249,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":498.214973982,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":498.214981469,"data":"\n"}
+,{"stream_name":"stderr","time":498.214985745,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":498.214990602,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":517.277173025,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":517.27722055,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":517.277226003,"data":"\n"}
+,{"stream_name":"stderr","time":517.277230024,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":517.277234823,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":517.620382536,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":517.62044022,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":517.620446695,"data":"\n"}
+,{"stream_name":"stderr","time":517.620452123,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":517.620457787,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":521.608162995,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":521.60820509,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":521.60820927,"data":"\n"}
+,{"stream_name":"stderr","time":521.60821276,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":521.608217128,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":541.654163904,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":541.654220592,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":541.654229346,"data":"\n"}
+,{"stream_name":"stderr","time":541.654236777,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":541.65424503,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":541.932408146,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":541.932446842,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":541.932474642,"data":"\n"}
+,{"stream_name":"stderr","time":541.932477709,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":541.932480619,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":549.775555597,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":549.775619188,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":549.77562531,"data":"\n"}
+,{"stream_name":"stderr","time":549.775629686,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":549.77563505,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":569.149252828,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":569.14930639,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":569.149312667,"data":"\n"}
+,{"stream_name":"stderr","time":569.151223388,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":569.1512665,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":569.411164492,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":569.411216407,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":569.411223134,"data":"\n"}
+,{"stream_name":"stderr","time":569.411229238,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":569.4112472,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":573.566316622,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":573.566351885,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":573.56635774,"data":"\n"}
+,{"stream_name":"stderr","time":573.5663626,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":573.566367975,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":592.415884239,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":592.415996276,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":592.416025711,"data":"\n"}
+,{"stream_name":"stderr","time":592.41603118,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":592.416035448,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":592.732539778,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":592.732573895,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":592.732578781,"data":"\n"}
+,{"stream_name":"stderr","time":592.732582597,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":592.732586952,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":597.212525404,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":597.212569443,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":597.212575327,"data":"\n"}
+,{"stream_name":"stderr","time":597.212579379,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":597.212584619,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":616.390752147,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":616.390797509,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":616.390805293,"data":"\n"}
+,{"stream_name":"stderr","time":616.390809984,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":616.390815713,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":616.666174971,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":616.666217048,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":616.666224511,"data":"\n"}
+,{"stream_name":"stderr","time":616.666230221,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":616.666235395,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":620.790166495,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":620.790222955,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":620.790229582,"data":"\n"}
+,{"stream_name":"stderr","time":620.790233686,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":620.790271862,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":639.989814395,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":639.989859114,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":639.989863841,"data":"\n"}
+,{"stream_name":"stderr","time":639.989867177,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":639.989870934,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":640.262148265,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":640.262187482,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":640.262193536,"data":"\n"}
+,{"stream_name":"stderr","time":640.262198622,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":640.262203856,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":644.633495978,"data":"    [REAL] Val B4: AP 0.5238 | Calibrated AP 0.5078 | R@0.1%FPR 24.28% | Mean Beta 0.872\n"}
+,{"stream_name":"stderr","time":648.393373661,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":648.393409965,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":648.393415909,"data":"\n"}
+,{"stream_name":"stderr","time":648.393420452,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":648.393425307,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":666.004235103,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":666.00429047,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":666.004298859,"data":"\n"}
+,{"stream_name":"stderr","time":666.004305588,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":666.004312523,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":683.314507102,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":683.314569191,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":683.314573789,"data":"\n"}
+,{"stream_name":"stderr","time":683.314576034,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":683.314578743,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":704.595715321,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":704.595768058,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":704.595774822,"data":"\n"}
+,{"stream_name":"stderr","time":704.595779781,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":704.595784154,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":722.441128645,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":722.441176482,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":722.441200449,"data":"\n"}
+,{"stream_name":"stderr","time":722.441208281,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":722.441216233,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":739.864574709,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":739.864651926,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":739.864660622,"data":"\n"}
+,{"stream_name":"stderr","time":739.864666424,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":739.864672354,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":757.589818738,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":757.589861887,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":757.589867627,"data":"\n"}
+,{"stream_name":"stderr","time":757.589883169,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":757.58988764,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stdout","time":774.845243429,"data":"    [NO_BOOST] Val B4: AP 0.5234 | Calibrated AP 0.5080 | R@0.1%FPR 24.30% | Mean Beta 0.872\n"}
+,{"stream_name":"stdout","time":775.082123213,"data":"\n"}
+,{"stream_name":"stdout","time":775.082157909,"data":"[3] Generating complete Stage-4 scores for all blocks (Pass B)...\n"}
+,{"stream_name":"stdout","time":775.082163659,"data":"    Block 1: expanding sub-folds K=4 -\u003e 75% coverage\n"}
+,{"stream_name":"stdout","time":777.001147542,"data":"      causality audit [b1_subfold1/card]: PASSED (20,000 nodes, 21,725 edges)\n"}
+,{"stream_name":"stdout","time":777.487198776,"data":"      causality audit [b1_subfold1/device]: PASSED (20,000 nodes, 96,300 edges)\n"}
+,{"stream_name":"stderr","time":777.779870885,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":777.77993559,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":777.779942235,"data":"\n"}
+,{"stream_name":"stderr","time":777.779946607,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":777.779952023,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":779.487215368,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":779.487253781,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":779.487258516,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":779.487263155,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":779.487267077,"data":"\n"}
+,{"stream_name":"stderr","time":779.487270999,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":779.487275434,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":779.487279229,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":779.487283659,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":779.782362452,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":779.78239605,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":779.782400517,"data":"\n"}
+,{"stream_name":"stderr","time":779.782421297,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":779.782425613,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":781.412522819,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":781.4125589,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":781.412563064,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":781.412567039,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":781.412570194,"data":"\n"}
+,{"stream_name":"stderr","time":781.412573353,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":781.412577626,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":781.412581621,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":781.412586097,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":781.88294186,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":781.882975558,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":781.882980067,"data":"\n"}
+,{"stream_name":"stderr","time":781.882983615,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":781.882987984,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":783.631041222,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":783.631091866,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":783.631098922,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":783.631103398,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":783.631107042,"data":"\n"}
+,{"stream_name":"stderr","time":783.63111059,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":783.631115002,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":783.631118542,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":783.63113927,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":783.923136238,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":783.923177313,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":783.923181665,"data":"\n"}
+,{"stream_name":"stderr","time":783.923185504,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":783.923189233,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":785.723782382,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":785.723823866,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":785.723830284,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":785.723836075,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":785.723841101,"data":"\n"}
+,{"stream_name":"stderr","time":785.723846006,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":785.723851538,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":785.723856459,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":785.723862166,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":786.335755864,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":786.335798876,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":786.335804246,"data":"\n"}
+,{"stream_name":"stderr","time":786.335807964,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":786.335812246,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":788.040081943,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":788.040121649,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":788.04012643,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":788.040130696,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":788.04013439,"data":"\n"}
+,{"stream_name":"stderr","time":788.040155943,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":788.040160232,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":788.040163856,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":788.040168021,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":788.333503348,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":788.333547141,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":788.333553067,"data":"\n"}
+,{"stream_name":"stderr","time":788.333558123,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":788.333563601,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":789.815195515,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":789.815276737,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":789.815286317,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":789.815294301,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":789.815301908,"data":"\n"}
+,{"stream_name":"stderr","time":789.81530876,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":789.815316026,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":789.815322664,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":789.8153299210001,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":790.375344649,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":790.375430427,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":790.375439229,"data":"\n"}
+,{"stream_name":"stderr","time":790.37544465,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":790.375451269,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":791.945593934,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":791.945670143,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":791.945675851,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":791.945680127,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":791.945688582,"data":"\n"}
+,{"stream_name":"stderr","time":791.945692323,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":791.945696443,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":791.945700075,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":791.945704223,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":792.531195883,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":792.531233707,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":792.531239211,"data":"\n"}
+,{"stream_name":"stderr","time":792.531243316,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":792.531247763,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":794.131354526,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":794.131401127,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":794.131406227,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":794.131411069,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":794.131414965,"data":"\n"}
+,{"stream_name":"stderr","time":794.131418949,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":794.131423513,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":794.131427457,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":794.131431889,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":797.507674975,"data":"      causality audit [b1_subfold2/card]: PASSED (20,000 nodes, 27,175 edges)\n"}
+,{"stream_name":"stdout","time":797.848874449,"data":"      causality audit [b1_subfold2/device]: PASSED (20,000 nodes, 96,150 edges)\n"}
+,{"stream_name":"stderr","time":798.444184925,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":798.444244636,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":798.444250413,"data":"\n"}
+,{"stream_name":"stderr","time":798.444254576,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":798.444259467,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":801.598731227,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":801.598777751,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":801.598787095,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":801.59879124,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":801.598793583,"data":"\n"}
+,{"stream_name":"stderr","time":801.598795912,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":801.598798901,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":801.598801177,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":801.598803771,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":802.442621295,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":802.442663855,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":802.442669874,"data":"\n"}
+,{"stream_name":"stderr","time":802.442674879,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":802.442680465,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":805.666270744,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":805.66629756,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":805.666302122,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":805.666318146,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":805.666322155,"data":"\n"}
+,{"stream_name":"stderr","time":805.666326197,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":805.66633076,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":805.666347881,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":805.666352417,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":806.350256811,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":806.350294872,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":806.350298456,"data":"\n"}
+,{"stream_name":"stderr","time":806.350301002,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":806.350303882,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":809.948473311,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":809.948534183,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":809.948540964,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":809.948546285,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":809.948550677,"data":"\n"}
+,{"stream_name":"stderr","time":809.948554589,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":809.948559432,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":809.948563482,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":809.948567265,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":810.703843757,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":810.703882997,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":810.703887815,"data":"\n"}
+,{"stream_name":"stderr","time":810.703895964,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":810.703899092,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":813.944939989,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":813.944988476,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":813.944993865,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":813.945015713,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":813.945019707,"data":"\n"}
+,{"stream_name":"stderr","time":813.945023428,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":813.945028217,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":813.945031974,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":813.945036179,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":815.29255437,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":815.292595634,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":815.292601166,"data":"\n"}
+,{"stream_name":"stderr","time":815.292605111,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":815.292609565,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":818.747601069,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":818.747639832,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":818.74764447,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":818.747648837,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":818.747662409,"data":"\n"}
+,{"stream_name":"stderr","time":818.747665968,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":818.747670112,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":818.747673902,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":818.747677903,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":819.425891714,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":819.425941031,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":819.4259468,"data":"\n"}
+,{"stream_name":"stderr","time":819.425951415,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":819.425974493,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":822.523426654,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":822.523524413,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":822.523533477,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":822.523538859,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":822.523543842,"data":"\n"}
+,{"stream_name":"stderr","time":822.523548591,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":822.523554272,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":822.523559334,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":822.523564858,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":823.39017492,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":823.390215495,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":823.390221197,"data":"\n"}
+,{"stream_name":"stderr","time":823.390225725,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":823.390231033,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":827.018799615,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":827.018844374,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":827.018849255,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":827.018853599,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":827.018857607,"data":"\n"}
+,{"stream_name":"stderr","time":827.018861047,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":827.018865315,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":827.018868869,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":827.018872753,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":828.017395295,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":828.017463244,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":828.01746843,"data":"\n"}
+,{"stream_name":"stderr","time":828.017472064,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":828.017476282,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":831.16537613,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":831.165416058,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":831.165421977,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":831.165427403,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":831.165431702,"data":"\n"}
+,{"stream_name":"stderr","time":831.165435201,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":831.165439884,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":831.165444316,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":831.165449324,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":835.500898852,"data":"      causality audit [b1_subfold3/card]: PASSED (20,000 nodes, 31,139 edges)\n"}
+,{"stream_name":"stdout","time":835.803135274,"data":"      causality audit [b1_subfold3/device]: PASSED (20,000 nodes, 96,626 edges)\n"}
+,{"stream_name":"stderr","time":836.951760308,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":836.951800353,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":836.951813821,"data":"\n"}
+,{"stream_name":"stderr","time":836.951817939,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":836.951820979,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":841.867088316,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":841.867147566,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":841.867153956,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":841.867160136,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":841.867164981,"data":"\n"}
+,{"stream_name":"stderr","time":841.867168187,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":841.867189582,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":841.867192969,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":841.867196526,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":843.059080138,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":843.059138953,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":843.059143453,"data":"\n"}
+,{"stream_name":"stderr","time":843.059147088,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":843.059151339,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":847.805564584,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":847.805616516,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":847.805622395,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":847.805626511,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":847.805630111,"data":"\n"}
+,{"stream_name":"stderr","time":847.805633824,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":847.805637801,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":847.805641111,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":847.805646355,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":848.985340844,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":848.985402177,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":848.985406532,"data":"\n"}
+,{"stream_name":"stderr","time":848.985409177,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":848.985412326,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":853.63619432,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":853.63628366,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":853.636289997,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":853.636295,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":853.63629914,"data":"\n"}
+,{"stream_name":"stderr","time":853.636302743,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":853.636306854,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":853.636310452,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":853.636315373,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":854.84258004,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":854.84262692,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":854.842631081,"data":"\n"}
+,{"stream_name":"stderr","time":854.842633592,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":854.84263652,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":859.596918608,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":859.596971869,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":859.596991229,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":859.596996045,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":859.597000331,"data":"\n"}
+,{"stream_name":"stderr","time":859.597004543,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":859.597008419,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":859.597012221,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":859.59701673,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":861.226278225,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":861.226306325,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":861.226311747,"data":"\n"}
+,{"stream_name":"stderr","time":861.226316208,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":861.226333516,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":866.276141198,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":866.276187134,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":866.276194034,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":866.276199684,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":866.276204901,"data":"\n"}
+,{"stream_name":"stderr","time":866.276209694,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":866.276215149,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":866.276220682,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":866.276226337,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":867.417046085,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":867.417097664,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":867.41710557,"data":"\n"}
+,{"stream_name":"stderr","time":867.4171095,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":867.417115958,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":872.275326758,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":872.275387197,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":872.275394726,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":872.275399792,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":872.275404057,"data":"\n"}
+,{"stream_name":"stderr","time":872.275408174,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":872.275417918,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":872.275423974,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":872.275428896,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":873.472295909,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":873.472352781,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":873.472359153,"data":"\n"}
+,{"stream_name":"stderr","time":873.472363114,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":873.472367673,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":878.234227872,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":878.234279753,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":878.234285387,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":878.234289999,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":878.234294014,"data":"\n"}
+,{"stream_name":"stderr","time":878.234298203,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":878.234302554,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":878.234306465,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":878.234310784,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":879.552536324,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":879.552584194,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":879.552591048,"data":"\n"}
+,{"stream_name":"stderr","time":879.552595887,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":879.55260051,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":884.387435815,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":884.387510565,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":884.387520854,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":884.387527873,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":884.387534058,"data":"\n"}
+,{"stream_name":"stderr","time":884.387543078,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":884.387583282,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":884.387592467,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":884.387602056,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":885.18367338,"data":"    Block 5 (Sealed OOT): Fitting frozen production model on Blocks 1-4...\n"}
+,{"stream_name":"stdout","time":895.482333378,"data":"    [WARNING] Representation shift (frozen_oot): max |mean diff| 9.564 | 12 dim(s) \u003e 0.75\n"}
+,{"stream_name":"stdout","time":901.708179464,"data":"      causality audit [frozen_oot/card]: PASSED (20,000 nodes, 40,538 edges)\n"}
+,{"stream_name":"stdout","time":902.108586541,"data":"      causality audit [frozen_oot/device]: PASSED (20,000 nodes, 97,585 edges)\n"}
+,{"stream_name":"stderr","time":907.019814597,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":907.019891124,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":907.021214605,"data":"\n"}
+,{"stream_name":"stderr","time":907.021233639,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":907.021240161,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":932.448808732,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":932.448901906,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":932.44891021,"data":"\n"}
+,{"stream_name":"stderr","time":932.448916521,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":932.448923196,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":932.816262564,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":932.81632518,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":932.816333904,"data":"\n"}
+,{"stream_name":"stderr","time":932.816341605,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":932.816349875,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":938.032395673,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":938.03246027,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":938.032466552,"data":"\n"}
+,{"stream_name":"stderr","time":938.032471202,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":938.032492522,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":964.259615615,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":964.25965534,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":964.25966061,"data":"\n"}
+,{"stream_name":"stderr","time":964.259982942,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":964.260000749,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":964.634712551,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":964.634780236,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":964.634791601,"data":"\n"}
+,{"stream_name":"stderr","time":964.634799112,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":964.634807033,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":969.831995093,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":969.832044768,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":969.832051628,"data":"\n"}
+,{"stream_name":"stderr","time":969.832056084,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":969.83206158,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":994.934028853,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":994.934098801,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":994.934106452,"data":"\n"}
+,{"stream_name":"stderr","time":994.934111151,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":994.934116362,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":995.301875969,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":995.301917499,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":995.301923711,"data":"\n"}
+,{"stream_name":"stderr","time":995.301928361,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":995.301951615,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":1001.251868208,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":1001.251904853,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":1001.251909978,"data":"\n"}
+,{"stream_name":"stderr","time":1001.251914805,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":1001.251920323,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":1025.879268882,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":1025.879303598,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":1025.879308939,"data":"\n"}
+,{"stream_name":"stderr","time":1025.879479639,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":1025.879488324,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":1026.250990429,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":1026.251050163,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":1026.251056086,"data":"\n"}
+,{"stream_name":"stderr","time":1026.251060224,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":1026.251065378,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":1036.895985164,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":1036.896083211,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":1036.896097025,"data":"\n"}
+,{"stream_name":"stderr","time":1036.896104562,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":1036.896110774,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":1061.863618075,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":1061.863668619,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":1061.863677007,"data":"\n"}
+,{"stream_name":"stderr","time":1061.863684404,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":1061.863707439,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":1062.195056122,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":1062.195118872,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":1062.195125419,"data":"\n"}
+,{"stream_name":"stderr","time":1062.195129278,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":1062.195133797,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":1068.044643166,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":1068.044691139,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":1068.044696923,"data":"\n"}
+,{"stream_name":"stderr","time":1068.044701306,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":1068.044706484,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":1092.658960833,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":1092.658998832,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":1092.659003528,"data":"\n"}
+,{"stream_name":"stderr","time":1092.659336567,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":1092.65934714,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":1093.007725223,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":1093.007766237,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":1093.007771061,"data":"\n"}
+,{"stream_name":"stderr","time":1093.007774399,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":1093.007778131,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":1098.214692472,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":1098.214736436,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":1098.214742297,"data":"\n"}
+,{"stream_name":"stderr","time":1098.214945474,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":1098.214967014,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":1123.244405187,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":1123.244438624,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":1123.24444344,"data":"\n"}
+,{"stream_name":"stderr","time":1123.244758875,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":1123.244769638,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":1123.612833503,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":1123.612890918,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":1123.612899795,"data":"\n"}
+,{"stream_name":"stderr","time":1123.612907613,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":1123.612915865,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":1128.857237864,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":1128.857289214,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":1128.857298489,"data":"\n"}
+,{"stream_name":"stderr","time":1128.857309303,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)\n"}
+,{"stream_name":"stderr","time":1128.8573144,"data":"  return data.pin_memory(device)\n"}
+,{"stream_name":"stderr","time":1154.993660716,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":1154.993744852,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":1154.993753236,"data":"\n"}
+,{"stream_name":"stderr","time":1154.993759881,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":1154.993767094,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":1155.358647896,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":1155.35870498,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":1155.358713284,"data":"\n"}
+,{"stream_name":"stderr","time":1155.358718537,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":1155.358724135,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":1160.354537724,"data":"    Scored 118,108 OOT rows (Block 5 target remained strictly unread).\n"}
+,{"stream_name":"stdout","time":1160.569873907,"data":"\n"}
+,{"stream_name":"stdout","time":1160.569900894,"data":"[4] Missingness Policy: 29,527 unscored seed rows filled with prior 0.02879.\n"}
+,{"stream_name":"stdout","time":1164.473537792,"data":"    Saved OOF predictions: ./artifacts/stage4_oof_predictions.csv\n"}
+,{"stream_name":"stdout","time":1164.473570003,"data":"      Block 1: 75.0% coverage\n"}
+,{"stream_name":"stdout","time":1164.473575006,"data":"      Block 2: 100.0% coverage\n"}
+,{"stream_name":"stdout","time":1164.47357891,"data":"      Block 3: 100.0% coverage\n"}
+,{"stream_name":"stdout","time":1164.473582604,"data":"      Block 4: 100.0% coverage\n"}
+,{"stream_name":"stdout","time":1164.473586455,"data":"      Block 5: 100.0% coverage (Sealed OOT)\n"}
+,{"stream_name":"stdout","time":1164.655113943,"data":"\n"}
+,{"stream_name":"stdout","time":1164.655170995,"data":"[5] Executing Paired Bootstrap Hypothesis Tests...\n"}
+,{"stream_name":"stdout","time":1595.059985983,"data":"\n"}
+,{"stream_name":"stdout","time":1595.060030471,"data":"==================================================================================================================================\n"}
+,{"stream_name":"stdout","time":1595.060039374,"data":"STAGE 4 ALTERNATING BGNN — VALIDATION BENCHMARK REPORT (EMBARGOED)\n"}
+,{"stream_name":"stdout","time":1595.06004845,"data":"==================================================================================================================================\n"}
+,{"stream_name":"stdout","time":1595.06005205,"data":" variant  fold  val_block  n_val       AP  AP_calibrated  AP_new_entity  AP_seen_entity  mean_beta  ROC_AUC  ECE_quantile  Recall@0.1%FPR  Loss_cost_rule_calibrated\n"}
+,{"stream_name":"stdout","time":1595.060055414,"data":"    real     1          2 114488 0.498443       0.462146       0.531400        0.481671   0.871274 0.859880      0.082592        0.254737              443071.401258\n"}
+,{"stream_name":"stdout","time":1595.060058959,"data":"no_boost     1          2 114488 0.497310       0.469029       0.531105        0.480150   0.871216 0.859738      0.083122        0.252584              444668.437261\n"}
+,{"stream_name":"stdout","time":1595.060121291,"data":"    real     2          3 114355 0.476744       0.458589       0.524806        0.455975   0.874339 0.858646      0.083438        0.234249              396075.705009\n"}
+,{"stream_name":"stdout","time":1595.060127666,"data":"no_boost     2          3 114355 0.480822       0.469470       0.526285        0.460662   0.871306 0.862339      0.079557        0.236144              391464.451928\n"}
+,{"stream_name":"stdout","time":1595.060133907,"data":"    real     3          4 115420 0.523756       0.507834       0.554652        0.508765   0.872193 0.886777      0.083854        0.242826              421387.728942\n"}
+,{"stream_name":"stdout","time":1595.060139891,"data":"no_boost     3          4 115420 0.523414       0.508032       0.554573        0.508301   0.872171 0.886691      0.083847        0.243046              420507.232941\n"}
+,{"stream_name":"stdout","time":1595.06014602,"data":"\n"}
+,{"stream_name":"stdout","time":1595.060151207,"data":"--- Variant Summary ---\n"}
+,{"stream_name":"stdout","time":1595.060156114,"data":" variant  AP_mean  AP_std  AP_cal_mean  R@0.1%FPR_mean  mean_beta  ECE_q_mean  Loss_cal_mean\n"}
+,{"stream_name":"stdout","time":1595.060161101,"data":"no_boost   0.5005  0.0215       0.4822          0.2439     0.8716      0.0822    418880.0407\n"}
+,{"stream_name":"stdout","time":1595.060166165,"data":"    real   0.4996  0.0235       0.4762          0.2439     0.8726      0.0833    420178.2784\n"}
+,{"stream_name":"stdout","time":1595.060171911,"data":"\n"}
+,{"stream_name":"stdout","time":1595.060188246,"data":"----------------------------------------------------------------------------------------------------------------------------------\n"}
+,{"stream_name":"stdout","time":1595.060192669,"data":"HYPOTHESIS TESTS — PAIRED BOOTSTRAP, BENJAMINI-HOCHBERG FDR @ 0.05\n"}
+,{"stream_name":"stdout","time":1595.060199006,"data":"----------------------------------------------------------------------------------------------------------------------------------\n"}
+,{"stream_name":"stdout","time":1595.060203497,"data":"H3a Alternating Boosting (Real - NoBoost)    fold_1                 114488    +0.0011     [+0.0010, +0.0013]  0.0025  0.0040  REAL BUT \u003c THRESH\n"}
+,{"stream_name":"stdout","time":1595.060208072,"data":"H3a Alternating Boosting (Real - NoBoost)    fold_2                 114355    -0.0041     [-0.0057, -0.0026]  0.0025  0.0040  REAL BUT \u003c THRESH\n"}
+,{"stream_name":"stdout","time":1595.060212257,"data":"H3a Alternating Boosting (Real - NoBoost)    fold_3                 115420    +0.0003     [+0.0002, +0.0004]  0.0025  0.0040  REAL BUT \u003c THRESH\n"}
+,{"stream_name":"stdout","time":1595.060216211,"data":"H3a Alternating Boosting (Real - NoBoost)    pooled_dev (B2-B4)     344263    -0.0005     [-0.0009, -0.0001]  0.0150  0.0171  REAL BUT \u003c THRESH\n"}
+,{"stream_name":"stdout","time":1595.060220427,"data":"H3b Gating Mechanism (NoBoost - S3)          fold_1                 114488    +0.0034     [+0.0001, +0.0065]  0.0400  0.0400  REAL BUT \u003c THRESH\n"}
+,{"stream_name":"stdout","time":1595.060225122,"data":"H3b Gating Mechanism (NoBoost - S3)          fold_2                 114355    -0.0061     [-0.0096, -0.0027]  0.0050  0.0067  REAL BUT \u003c THRESH\n"}
+,{"stream_name":"stdout","time":1595.060229346,"data":"H3b Gating Mechanism (NoBoost - S3)          fold_3                 115420    -0.0110     [-0.0140, -0.0082]  0.0025  0.0040  REAL BUT \u003c THRESH\n"}
+,{"stream_name":"stdout","time":1595.06024443,"data":"H3b Gating Mechanism (NoBoost - S3)          pooled_dev (B2-B4)     344263    -0.0044     [-0.0062, -0.0026]  0.0025  0.0040  REAL BUT \u003c THRESH\n"}
+,{"stream_name":"stdout","time":1595.060248542,"data":"H3  Joint vs Frozen (S4 - S3) [CROSS-RUN]    fold_1                 114488    +0.0046     [+0.0013, +0.0076]  0.0100       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":1595.060252336,"data":"H3  Joint vs Frozen (S4 - S3) [CROSS-RUN]    fold_2                 114355    -0.0102     [-0.0134, -0.0072]  0.0025       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":1595.060256513,"data":"H3  Joint vs Frozen (S4 - S3) [CROSS-RUN]    fold_3                 115420    -0.0106     [-0.0137, -0.0079]  0.0025       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":1595.060260255,"data":"H3  Joint vs Frozen (S4 - S3) [CROSS-RUN]    pooled_dev (B2-B4)     344263    -0.0049     [-0.0067, -0.0031]  0.0025       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":1595.060264336,"data":"H4  Full vs Tabular (S4 - S1) [CROSS-RUN]    fold_1                 114488    -0.0270     [-0.0337, -0.0211]  0.0025       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":1595.060269262,"data":"H4  Full vs Tabular (S4 - S1) [CROSS-RUN]    fold_2                 114355    -0.0044     [-0.0096, +0.0010]  0.1400       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":1595.060273895,"data":"H4  Full vs Tabular (S4 - S1) [CROSS-RUN]    fold_3                 115420    -0.0093     [-0.0140, -0.0042]  0.0025       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":1595.060277735,"data":"H4  Full vs Tabular (S4 - S1) [CROSS-RUN]    pooled_dev (B2-B4)     344263    -0.0116     [-0.0141, -0.0085]  0.0025       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":1595.060281773,"data":"\n"}
+,{"stream_name":"stdout","time":1595.060285192,"data":"Artifacts successfully written to ./artifacts/\n"}
+,{"stream_name":"stdout","time":1595.060294105,"data":"Stage 4 execution complete. Block 5 holdout is scored, sealed, and unevaluated.\n"}
+,{"stream_name":"stderr","time":1601.313849327,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1601.313890013,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1601.498708179,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1601.498735057,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1602.225239866,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1602.580028272,"data":"[NbConvertApp] Writing 165242 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1605.207218661,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1606.474171425,"data":"[NbConvertApp] Writing 748930 bytes to __results__.html\n"}
+]

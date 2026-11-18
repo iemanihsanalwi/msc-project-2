@@ -1,0 +1,348 @@
+{
+  "stage": "Stage 3 - Frozen Two-Stage Res-GNN (v2, audit-hardened)",
+  "executed_at_utc": "2026-10-01T03:51:14+00:00",
+  "device": "cuda",
+  "stage_exit_decision": "DO_NOT_ADVANCE_GRAPH_ARM",
+  "stage_exit_gate": {
+    "decision": "DO_NOT_ADVANCE_GRAPH_ARM",
+    "criterion": "unique exact H2a at pooled_dev (B2-B4), confirmatory=True, finite delta_AP >= ACCEPTANCE_DELTA and finite p_adj <= FDR_ALPHA",
+    "test": "H2a Message Passing (Real - NoGraph)",
+    "scope": "pooled_dev (B2-B4)",
+    "acceptance_delta": 0.005,
+    "fdr_alpha": 0.05,
+    "observed_internal_result": {
+      "delta_AP": -0.0024367595481427085,
+      "p_adj": 0.0075,
+      "confirmatory": true
+    },
+    "reason": "delta_AP below materiality threshold"
+  },
+  "stage1_required_coverage_gate": {
+    "scope": "all rows except first np.array_split(B1, B1_SUBFOLDS)[0]; includes later B1 slices, B2-B4 and sealed OOT",
+    "total_rows": 590540,
+    "seed_exempt_rows": 29527,
+    "seed_unavailable_rows": 29527,
+    "required_rows": 561013,
+    "required_valid_rows": 561013,
+    "required_invalid_rows": 0,
+    "required_invalid_by_block": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0
+    },
+    "artifact_available": true
+  },
+  "predecessor_audits": [
+    {
+      "label": "fold1/card",
+      "nodes_checked": 20000,
+      "requested_sample": 20000,
+      "lookback_seconds": 2592000,
+      "seed": 53,
+      "edges_checked": 37556,
+      "tie_edges": 0,
+      "mode": "STRICT"
+    },
+    {
+      "label": "fold1/device",
+      "nodes_checked": 20000,
+      "requested_sample": 20000,
+      "lookback_seconds": 2592000,
+      "seed": 54,
+      "edges_checked": 97572,
+      "tie_edges": 0,
+      "mode": "STRICT"
+    },
+    {
+      "label": "fold1/null_card",
+      "nodes_checked": 20000,
+      "requested_sample": 20000,
+      "lookback_seconds": 2592000,
+      "seed": 55,
+      "edges_checked": 37338,
+      "tie_edges": 0,
+      "mode": "STRICT"
+    },
+    {
+      "label": "fold2/card",
+      "nodes_checked": 20000,
+      "requested_sample": 20000,
+      "lookback_seconds": 2592000,
+      "seed": 63,
+      "edges_checked": 38892,
+      "tie_edges": 0,
+      "mode": "STRICT"
+    },
+    {
+      "label": "fold2/device",
+      "nodes_checked": 20000,
+      "requested_sample": 20000,
+      "lookback_seconds": 2592000,
+      "seed": 64,
+      "edges_checked": 97571,
+      "tie_edges": 0,
+      "mode": "STRICT"
+    },
+    {
+      "label": "fold2/null_card",
+      "nodes_checked": 20000,
+      "requested_sample": 20000,
+      "lookback_seconds": 2592000,
+      "seed": 65,
+      "edges_checked": 38703,
+      "tie_edges": 0,
+      "mode": "STRICT"
+    },
+    {
+      "label": "fold3/card",
+      "nodes_checked": 20000,
+      "requested_sample": 20000,
+      "lookback_seconds": 2592000,
+      "seed": 73,
+      "edges_checked": 40131,
+      "tie_edges": 0,
+      "mode": "STRICT"
+    },
+    {
+      "label": "fold3/device",
+      "nodes_checked": 20000,
+      "requested_sample": 20000,
+      "lookback_seconds": 2592000,
+      "seed": 74,
+      "edges_checked": 97577,
+      "tie_edges": 0,
+      "mode": "STRICT"
+    },
+    {
+      "label": "fold3/null_card",
+      "nodes_checked": 20000,
+      "requested_sample": 20000,
+      "lookback_seconds": 2592000,
+      "seed": 75,
+      "edges_checked": 40899,
+      "tie_edges": 0,
+      "mode": "STRICT"
+    },
+    {
+      "label": "b1_subfold1/card",
+      "nodes_checked": 20000,
+      "requested_sample": 20000,
+      "lookback_seconds": 2592000,
+      "seed": 1053,
+      "edges_checked": 21505,
+      "tie_edges": 0,
+      "mode": "STRICT"
+    },
+    {
+      "label": "b1_subfold1/device",
+      "nodes_checked": 20000,
+      "requested_sample": 20000,
+      "lookback_seconds": 2592000,
+      "seed": 1054,
+      "edges_checked": 96247,
+      "tie_edges": 0,
+      "mode": "STRICT"
+    },
+    {
+      "label": "b1_subfold2/card",
+      "nodes_checked": 20000,
+      "requested_sample": 20000,
+      "lookback_seconds": 2592000,
+      "seed": 1063,
+      "edges_checked": 26879,
+      "tie_edges": 0,
+      "mode": "STRICT"
+    },
+    {
+      "label": "b1_subfold2/device",
+      "nodes_checked": 20000,
+      "requested_sample": 20000,
+      "lookback_seconds": 2592000,
+      "seed": 1064,
+      "edges_checked": 96258,
+      "tie_edges": 0,
+      "mode": "STRICT"
+    },
+    {
+      "label": "b1_subfold3/card",
+      "nodes_checked": 20000,
+      "requested_sample": 20000,
+      "lookback_seconds": 2592000,
+      "seed": 1073,
+      "edges_checked": 30390,
+      "tie_edges": 0,
+      "mode": "STRICT"
+    },
+    {
+      "label": "b1_subfold3/device",
+      "nodes_checked": 20000,
+      "requested_sample": 20000,
+      "lookback_seconds": 2592000,
+      "seed": 1074,
+      "edges_checked": 96738,
+      "tie_edges": 0,
+      "mode": "STRICT"
+    },
+    {
+      "label": "frozen_oot/card",
+      "nodes_checked": 20000,
+      "requested_sample": 20000,
+      "lookback_seconds": 2592000,
+      "seed": 2043,
+      "edges_checked": 39570,
+      "tie_edges": 0,
+      "mode": "STRICT"
+    },
+    {
+      "label": "frozen_oot/device",
+      "nodes_checked": 20000,
+      "requested_sample": 20000,
+      "lookback_seconds": 2592000,
+      "seed": 2044,
+      "edges_checked": 97598,
+      "tie_edges": 0,
+      "mode": "STRICT"
+    }
+  ],
+  "b1_skipped_subfolds": [],
+  "input_artifact_fingerprints": {
+    "train_transaction": {
+      "resolved_path": "/kaggle/input/competitions/ieee-fraud-detection/train_transaction.csv",
+      "optional": false,
+      "status": "loaded",
+      "sha256": "3a5c83ab6b3cc13dcabe5ffa9f522307fd5f7f7b6e6f6a60c32284ca6283d642"
+    },
+    "train_identity": {
+      "resolved_path": "/kaggle/input/competitions/ieee-fraud-detection/train_identity.csv",
+      "optional": true,
+      "status": "loaded",
+      "sha256": "b63c725d8377be90a995268d97f347c17d456b95db45807adcf9f59cd603c37c"
+    },
+    "decision_file": {
+      "resolved_path": "/kaggle/input/notebooks/iemanihsan/ieee-cis-eda-leakage-audit/artifacts/feature_risk_table.csv",
+      "optional": false,
+      "status": "loaded",
+      "sha256": "d2cbf3b245662cdc69cca24002135b9ea29e1f555e0a0657d5b0312e752ef496"
+    },
+    "stage1_oof": {
+      "resolved_path": "/kaggle/input/notebooks/iemanihsan/fork-of-stage-1-standalone-tabular-lightgbm-basel/artifacts/stage1_oof_predictions.csv",
+      "optional": false,
+      "status": "loaded",
+      "sha256": "7898b79740d38a750cb18c13dbc12a6e062358ce696c7f0279f997b8ab2d731a",
+      "selected_probability_column": "stage1_prob_raw"
+    },
+    "stage2_oof": {
+      "resolved_path": "/kaggle/input/notebooks/iemanihsan/fork-of-stage-2-graph-augmented-gbdt-relational/artifacts/stage2_oof_predictions.csv",
+      "optional": true,
+      "status": "loaded",
+      "sha256": "53f7bbc7fec361708024d67cc76e1fcebe357e3d794b45deb96eb7cefa4c3f98",
+      "selected_probability_column": "stage2_prob_raw"
+    },
+    "stage2_fold_results": {
+      "resolved_path": "/kaggle/input/notebooks/iemanihsan/fork-of-stage-2-graph-augmented-gbdt-relational/artifacts/stage2_fold_results.csv",
+      "optional": true,
+      "status": "loaded",
+      "sha256": "806020594d5555be8a96acc72761bf0fc7f591d2e7b653869baab890b92d781b"
+    }
+  },
+  "script_sha256": null,
+  "script_resolved_path": null,
+  "script_sha256_reason": "__file__ absent or not a file",
+  "notebook_code_sha256": "592f96ce6c4111a3b7268be97ba1970d7bf5c2e390c037444c275df0d5630e72",
+  "notebook_code_sha256_scope": "IPython input_hist_raw[1:] at reporting; UTF-8 JSON array, ensure_ascii=False, separators=(',', ':'); outputs/metadata excluded; includes current input and any manual inputs/reruns",
+  "notebook_code_input_count": 13,
+  "dataset_rows": 590540,
+  "continuous_features": 32,
+  "v_columns": 339,
+  "variants": [
+    "real",
+    "null",
+    "no_graph"
+  ],
+  "n_seeds_per_variant": 3,
+  "mean_ap_real": 0.5050761368673996,
+  "std_ap_real": 0.025614195010990083,
+  "mean_ap_real_calibrated": 0.48695793141555693,
+  "mean_recall_at_0p1_fpr_real": 0.24364327844044575,
+  "seed_noise_floor_inner_ap_sd": 0.004108935558062069,
+  "fraud_base_rate": 0.03499000914417313,
+  "mean_validation_connectivity": 0.9947759677583229,
+  "stage1_artifact_available": true,
+  "stage1_logit_coverage_val_mean": 1.0,
+  "stage2_artifact_available": true,
+  "oof_coverage_by_block": {
+    "1": 0.75,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0
+  },
+  "oof_missing_rows": 29527,
+  "oof_missing_fill_value": 0.028787211704541606,
+  "representation_shift_max": 3.652885913848877,
+  "frozen_oot_shift_max": 9.564457893371582,
+  "fdr_alpha": 0.05,
+  "acceptance_delta": 0.005,
+  "artifacts": {
+    "oof_predictions": "./artifacts/stage3_oof_predictions.csv",
+    "fold_results": "./artifacts/stage3_fold_results.csv",
+    "variant_summary": "./artifacts/stage3_variant_summary.csv",
+    "diagnostics": "./artifacts/stage3_diagnostics.csv",
+    "hypothesis_tests": "./artifacts/stage3_hypothesis_tests.csv"
+  },
+  "config": {
+    "SEED": 42,
+    "N_SEEDS": 3,
+    "TIME_COLUMN": "TransactionDT",
+    "TARGET_COLUMN": "isFraud",
+    "ID_COLUMN": "TransactionID",
+    "AMOUNT_COLUMN": "TransactionAmt",
+    "N_BLOCKS": 5,
+    "DEV_BLOCKS": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "OOT_BLOCK": 5,
+    "SECONDS_PER_DAY": 86400,
+    "EMBARGO_SECONDS": 86400,
+    "LOOKBACK_WINDOW_SECS": 2592000,
+    "EMBARGO_IN_FEATURE_PASS": false,
+    "INNER_VAL_FRAC": 0.2,
+    "MIN_STOP_ROWS": 5000,
+    "MIN_STOP_POSITIVES": 50,
+    "B1_SUBFOLDS": 4,
+    "CALIBRATION": "isotonic",
+    "EXPORT_CALIBRATED_OOF": true,
+    "C_REVIEW": 10.0,
+    "C_FRICTION": 25.0,
+    "INVESTIGATION_CAPACITY": 0.01,
+    "N_BOOTSTRAP": 400,
+    "BOOTSTRAP_ALPHA": 0.05,
+    "ACCEPTANCE_DELTA": 0.005,
+    "FDR_ALPHA": 0.05,
+    "MAX_EPOCHS": 20,
+    "PATIENCE": 4,
+    "BATCH_SIZE": 4096,
+    "HIDDEN_DIM": 64,
+    "DROPOUT": 0.2,
+    "LR": 0.003,
+    "WEIGHT_DECAY": 0.0001,
+    "N_PCA": 15,
+    "CARD_MAX_NEIGHBORS": 10,
+    "DEVICE_MAX_NEIGHBORS": 5,
+    "FOCAL_ALPHA": 0.25,
+    "FOCAL_GAMMA": 2.0,
+    "SHIFT_TOLERANCE": 0.75,
+    "SHIFT_FAIL_HARD": false,
+    "PREDECESSOR_AUDIT_SAMPLE": 20000,
+    "RUN_NULL_CONTROL": true,
+    "RUN_NO_GRAPH_ABLATION": true,
+    "OUTPUT_DIR": "./artifacts",
+    "STRICT_TIME_CAUSALITY": true,
+    "REPORT_TIE_DIAGNOSTICS": true
+  }
+}

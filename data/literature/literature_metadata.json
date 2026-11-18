@@ -1,0 +1,818 @@
+[
+  {
+    "file": "Literature\\A Comprehensive Survey on Graph Anomaly Detection with Deep Learning.pdf",
+    "basename": "A Comprehensive Survey on Graph Anomaly Detection with Deep Learning.pdf",
+    "meta_title": "A Comprehensive Survey on Graph Anomaly Detection With Deep Learning",
+    "meta_author": "",
+    "doi": "10.1109/TKDE.2021.3118815",
+    "first_lines": [
+      "A Comprehensive Survey on Graph Anomaly",
+      "Detection With Deep Learning",
+      "Xiaoxiao Ma, Jia Wu , Senior Member, IEEE, Shan Xue , Jian Yang , Chuan Zhou ,",
+      "Quan Z. Sheng , Hui Xiong , Fellow, IEEE, and Leman Akoglu",
+      "Abstract— Anomalies are rare observations (e.g., data records or events) that deviate signiﬁcantly from the others in the sample. Over",
+      "the past few decades, research on anomaly mining has received increasing interests due to the implications of these occurrences in a",
+      "wide range of disciplines - for instance, security , ﬁnance, and medicine. For this reason, anomaly detection, which aims to identify these",
+      "rare observations, has become one of the most vital tasks in the world and has shown its power in preventing detrimental events, such"
+    ]
+  },
+  {
+    "file": "Literature\\Anti-Money Laundering in Bitcoin- Experimenting with Graph Convolutional Networks for Financial Forensics.pdf",
+    "basename": "Anti-Money Laundering in Bitcoin- Experimenting with Graph Convolutional Networks for Financial Forensics.pdf",
+    "meta_title": "Anti-Money Laundering in Bitcoin: Experimenting with Graph Convolutional Networks for Financial Forensics",
+    "meta_author": "Mark Weber, Giacomo Domeniconi, Jie Chen, Daniel Karl I. Weidele, Claudio Bellei, Tom Robinson, and Charles E. Leiserson",
+    "doi": "",
+    "first_lines": [
+      "Anti-Money Laundering in Bitcoin: Experimenting with Graph",
+      "Convolutional Networks for Financial Forensics",
+      "Mark Weber∗",
+      "MIT-IBM Watson AI Lab",
+      "mrweber@mit.edu",
+      "Giacomo Domeniconi∗",
+      "IBM Research",
+      "Giacomo.Domeniconi1@ibm.com"
+    ]
+  },
+  {
+    "file": "Literature\\AntiBenford Subgraphs Unsupervised Anomaly Detection in Financial Networks.pdf",
+    "basename": "AntiBenford Subgraphs Unsupervised Anomaly Detection in Financial Networks.pdf",
+    "meta_title": "AntiBenford Subgraphs:  Unsupervised Anomaly Detection in Financial Networks",
+    "meta_author": "Tianyi Chen",
+    "doi": "10.1145/3534678.3539100",
+    "first_lines": [
+      "AntiBenford Subgraphs:",
+      "Unsupervised Anomaly Detection in Financial Networks",
+      "Tianyi Chen",
+      "ctony@bu.edu",
+      "Boston University",
+      "Boston, MA, USA",
+      "Charalampos Tsourakakis",
+      "ctsourak@bu.edu"
+    ]
+  },
+  {
+    "file": "Literature\\BOOST THEN CONVOLVE GRADIENT BOOSTING MEETS GNN.pdf",
+    "basename": "BOOST THEN CONVOLVE GRADIENT BOOSTING MEETS GNN.pdf",
+    "meta_title": "",
+    "meta_author": "",
+    "doi": "",
+    "first_lines": [
+      "Published as a conference paper at ICLR 2021",
+      "BOOST THEN CONVOLVE : G RADIENT BOOSTING",
+      "MEETS GRAPH NEURAL NETWORKS",
+      "Sergei Ivanov",
+      "Criteo AI Lab",
+      "Paris, France",
+      "s.ivanov@criteo.com",
+      "Liudmila Prokhorenkova"
+    ]
+  },
+  {
+    "file": "Literature\\Beyond Homophily in Graph Neural Networks-Current Limitation and Effective Design.pdf",
+    "basename": "Beyond Homophily in Graph Neural Networks-Current Limitation and Effective Design.pdf",
+    "meta_title": "",
+    "meta_author": "",
+    "doi": "",
+    "first_lines": [
+      "Beyond Homophily in Graph Neural Networks:",
+      "Current Limitations and Effective Designs",
+      "Jiong Zhu",
+      "University of Michigan",
+      "jiongzhu@umich.edu",
+      "Yujun Yan",
+      "University of Michigan",
+      "yujunyan@umich.edu"
+    ]
+  },
+  {
+    "file": "Literature\\Fraud detection_A systematic literature review of graph-based anomaly detection approaches.pdf",
+    "basename": "Fraud detection_A systematic literature review of graph-based anomaly detection approaches.pdf",
+    "meta_title": "Fraud detection_ A systematic literature review of graph-based anomaly detection approaches",
+    "meta_author": "Tahereh Pourhabibi",
+    "doi": "10.1016/j.dss.2020.113303",
+    "first_lines": [
+      "Contents lists available atScienceDirect",
+      "Decision Support Systems",
+      "journal homepage: www.elsevier.com/locate/dss",
+      "Fraud detection: A systematic literature review of graph-based anomaly",
+      "detection approaches",
+      "Tahereh Pourhabibia,⁎",
+      ", Kok-Leong Ongb, Booi H. Kama, Yee Ling Booa",
+      "aSchool of Accounting, Information Systems and Supply Chain, RMIT University, Melbourne, Australia"
+    ]
+  },
+  {
+    "file": "Literature\\Graph-based fraud detection\\A-behavior-aware-intelligent-decision-framework-for-_2026_Engineering-Applic.pdf",
+    "basename": "A-behavior-aware-intelligent-decision-framework-for-_2026_Engineering-Applic.pdf",
+    "meta_title": "A behavior-aware intelligent decision framework for real-time credit card fraud detection using deep learning and adaptive user profiling",
+    "meta_author": "Ugochukwu Onwudebelu",
+    "doi": "10.1016/j.engappai.2026.115641",
+    "first_lines": [
+      "A behavior-aware intelligent decision framework for real-time credit card",
+      "fraud detection using deep learning and adaptive user profiling",
+      "Ugochukwu Onwudebelu",
+      "a , *",
+      ", Olusanjo Olugbemi Fasola",
+      "b",
+      ", Ernest Chimaroge Ugonna",
+      "b"
+    ]
+  },
+  {
+    "file": "Literature\\Graph-based fraud detection\\A-heterogeneous-graph-representation-learning-appro_2026_Intelligent-Systems.pdf",
+    "basename": "A-heterogeneous-graph-representation-learning-appro_2026_Intelligent-Systems.pdf",
+    "meta_title": "A heterogeneous graph representation learning approach for fraud detection in supply chain networks",
+    "meta_author": "Tamym Lahcen",
+    "doi": "10.1016/j.iswa.2026.200686",
+    "first_lines": [
+      "Contents lists available at ScienceDirect",
+      "Intelligent Systems with Applications",
+      "journal homepage: www.journals.elsevier.com/intelligent-systems-with-applications",
+      "A heterogeneous graph representation learning approach for fraud detection",
+      "in supply chain networks",
+      "Tamym Lahcen a",
+      ",∗, Youness Amadiaz a",
+      ",∗, Mohammed Bahbib b"
+    ]
+  },
+  {
+    "file": "Literature\\Graph-based fraud detection\\Adaptive-metagraph-neural-network-assisted-by-_2025_Engineering-Applications.pdf",
+    "basename": "Adaptive-metagraph-neural-network-assisted-by-_2025_Engineering-Applications.pdf",
+    "meta_title": "Adaptive metagraph neural network assisted by metagraph search for financial fraud detection",
+    "meta_author": "Guoxiang Tong",
+    "doi": "10.1016/j.engappai.2025.110807",
+    "first_lines": [
+      "Contents lists available at ScienceDirect",
+      "Engineering Applications of Artificial Intelligence",
+      "journal homepage: www.elsevier.com/locate/engappai",
+      "Research paper",
+      "Adaptive metagraph neural network assisted by metagraph search for",
+      "financial fraud detection",
+      "Guoxiang Tong",
+      "∗, Junjie Qian, Jieyu Shen"
+    ]
+  },
+  {
+    "file": "Literature\\Graph-based fraud detection\\An-enhanced-secretary-bird-inspired-multi-classifier-fram_2026_Alexandria-En.pdf",
+    "basename": "An-enhanced-secretary-bird-inspired-multi-classifier-fram_2026_Alexandria-En.pdf",
+    "meta_title": "An enhanced secretary bird-inspired multi-classifier framework for high-performance Credit Card Fraud Detection in imbalanced data",
+    "meta_author": "Ria H. Egami",
+    "doi": "10.1016/j.aej.2026.04.061",
+    "first_lines": [
+      "Contents lists available at ScienceDirect",
+      "Alexandria Engineering Journal",
+      "journal homepage: www.elsevier.com/locate/aej",
+      "Original Article",
+      "An enhanced secretary bird-inspired multi-classifier framework for",
+      "high-performance Credit Card Fraud Detection in imbalanced data",
+      "Ria H. Egami a, Amr A. Abd El-Mageed b,∗, Mona Gafar c, Amr A. Abohany d",
+      "a Department of Mathematics, College of Science and Humanity, Prince Sattam Bin Abdulaziz University, Saudi Arabia"
+    ]
+  },
+  {
+    "file": "Literature\\Graph-based fraud detection\\An-explainable-ensemble-learning-approach-for-financial_2026_Information-Pro.pdf",
+    "basename": "An-explainable-ensemble-learning-approach-for-financial_2026_Information-Pro.pdf",
+    "meta_title": "An explainable ensemble learning approach for financial fraud detection: Integrating SHAP and LIME on the PaySim dataset",
+    "meta_author": "Nagwa Gamal",
+    "doi": "10.1016/j.ipm.2026.104967",
+    "first_lines": [
+      "Contents lists available at ScienceDirect",
+      "Information Processing and Management",
+      "journal homepage: www.elsevier.com/locate/ipm",
+      "An explainable ensemble learning approach for financial fraud",
+      "detection: Integrating SHAP and LIME on the PaySim dataset",
+      "Nagwa Gamal a",
+      ", Eman M.G. Younis a",
+      ",∗, Waleed M. Mohamed a,b"
+    ]
+  },
+  {
+    "file": "Literature\\Graph-based fraud detection\\Anomaly-detection-in-online-credit-card-data-using-optimiz_2025_Knowledge-Ba.pdf",
+    "basename": "Anomaly-detection-in-online-credit-card-data-using-optimiz_2025_Knowledge-Ba.pdf",
+    "meta_title": "Anomaly detection in online credit card data using optimized multi-view heterogeneous graph neural networks",
+    "meta_author": "T John Berkmans",
+    "doi": "10.1016/j.knosys.2025.113767",
+    "first_lines": [
+      "Anomaly detection in online credit card data using optimized multi-view",
+      "heterogeneous graph neural networks",
+      "T John Berkmans",
+      "a",
+      ", S Karthick",
+      "b , *",
+      "a",
+      "Research Scholar, Department of Computational Intelligence, School of Computing, SRM Institute of Science and Technology, Kattankulathur Campus, Chennai -"
+    ]
+  },
+  {
+    "file": "Literature\\Graph-based fraud detection\\CATCHM--A-novel-network-based-credit-card-fraud-detection_2023_Decision-Supp.pdf",
+    "basename": "CATCHM--A-novel-network-based-credit-card-fraud-detection_2023_Decision-Supp.pdf",
+    "meta_title": "CATCHM: A novel network-based credit card fraud detection method using node representation learning",
+    "meta_author": "Rafaël Van Belle",
+    "doi": "10.1016/j.dss.2022.113866",
+    "first_lines": [
+      "Decision Support Systems 164 (2023) 113866",
+      "Available online 2 September 2022",
+      "0167-9236/© 2022 Elsevier B.V. All rights reserved.",
+      "Contents lists available at ScienceDirect",
+      "Decision Support Systems",
+      "journal homepage: www.elsevier.com/locate/dss",
+      "CATCHM: A novel network-based credit card fraud detection method using",
+      "node representation learning✩"
+    ]
+  },
+  {
+    "file": "Literature\\Graph-based fraud detection\\Credit-card-fraud-detection-based-on-federated_2024_Expert-Systems-with-Appl.pdf",
+    "basename": "Credit-card-fraud-detection-based-on-federated_2024_Expert-Systems-with-Appl.pdf",
+    "meta_title": "Credit card fraud detection based on federated graph learning",
+    "meta_author": "Yuncan Tang",
+    "doi": "10.1016/j.eswa.2024.124979",
+    "first_lines": [
+      "Contents lists available at ScienceDirect",
+      "Expert Systems With Applications",
+      "journal homepage: www.elsevier.com/locate/eswa",
+      "Credit card fraud detection based on federated graph learning",
+      "Yuncan Tang, Yongquan Liang∗",
+      "College of Computer Science and Engineering, Shandong University of Science and Technology, Qingdao 266590, China",
+      "A R T I C L E I N F O",
+      "Keywords:"
+    ]
+  },
+  {
+    "file": "Literature\\Graph-based fraud detection\\Credit-card-fraud-detection-using-the-brown-bear-o_2024_Alexandria-Engineeri.pdf",
+    "basename": "Credit-card-fraud-detection-using-the-brown-bear-o_2024_Alexandria-Engineeri.pdf",
+    "meta_title": "Credit card fraud detection using the brown bear optimization algorithm",
+    "meta_author": "Shaymaa E. Sorour",
+    "doi": "10.1016/j.aej.2024.06.040",
+    "first_lines": [
+      "Contents lists available at ScienceDirect",
+      "Alexandria Engineering Journal",
+      "journal homepage: www.elsevier.com/locate/aej",
+      "Original article",
+      "Credit card fraud detection using the brown bear optimization algorithm",
+      "Shaymaa E. Soroura,b,∗, Khalied M. AlBarraka, Amr A. Abohanyc, Amr A. Abd El-Mageedd",
+      "a Department of Management Information Systems, School of Business, King Faisal University, Al-Ahsa 31982, Saudi Arabia",
+      "b Faculty of Specific Education, Kafrelsheikh University, 33511, Egypt"
+    ]
+  },
+  {
+    "file": "Literature\\Graph-based fraud detection\\DG-GCN--A-dual-similarity-guided-graph-convolutional-network-f_2026_Neurocom.pdf",
+    "basename": "DG-GCN--A-dual-similarity-guided-graph-convolutional-network-f_2026_Neurocom.pdf",
+    "meta_title": "DG-GCN: A dual similarity-guided graph convolutional network for imbalanced node classification",
+    "meta_author": "Ni Wang",
+    "doi": "10.1016/j.neucom.2026.134284",
+    "first_lines": [
+      "Contents lists available at ScienceDirect",
+      "Neurocomputing",
+      "journal homepage: www.elsevier.com/locate/neucom",
+      "DG-GCN: A dual similarity-guided graph convolutional network for",
+      "imbalanced node classification",
+      "Ni Wanga, Longjie Lia,∗ iD, Lingbo Suna iD, Weijun Wanga, Zhixin Maa, b,∗∗",
+      "a School of Information Science and Engineering, Lanzhou University, Lanzhou, China",
+      "b Key Laboratory of Media Convergence Technology and Communication, Gansu Province, Lanzhou, China"
+    ]
+  },
+  {
+    "file": "Literature\\Graph-based fraud detection\\DISCO--Decoupling-representation-learning-and-risk-contro_2026_Decision-Supp.pdf",
+    "basename": "DISCO--Decoupling-representation-learning-and-risk-contro_2026_Decision-Supp.pdf",
+    "meta_title": "DISCO: Decoupling representation learning and risk control for reliable credit card fraud detection",
+    "meta_author": "Ruonan Zhu",
+    "doi": "10.1016/j.dss.2026.114717",
+    "first_lines": [
+      "Contents lists available at ScienceDirect",
+      "Decision Support Systems",
+      "journal homepage: www.elsevier.com/locate/dss",
+      "DISCO: Decoupling representation learning and risk control for reliable",
+      "credit card fraud detection",
+      "Ruonan Zhu a, Xinru Zhang a, Tao Wang a, Jingxiao Liao a, Sai-Ho Chung a",
+      ", Xiaoge Zhang a,b",
+      ",∗"
+    ]
+  },
+  {
+    "file": "Literature\\Graph-based fraud detection\\Dynamic-oversampling-driven-Kolmogorov-Arnold-networks-for-_2025_Egyptian-In.pdf",
+    "basename": "Dynamic-oversampling-driven-Kolmogorov-Arnold-networks-for-_2025_Egyptian-In.pdf",
+    "meta_title": "Dynamic oversampling-driven Kolmogorov–Arnold networks for credit card fraud detection: An ensemble approach to robust financial security",
+    "meta_author": "Mohamed Akouhar",
+    "doi": "10.1016/j.eij.2025.100712",
+    "first_lines": [
+      "Contents lists available at ScienceDirect",
+      "Egyptian Informatics Journal",
+      "journal homepage: www.sciencedirect.com",
+      "Full length article",
+      "Dynamic oversampling-driven Kolmogorov–Arnold networks for credit card",
+      "fraud detection: An ensemble approach to robust financial security",
+      "Mohamed Akouhar a",
+      ",∗, Mohamed Ouhssini b"
+    ]
+  },
+  {
+    "file": "Literature\\Graph-based fraud detection\\Encoder-decoder-graph-neural-network_2024_Journal-of-King-Saud-University---.pdf",
+    "basename": "Encoder-decoder-graph-neural-network_2024_Journal-of-King-Saud-University---.pdf",
+    "meta_title": "Encoder–decoder graph neural network for credit card fraud detection",
+    "meta_author": "Asma Cherif",
+    "doi": "10.1016/j.jksuci.2024.102003",
+    "first_lines": [
+      "Journal of King Saud University - Computer and Information Sciences 36 (2024) 102003",
+      "Available online 7 March 2024",
+      "1319-1578/© 2024 The Authors. Published by Elsevier B.V. on behalf of King Saud University. This is an open access article under the CC BY-NC-ND license",
+      "(http://creativecommons.org/licenses/by-nc-nd/4.0/).",
+      "Contents lists available at ScienceDirect",
+      "Journal of King Saud University - Computer and Information",
+      "Sciences",
+      "journal homepage: www.sciencedirect.com"
+    ]
+  },
+  {
+    "file": "Literature\\Graph-based fraud detection\\Enhancing-financial-fraud-detection-with-graph-neural_2026_International-Rev.pdf",
+    "basename": "Enhancing-financial-fraud-detection-with-graph-neural_2026_International-Rev.pdf",
+    "meta_title": "Enhancing financial fraud detection with graph neural network and ensemble learning: insights from Related Party Transactions network",
+    "meta_author": "Xuting Mao",
+    "doi": "10.1016/j.iref.2026.105217",
+    "first_lines": [
+      "Enhancing financial fraud detection with graph neural network",
+      "and ensemble learning: insights from Related Party",
+      "Transactions network",
+      "Xuting Mao",
+      "a , b",
+      ", Jianping Li",
+      "b , c",
+      ", Xiaoqian Zhu"
+    ]
+  },
+  {
+    "file": "Literature\\Graph-based fraud detection\\Enhancing-financial-fraud-detection-with-hierarchical-graph-a_2023_Finance-R.pdf",
+    "basename": "Enhancing-financial-fraud-detection-with-hierarchical-graph-a_2023_Finance-R.pdf",
+    "meta_title": "Enhancing financial fraud detection with hierarchical graph attention networks: A study on integrating local and extensive structural information",
+    "meta_author": "Feifen Shi",
+    "doi": "10.1016/j.frl.2023.104458",
+    "first_lines": [
+      "Finance Research Letters 58 (2023) 104458",
+      "Available online 12 September 2023",
+      "1544-6123/© 2023 Elsevier Inc. All rights reserved.",
+      "Contents lists available at ScienceDirect",
+      "Finance Research Letters",
+      "journal homepage: www.elsevier.com/locate/frl",
+      "Enhancing financial fraud detection with hierarchical graph",
+      "attention networks: A study on integrating local and extensive"
+    ]
+  },
+  {
+    "file": "Literature\\Graph-based fraud detection\\Financial-transaction-fraud-detector-based-on-imbalance-l_2023_Applied-Soft-.pdf",
+    "basename": "Financial-transaction-fraud-detector-based-on-imbalance-l_2023_Applied-Soft-.pdf",
+    "meta_title": "Financial transaction fraud detector based on imbalance learning and graph neural network",
+    "meta_author": "Guoxiang Tong",
+    "doi": "10.1016/j.asoc.2023.110984",
+    "first_lines": [
+      "Applied Soft Computing Journal 149 (2023) 110984",
+      "Available online 28 October 2023",
+      "1568-4946/© 2023 Elsevier B.V. All rights reserved.",
+      "Contents lists available at ScienceDirect",
+      "Applied Soft Computing",
+      "journal homepage: www.elsevier.com/locate/asoc",
+      "Financial transaction fraud detector based on imbalance learning and graph",
+      "neural network"
+    ]
+  },
+  {
+    "file": "Literature\\Graph-based fraud detection\\Graph-Neural-Networks--A-bibliometrics-ov_2022_Machine-Learning-with-Applica.pdf",
+    "basename": "Graph-Neural-Networks--A-bibliometrics-ov_2022_Machine-Learning-with-Applica.pdf",
+    "meta_title": "",
+    "meta_author": "",
+    "doi": "10.1016/j.mlwa.2022.100401",
+    "first_lines": [
+      "Machine Learning with Applications 10 (2022) 100401",
+      "Contents lists available at ScienceDirect",
+      "Machine Learning with Applications",
+      "journal homepage: www.elsevier.com/locate/mlwa",
+      "Graph Neural Networks: A bibliometrics overview",
+      "Abdalsamad Keramatfara,∗, Mohadeseh Rafieea, Hossein Amirkhanib",
+      "a Academic Center for Education, Culture and Research (ACECR), Tehran, Iran",
+      "b Department of Computer Engineering and IT, Faculty of Engineering, University of Qom, Qom, Iran"
+    ]
+  },
+  {
+    "file": "Literature\\Graph-based fraud detection\\Heterophily-outlier-temporal-aware-graph-neural-net_2026_Expert-Systems-with.pdf",
+    "basename": "Heterophily-outlier-temporal-aware-graph-neural-net_2026_Expert-Systems-with.pdf",
+    "meta_title": "Heterophily outlier temporal aware graph neural network for online fraud detection",
+    "meta_author": "Hiba Akli",
+    "doi": "10.1016/j.eswa.2026.133278",
+    "first_lines": [
+      "Contents lists available at ScienceDirect",
+      "Expert Systems With Applications",
+      "journal homepage: www.elsevier.com/locate/eswa",
+      "Heterophily outlier temporal aware graph neural network for online fraud",
+      "detection",
+      "Hiba Akli",
+      "a,b,∗, Soﬁane Hamrioui",
+      "b, Igor Stéphana"
+    ]
+  },
+  {
+    "file": "Literature\\Graph-based fraud detection\\Leveraging-GraphSAGE-and-large-language-models-with-cross_2026_Information-P.pdf",
+    "basename": "Leveraging-GraphSAGE-and-large-language-models-with-cross_2026_Information-P.pdf",
+    "meta_title": "Leveraging GraphSAGE and large language models with cross-attention for transaction fraud detection: Evidence from credit card and PaySim datasets",
+    "meta_author": "Rami Mohawesh",
+    "doi": "10.1016/j.ipm.2026.104860",
+    "first_lines": [
+      "Contents lists available at ScienceDirect",
+      "Information Processing and Management",
+      "journal homepage: www.elsevier.com/locate/ipm",
+      "Leveraging GraphSAGE and large language models with",
+      "cross-attention for transaction fraud detection: Evidence from credit",
+      "card and PaySim datasetsI",
+      "Rami Mohawesh a, Sumbal Maqsood b, Haythem Bany Salameh c",
+      ",∗, Ghaleb Elrefae d"
+    ]
+  },
+  {
+    "file": "Literature\\Graph-based fraud detection\\Metapath-guided-graph-neural-networks-for-fina_2025_Computers-and-Electrical.pdf",
+    "basename": "Metapath-guided-graph-neural-networks-for-fina_2025_Computers-and-Electrical.pdf",
+    "meta_title": "Metapath-guided graph neural networks for financial fraud detection",
+    "meta_author": "Junjie Qian",
+    "doi": "10.1016/j.compeleceng.2025.110428",
+    "first_lines": [
+      "Contents lists available at ScienceDirect",
+      "Computers and Electrical Engineering",
+      "journal homepage: www.elsevier.com/locate/compeleceng",
+      "Metapath-guided graph neural networks for financial fraud",
+      "detectionI",
+      "Junjie Qian, Guoxiang Tong",
+      "∗",
+      "Department of Optical-Electrical and Computer Engineering, University of Shanghai for Science and Technology, Shanghai, 200093, China"
+    ]
+  },
+  {
+    "file": "Literature\\Graph-based fraud detection\\Physics-informed-spatiotemporal-graph-neural-networks-for-e_2026_Systems-and.pdf",
+    "basename": "Physics-informed-spatiotemporal-graph-neural-networks-for-e_2026_Systems-and.pdf",
+    "meta_title": "Physics-informed spatiotemporal graph neural networks for early detection of financial fraud in multi-campus shared service centers",
+    "meta_author": "Qin Jiang",
+    "doi": "10.1016/j.sasc.2026.200520",
+    "first_lines": [
+      "Physics-informed spatiotemporal graph neural networks for early detection",
+      "of financial fraud in multi-campus shared service centers",
+      "Qin Jiang",
+      "*",
+      ", Mohan Tang",
+      "School of Financial Management, Hefei University of Economics, Hefei 230011, Anhui, China",
+      "ARTICLE INFO",
+      "Keywords:"
+    ]
+  },
+  {
+    "file": "Literature\\Graph-based fraud detection\\TS-GNN--Modeling-temporal-semantic-discrepancy-for-g_2026_Expert-Systems-wit.pdf",
+    "basename": "TS-GNN--Modeling-temporal-semantic-discrepancy-for-g_2026_Expert-Systems-wit.pdf",
+    "meta_title": "TS-GNN: Modeling temporal-semantic discrepancy for graph-based credit card fraud detection",
+    "meta_author": "Jinquan Zhang",
+    "doi": "10.1016/j.eswa.2026.133233",
+    "first_lines": [
+      "Contents lists available at ScienceDirect",
+      "Expert Systems With Applications",
+      "journal homepage: www.elsevier.com/locate/eswa",
+      "TS-GNN: Modeling temporal-semantic discrepancy for graph-based credit",
+      "card fraud detection",
+      "Jinquan Zhang",
+      ", Zixiang Fang, Yuncan Tang, Lina Ni",
+      "∗"
+    ]
+  },
+  {
+    "file": "Literature\\Graph-based fraud detection\\Zero-Trust-Federated-Learning-with-GAN-Augmented-Anomal_2026_Procedia-Comput.pdf",
+    "basename": "Zero-Trust-Federated-Learning-with-GAN-Augmented-Anomal_2026_Procedia-Comput.pdf",
+    "meta_title": "",
+    "meta_author": "",
+    "doi": "",
+    "first_lines": [
+      "ScienceDirect",
+      "Available online at www.sciencedirect.com",
+      "Procedia Computer Science 283 (2026)  1472–1482",
+      "1877-0509 © 2026 The Authors. Published by Elsevier B.V .",
+      "This is an open access article under the CC BY-NC-ND license ( https://creativecommons.org/licenses/by-nc-nd/4.0 )",
+      "Peer review under the responsibility of the scientific committee of the International Conference on Machine Learning and Data Engineering",
+      "© 2026 The Authors. Published by Elsevier B.V .",
+      "This is an open access article under the CC BY-NC-ND license ( https://creativecommons.org/licenses/by-nc-nd/4.0 )"
+    ]
+  },
+  {
+    "file": "Literature\\Old\\2003.01171.pdf",
+    "basename": "2003.01171.pdf",
+    "meta_title": "",
+    "meta_author": "",
+    "doi": "",
+    "first_lines": [
+      "A Semi-supervised Graph Attentive Network for",
+      "Financial Fraud Detection",
+      "Daixin Wang1,2, Jianbin Lin 1, Peng Cui 2, Quanhui Jia 1, Zhen Wang1,",
+      "Yanming Fang1, Quan Yu1, Jun Zhou 1, Shuang Yang1, Yuan Qi1",
+      "1Ant Financial Services Group, China",
+      "2Department of Computer Science and Technology, Tsinghua University, China",
+      "Abstract—With the rapid growth of ﬁnancial services, fraud",
+      "detection has been a very important problem to guarantee a"
+    ]
+  },
+  {
+    "file": "Literature\\Old\\2402.09495.pdf",
+    "basename": "2402.09495.pdf",
+    "meta_title": "",
+    "meta_author": "",
+    "doi": "",
+    "first_lines": [
+      "On the Potential of Network-Based Features for Fraud Detection",
+      "Catayoun Azarm1, Erman Acar1, Mickey van Zeelt2",
+      "1University of Amsterdam",
+      "2ING Netherlands",
+      "catayounazarm@yahoo.de, e.acar@uva.nl, mickey.van.zeelt@ing.com",
+      "Abstract",
+      "Online transaction fraud presents substantial challenges to",
+      "businesses and consumers, risking significant financial losses."
+    ]
+  },
+  {
+    "file": "Literature\\Old\\2405.19383.pdf",
+    "basename": "2405.19383.pdf",
+    "meta_title": "Network Analytics for Anti-Money Laundering -- A Systematic Literature Review and Experimental Evaluation",
+    "meta_author": "Bruno Deprez; Toon Vanderschueren; Bart Baesens; Tim Verdonck; Wouter Verbeke",
+    "doi": "",
+    "first_lines": [
+      "NETWORK ANALYTICS FOR ANTI -MONEY LAUNDERING – A",
+      "SYSTEMATIC LITERATURE REVIEW AND EXPERIMENTAL",
+      "EVALUATION",
+      "A PREPRINT",
+      "Bruno Deprez∗",
+      "KU Leuven",
+      "University of Antwerp - imec",
+      "Toon Vanderschueren"
+    ]
+  },
+  {
+    "file": "Literature\\Old\\3340531.3411903.pdf",
+    "basename": "3340531.3411903.pdf",
+    "meta_title": "Enhancing Graph Neural Network-based Fraud Detectors against Camouflaged Fraudsters",
+    "meta_author": "Yingtong Dou1, Zhiwei Liu1, Li Sun2, Yutong Deng2, Hao Peng3, Philip S. Yu1",
+    "doi": "10.1145/3340531.3411903",
+    "first_lines": [
+      "Enhancing Graph Neural Network-based Fraud Detectors",
+      "against Camouflaged Fraudsters",
+      "Yingtong Dou1, Zhiwei Liu1, Li Sun2, Yutong Deng2, Hao Peng3, Philip S. Yu1",
+      "1Department of Computer Science, University of Illinois at Chicago",
+      "2School of Computer Science, Beijing University of Posts and Telecommunications",
+      "3Beijing Advanced Innovation Center for Big Data and Brain Computing, Beihang University",
+      "{ydou5,zliu213,psyu}@uic.edu,{l.sun,buptdyt}@bupt.edu.cn,penghao@act.buaa.edu.cn",
+      "ABSTRACT"
+    ]
+  },
+  {
+    "file": "Literature\\Old\\3442381.3449989.pdf",
+    "basename": "3442381.3449989.pdf",
+    "meta_title": "Pick and Choose: A GNN-based Imbalanced Learning Approach for Fraud Detection",
+    "meta_author": " Yang Liu1,2, Xiang Ao*1,2, Zidi Qin1,2, Jianfeng Chi3, Jinghua Feng3, Hao Yang3, Qing He1,2,4 ",
+    "doi": "10.1145/3442381.3449989",
+    "first_lines": [
+      "Pick and Choose: A GNN-based Imbalanced Learning Approach",
+      "for Fraud Detection",
+      "Yang Liu1,2, Xiang Ao∗1,2, Zidi Qin1,2, Jianfeng Chi3, Jinghua Feng3, Hao Yang3, Qing He1,2,4",
+      "1Key Lab of Intelligent Information Processing of Chinese Academy of Sciences (CAS),",
+      "Institute of Computing Technology, CAS, Beijing 100190, China",
+      "2University of Chinese Academy of Sciences, Beijing 100049, China",
+      "3Alibaba Group, Hangzhou, China",
+      "4Henan Institutes of Advanced Technology, Zhengzhou University, Zhengzhou 450052, China"
+    ]
+  },
+  {
+    "file": "Literature\\Old\\3677052.3698680.pdf",
+    "basename": "3677052.3698680.pdf",
+    "meta_title": "DySTAGE: Dynamic Graph Representation Learning for Asset Pricing via Spatio-Temporal Attention and Graph Encodings",
+    "meta_author": "",
+    "doi": "10.1145/3677052.3698680",
+    "first_lines": [
+      "DySTAGE: Dynamic Graph Representation Learning for Asset",
+      "Pricing via Spatio-Temporal Attention and Graph Encodings",
+      "Jingyi Gu∗",
+      "New Jersey Institute of Technology",
+      "US",
+      "jg95@njit.edu",
+      "Junyi Ye∗",
+      "New Jersey Institute of Technology"
+    ]
+  },
+  {
+    "file": "Literature\\Old\\Credit Card Fraud Detection based on TMR-GGNN.pdf",
+    "basename": "Credit Card Fraud Detection based on TMR-GGNN.pdf",
+    "meta_title": "TMR-GGNN: Credit Card Fraud Detection Based on Time-Aware Multi-Relational Guided Graph Neural Network",
+    "meta_author": "",
+    "doi": "10.1109/SSITCON66133.2025.11342193",
+    "first_lines": [
+      "2025 2 nd  International Conference on Software, Systems and Information Technology (SSITCON)",
+      "979-8-3315-2623-8/25/$31.00 ©2025 IEEE",
+      "TMR-GGNN: Credit Card Fraud Detection based",
+      "on Time-Aware Multi-Relational Guided Graph",
+      "Neural Network",
+      "1st  Rohit Tewari",
+      "Unysis",
+      "Fairfax, USA"
+    ]
+  },
+  {
+    "file": "Literature\\Old\\Detecting Credit Card Fraud via Heterogeneous GNN with Graph Attention.pdf",
+    "basename": "Detecting Credit Card Fraud via Heterogeneous GNN with Graph Attention.pdf",
+    "meta_title": "Paper Title (use style: paper title)",
+    "meta_author": "IEEE",
+    "doi": "",
+    "first_lines": [
+      "Detecting Credit Card Fraud via Heterogeneous",
+      "Graph Neural Networks with Graph Attention",
+      "Qiuwu  Sha",
+      "Columbia University",
+      "New York, USA",
+      "Tengda Tang",
+      "University of Michigan",
+      "Ann Arbor, USA"
+    ]
+  },
+  {
+    "file": "Literature\\Old\\GraphGuard_Contrastive_Self-Supervised_Learning_fo.pdf",
+    "basename": "GraphGuard_Contrastive_Self-Supervised_Learning_fo.pdf",
+    "meta_title": "",
+    "meta_author": "",
+    "doi": "",
+    "first_lines": [
+      "GraphGuard: Contrastive Self-Supervised Learning",
+      "for Credit-Card Fraud Detection in Multi-Relational Dynamic Graphs",
+      "Krist´ofer Reynisson1, Marco Schreyer1, Damian Borth1",
+      "1University of St. Gallen (HSG), St. Gallen, Switzerland",
+      "kristofer.reynisson@student.unisg.ch, marco.schreyer@unisg.ch, damian.borth@unisg.ch",
+      "Abstract",
+      "Credit card fraud has significant implications at both an in-",
+      "dividual and societal level, making effective prevention es-"
+    ]
+  },
+  {
+    "file": "Literature\\Old\\Graph_Representation_Learning_for_Fraud_Detection___MIDAS11.pdf",
+    "basename": "Graph_Representation_Learning_for_Fraud_Detection___MIDAS11.pdf",
+    "meta_title": "",
+    "meta_author": "",
+    "doi": "",
+    "first_lines": [
+      "Representation Learning in Graphs for",
+      "Credit Card Fraud Detection",
+      "Rafa¨ el Van Belle, Sandra Mitrovi´ c, and Jochen De Weerdt",
+      "KU Leuven",
+      "Research Center for Information Systems Engineering",
+      "Naamsestraat 69, 3000 Leuven, Belgium",
+      "rafael.vanbelle@kuleuven.be",
+      "Abstract. Representation learning in graphs has proven useful for many"
+    ]
+  },
+  {
+    "file": "Literature\\Old\\Quick survey of graph-based fraud detection methods.pdf",
+    "basename": "Quick survey of graph-based fraud detection methods.pdf",
+    "meta_title": "",
+    "meta_author": "",
+    "doi": "",
+    "first_lines": [
+      "arXiv:1910.11299v3  [cs.LG]  11 Jan 2021",
+      "Quick survey of graph-based fraud detection methods∗",
+      "Paul Irofti 1,2, Andrei Pătras , cu1, and Andra Băltoiu 2",
+      "1 Department of Computer Science, University of Bucharest, R omania",
+      "2 The Research Institute University of Bucharest (ICUB), Rom ania",
+      "Abstract. In general, anomaly detection is the problem of distinguish ing between",
+      "normal data samples with well deﬁned patterns or signatures and those that do not",
+      "conform to the expected proﬁles. Financial transactions, c ustomer reviews, social"
+    ]
+  },
+  {
+    "file": "Literature\\Old\\RiskSEA A Scalable Graph Embedding for Detecting On chain Fraudulent Activities on the Ethereum Blockchain.pdf",
+    "basename": "RiskSEA A Scalable Graph Embedding for Detecting On chain Fraudulent Activities on the Ethereum Blockchain.pdf",
+    "meta_title": "",
+    "meta_author": "",
+    "doi": "",
+    "first_lines": [
+      "RiskSEA : A Scalable Graph Embedding for Detecting On-chain",
+      "Fraudulent Activities on the Ethereum Blockchain",
+      "Ayush Agarwal*, Lv Lu, Arjun Maheswaran, Varsha Mahadevan and Bhaskar Krishnamachari",
+      "Machine Learning Team, Coinbase",
+      "Abstract— Like any other useful technology, cryptocurren-",
+      "cies are sometimes used for criminal activities. While transac-",
+      "tions are recorded on the blockchain, there exists a need for a",
+      "more rapid and scalable method to detect addresses associated"
+    ]
+  },
+  {
+    "file": "Literature\\Old\\Semi-supervised Credit Card Fraud Detection via Attribute-Driven Graph Representation.pdf",
+    "basename": "Semi-supervised Credit Card Fraud Detection via Attribute-Driven Graph Representation.pdf",
+    "meta_title": "",
+    "meta_author": "",
+    "doi": "",
+    "first_lines": [
+      "Semi-supervised Credit Card Fraud Detection via",
+      "Attribute-Driven Graph Representation",
+      "Sheng Xiang1, Mingzhi Zhu2, Dawei Cheng2,3*, Enxia Li1,",
+      "Ruihui Zhao4, Yi Ouyang4, Ling Chen1, Yefeng Zheng4",
+      "1Australian Artificial Intelligence Institute, University of Technology Sydney, Sydney, Australia",
+      "2Department of Computer Science and Technology, Tongji University, Shanghai, China",
+      "3Shanghai Artificial Intelligence Laboratory, Shanghai, China",
+      "4Tencent Jarvis Laboratory, Shenzhen, China"
+    ]
+  },
+  {
+    "file": "Literature\\Old\\ai-06-00069.pdf",
+    "basename": "ai-06-00069.pdf",
+    "meta_title": "LineMVGNN: Anti-Money Laundering with Line-Graph-Assisted Multi-View Graph Neural Networks",
+    "meta_author": "Chung-Hoo Poon, James Kwok, Calvin Chow and Jang-Hyeon Choi",
+    "doi": "10.3390/ai6040069",
+    "first_lines": [
+      "Academic Editor: Xianrong (Shawn)",
+      "Zheng",
+      "Received: 17 February 2025",
+      "Revised: 20 March 2025",
+      "Accepted: 28 March 2025",
+      "Published: 3 April 2025",
+      "Citation: Poon, C.-H.; Kwok, J.;",
+      "Chow, C.; Choi, J.-H. LineMVGNN:"
+    ]
+  },
+  {
+    "file": "Literature\\Old\\appliedmath-05-00131.pdf",
+    "basename": "appliedmath-05-00131.pdf",
+    "meta_title": "Detecting Imbalanced Credit Card Fraud via Hybrid Graph Attention and Variational Autoencoder Ensembles",
+    "meta_author": "Ibomoiye Domor Mienye, Ebenezer Esenogho and Cameron Modisane",
+    "doi": "10.3390/appliedmath5040131",
+    "first_lines": [
+      "Academic Editor: Takayuki Hibi",
+      "Received: 3 August 2025",
+      "Revised: 7 September 2025",
+      "Accepted: 16 September 2025",
+      "Published: 2 October 2025",
+      "Citation: Mienye, I.D.; Esenogho, E.;",
+      "Modisane, C. Detecting Imbalanced",
+      "Credit Card Fraud via Hybrid Graph"
+    ]
+  },
+  {
+    "file": "Literature\\Old\\computers-14-00120-v2.pdf",
+    "basename": "computers-14-00120-v2.pdf",
+    "meta_title": "FraudX AI: An Interpretable Machine Learning Framework for Credit Card Fraud Detection on Imbalanced Datasets",
+    "meta_author": "Nazerke Baisholan, J. Eric Dietz, Sergiy Gnatyuk, Mussa Turdalyuly, Eric T. Matson and Karlygash Baisholanova",
+    "doi": "10.3390/computers14040120",
+    "first_lines": [
+      "Academic Editor: Paolo Bellavista",
+      "Received: 10 February 2025",
+      "Revised: 21 March 2025",
+      "Accepted: 24 March 2025",
+      "Published: 25 March 2025",
+      "Citation: Baisholan, N.; Dietz, J.E.;",
+      "Gnatyuk, S.; Turdalyuly, M.; Matson,",
+      "E.T.; Baisholanova, K. FraudX AI: An"
+    ]
+  },
+  {
+    "file": "Literature\\Old\\jrevak,+AAAI_ChengD-87.pdf",
+    "basename": "jrevak,+AAAI_ChengD-87.pdf",
+    "meta_title": "Spatio-Temporal Attention-Based Neural Network for Credit Card Fraud Detection",
+    "meta_author": "Dawei Cheng,Sheng Xiang,Chencheng Shang,Yiyi Zhang,Fangzhou Yang,Liqing Zhang",
+    "doi": "",
+    "first_lines": [
+      "The Thirty-Fourth AAAI Conference on Artiﬁcial Intelligence (AAAI-20)",
+      "Spatio-Temporal Attention-Based",
+      "Neural Network for Credit Card Fraud Detection",
+      "Dawei Cheng, Sheng Xiang, Chencheng Shang,",
+      "Yiyi Zhang, Fangzhou Yang, Liqing Zhang∗",
+      "MoE Key Lab of Artiﬁcial Intelligence, Department of Computer Science and Engineering,",
+      "Shanghai Jiao Tong University, Shanghai, China",
+      "{dawei.cheng, yi95yi, laketiticaca}@sjtu.edu.cn, zhang-lq@cs.sjtu.edu.cn"
+    ]
+  },
+  {
+    "file": "Literature\\Old\\main.pdf",
+    "basename": "main.pdf",
+    "meta_title": "Feature engineering strategies for credit card fraud detection",
+    "meta_author": "Alejandro Correa Bahnsen",
+    "doi": "10.1016/j.eswa.2015.12.030",
+    "first_lines": [
+      "Expert Systems With Applications 51 (2016) 134–142",
+      "Contents lists available atScienceDirect",
+      "Expert Systems With Applications",
+      "journal homepage:www.elsevier.com/locate/eswa",
+      "Feature engineering strategies for credit card fraud detection",
+      "Alejandro Correa Bahnsen∗, Djamila Aouada, Aleksandar Stojanovic, Björn Ottersten",
+      "Interdisciplinary Centre for Security, Reliability and Trust, University of Luxembourg, Luxembourg",
+      "article info"
+    ]
+  },
+  {
+    "file": "Literature\\Old\\vanvlasselaer_dss2015.pdf",
+    "basename": "vanvlasselaer_dss2015.pdf",
+    "meta_title": "APATE: A novel approach for automated credit card transaction fraud detection using network-based extensions",
+    "meta_author": "",
+    "doi": "10.1016/j.dss.2015.04.013",
+    "first_lines": [
+      "APATE: A novel approach for automated credit card transaction fraud",
+      "detection using network-based extensions",
+      "Véronique Van Vlasselaera, Cristián Bravob,⁎, Olivier Caelenc,T i n aE l i a s s i - R a dd,L e m a nA k o g l ue,",
+      "Monique Snoecka, Bart Baesensa,f",
+      "a Department of Decision Sciences and Information Management, KU Leuven, Naamsestraat 69, B-3000 Leuven, Belgium",
+      "b Departamento de Ingeniería Industrial, Universidad de Talca, Curicó, Chile",
+      "c Fraud Risk Management Analytics, Worldline, Brussels, Belgium",
+      "d Department of Computer Science, Rutgers University, Piscataway, NJ, USA"
+    ]
+  }
+]

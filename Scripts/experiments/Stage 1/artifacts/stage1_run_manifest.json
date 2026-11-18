@@ -1,0 +1,120 @@
+{
+  "stage": "Stage 1 - Standalone Tabular LightGBM Baseline (v2, audit-hardened)",
+  "executed_at_utc": "2026-09-30T04:24:45+00:00",
+  "script_sha256": null,
+  "script_sha256_scope": "unavailable: notebook has no __file__",
+  "data_sha256": {
+    "train_transaction.csv": "3a5c83ab6b3cc13dcabe5ffa9f522307fd5f7f7b6e6f6a60c32284ca6283d642",
+    "train_identity.csv": "b63c725d8377be90a995268d97f347c17d456b95db45807adcf9f59cd603c37c"
+  },
+  "data_sha256_scope": "raw input file bytes; fingerprints only, not label-derived statistics",
+  "feature_ledger_sha256": "d2cbf3b245662cdc69cca24002135b9ea29e1f555e0a0657d5b0312e752ef496",
+  "dataset_rows": 590540,
+  "features_fitted": 371,
+  "categorical_features": 0,
+  "mean_ap": 0.5132107537321485,
+  "std_ap": 0.027996777821242644,
+  "mean_ap_calibrated": 0.4909990303263642,
+  "mean_recall_at_0p1_fpr": 0.2576887053397802,
+  "mean_loss_cost_rule": 431618.35528164107,
+  "acceptance_gate_vs_amount": "PASS",
+  "best_iterations": {
+    "1": 103,
+    "2": 134,
+    "3": 179
+  },
+  "frozen_oot_model_rounds": 216,
+  "oof_coverage_by_block": {
+    "1": 0.75,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0
+  },
+  "oof_missing_rows": 29527,
+  "oof_missing_fill_value": 0.028787211704541606,
+  "oof_prior_prevalence": 0.028787211704541606,
+  "oof_prior_scope": "Block 1 seed slice: df.loc[slices[0], CONFIG['TARGET_COLUMN']]; excludes OOT",
+  "oof_fill_validation": true,
+  "pooled_dev_oof_ap": 0.4703199878248824,
+  "importance_rank_corr": {
+    "gain_fold1": {
+      "gain_fold1": 1.0,
+      "gain_fold2": 0.88,
+      "gain_fold3": 0.8553
+    },
+    "gain_fold2": {
+      "gain_fold1": 0.88,
+      "gain_fold2": 1.0,
+      "gain_fold3": 0.9056
+    },
+    "gain_fold3": {
+      "gain_fold1": 0.8553,
+      "gain_fold2": 0.9056,
+      "gain_fold3": 1.0
+    }
+  },
+  "artifacts": {
+    "oof_predictions": "./artifacts/stage1_oof_predictions.csv",
+    "fold_results": "./artifacts/stage1_fold_results.csv",
+    "feature_importance": "./artifacts/stage1_feature_importance.csv",
+    "feature_audit": "./artifacts/stage1_feature_audit.csv",
+    "unstable_features": "./artifacts/stage1_unstable_features.csv",
+    "cohort_metrics": "./artifacts/stage1_cohort_metrics.csv",
+    "frozen_model": "./artifacts/stage1_frozen_model.txt"
+  },
+  "config": {
+    "SEED": 42,
+    "TIME_COLUMN": "TransactionDT",
+    "TARGET_COLUMN": "isFraud",
+    "ID_COLUMN": "TransactionID",
+    "AMOUNT_COLUMN": "TransactionAmt",
+    "N_BLOCKS": 5,
+    "DEV_BLOCKS": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "OOT_BLOCK": 5,
+    "SECONDS_PER_DAY": 86400,
+    "EMBARGO_SECONDS": 86400,
+    "EMBARGO_IN_FEATURE_PASS": false,
+    "INNER_VAL_FRAC": 0.2,
+    "MIN_STOP_ROWS": 5000,
+    "MIN_STOP_POSITIVES": 50,
+    "B1_SUBFOLDS": 4,
+    "FINAL_ROUNDS_RULE": "median",
+    "CALIBRATION": "isotonic",
+    "EXPORT_CALIBRATED_OOF": true,
+    "C_REVIEW": 10.0,
+    "C_FRICTION": 25.0,
+    "INVESTIGATION_CAPACITY": 0.01,
+    "N_BOOTSTRAP": 400,
+    "BOOTSTRAP_ALPHA": 0.05,
+    "ACCEPTANCE_DELTA": 0.005,
+    "LGB_PARAMS": {
+      "objective": "binary",
+      "metric": "average_precision",
+      "boosting_type": "gbdt",
+      "learning_rate": 0.03,
+      "num_leaves": 256,
+      "max_depth": -1,
+      "min_child_samples": 50,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 1,
+      "feature_fraction": 0.7,
+      "seed": 42,
+      "bagging_seed": 42,
+      "feature_fraction_seed": 42,
+      "data_random_seed": 42,
+      "deterministic": true,
+      "force_row_wise": true,
+      "n_jobs": -1,
+      "verbose": -1
+    },
+    "NUM_BOOST_ROUND": 2000,
+    "EARLY_STOPPING_ROUNDS": 50,
+    "OUTPUT_DIR": "./artifacts"
+  }
+}

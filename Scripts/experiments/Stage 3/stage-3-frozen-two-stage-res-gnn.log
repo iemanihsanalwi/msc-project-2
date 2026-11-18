@@ -1,0 +1,218 @@
+[{"stream_name":"stderr","time":6.028297288,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.028380088,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.028386739,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.028390445,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":6.594727448,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.594768156,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.594772371,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.594775201,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":14.159765924,"data":"[1] Resolving environment and loading raw data...\n"}
+,{"stream_name":"stdout","time":14.159851001,"data":"    Data directory: /kaggle/input/competitions/ieee-fraud-detection | Device: cuda\n"}
+,{"stream_name":"stdout","time":41.196699986,"data":"    Joining train_identity.csv via left join...\n"}
+,{"stream_name":"stdout","time":43.49093656,"data":"    Memory downcast [raw]: 1955.4 MB -\u003e 1044.7 MB (46.6% saved)\n"}
+,{"stream_name":"stdout","time":43.49100152,"data":"[2] Enforcing deterministic chronological sort and block construction...\n"}
+,{"stream_name":"stdout","time":49.575687177,"data":"    Block 5 OOT quarantine: PASSED (sealed; scored later, never trained on).\n"}
+,{"stream_name":"stdout","time":49.575730502,"data":"    Block profile (prevalence drift check):\n"}
+,{"stream_name":"stdout","time":49.575738887,"data":"                rows  fraud_rate  first_day  last_day\n"}
+,{"stream_name":"stdout","time":49.575744451,"data":"chrono_block                                         \n"}
+,{"stream_name":"stdout","time":49.575749711,"data":"1             118108    0.023927          0        25\n"}
+,{"stream_name":"stdout","time":49.575754775,"data":"2             118108    0.040065         25        63\n"}
+,{"stream_name":"stdout","time":49.575759902,"data":"3             118108    0.037508         63       100\n"}
+,{"stream_name":"stdout","time":49.575764968,"data":"4             118108    0.039041        100       140\n"}
+,{"stream_name":"stdout","time":49.575770224,"data":"5             118108    0.034409        140       181\n"}
+,{"stream_name":"stdout","time":49.738432077,"data":"[3] Loading feature-decision ledger and upstream stage artifacts...\n"}
+,{"stream_name":"stdout","time":49.73849055,"data":"    Loaded decisions ledger: /kaggle/input/notebooks/iemanihsan/ieee-cis-eda-leakage-audit/artifacts/feature_risk_table.csv\n"}
+,{"stream_name":"stdout","time":49.738498399,"data":"    Continuous features: 32 | V-columns: 339\n"}
+,{"stream_name":"stdout","time":53.469543238,"data":"    Stage 1 OOF: loaded 'stage1_prob_raw' from stage1_oof_predictions.csv | dev coverage 93.8% | OOT coverage 100.0%\n"}
+,{"stream_name":"stdout","time":53.469584886,"data":"    Mandatory Stage-1 gate: {\"artifact_available\": true, \"required_invalid_by_block\": {\"1\": 0, \"2\": 0, \"3\": 0, \"4\": 0, \"5\": 0}, \"required_invalid_rows\": 0, \"required_rows\": 561013, \"required_valid_rows\": 561013, \"scope\": \"all rows except first np.array_split(B1, B1_SUBFOLDS)[0]; includes later B1 slices, B2-B4 and sealed OOT\", \"seed_exempt_rows\": 29527, \"seed_unavailable_rows\": 29527, \"total_rows\": 590540}\n"}
+,{"stream_name":"stdout","time":55.503248119,"data":"    Stage 2 OOF: loaded 'stage2_prob_raw' from stage2_oof_predictions.csv | dev coverage 93.8% | OOT coverage 100.0%\n"}
+,{"stream_name":"stdout","time":55.50330636,"data":"    Stage 2 reference APs: {1: 0.496, 2: 0.4759, 3: 0.5384}\n"}
+,{"stream_name":"stdout","time":55.695697341,"data":"\n"}
+,{"stream_name":"stdout","time":55.695742284,"data":"========================================================================================\n"}
+,{"stream_name":"stdout","time":55.695750533,"data":"PASS A: EXPANDING CHRONOLOGICAL FORWARD VALIDATION (EMBARGOED EVALUATION)\n"}
+,{"stream_name":"stdout","time":55.695755283,"data":"========================================================================================\n"}
+,{"stream_name":"stdout","time":55.695761788,"data":"\n"}
+,{"stream_name":"stdout","time":55.695766462,"data":"--- Fold 1: train [1] -\u003e validate Block 2 ---\n"}
+,{"stream_name":"stdout","time":59.962533715,"data":"    [WARNING] Representation shift (fold_1): max |mean diff| 3.653 across 47 dims | 2 dim(s) \u003e 0.75\n"}
+,{"stream_name":"stdout","time":59.962583763,"data":"    V-PCA(15) explains 71.4% | Stage-1 logit coverage: train 75.0%, val 100.0%\n"}
+,{"stream_name":"stdout","time":61.820620953,"data":"      causality audit [fold1/card]: PASSED (STRICT) 20,000 nodes sampled (requested 20,000), lookback=2592000s, seed=53, 37,556 edges checked\n"}
+,{"stream_name":"stdout","time":62.436102083,"data":"      causality audit [fold1/device]: PASSED (STRICT) 20,000 nodes sampled (requested 20,000), lookback=2592000s, seed=54, 97,572 edges checked\n"}
+,{"stream_name":"stdout","time":62.436151687,"data":"    Tie policy STRICT: 4,059 same-second edges dropped, 1,597,209 kept (0.25% of candidates)\n"}
+,{"stream_name":"stdout","time":63.856321946,"data":"    Connectivity (train): card 45.5% | device 98.0% | any 98.8%\n"}
+,{"stream_name":"stdout","time":63.856361883,"data":"    Connectivity (val): card 59.4% | device 99.2% | any 99.6%\n"}
+,{"stream_name":"stdout","time":63.856368723,"data":"    Entity overlap train-\u003eval: card 32.4% | device 98.1%\n"}
+,{"stream_name":"stdout","time":68.570782795,"data":"      causality audit [fold1/null_card]: PASSED (STRICT) 20,000 nodes sampled (requested 20,000), lookback=2592000s, seed=55, 37,338 edges checked\n"}
+,{"stream_name":"stdout","time":70.176437769,"data":"    -- variant: REAL --\n"}
+,{"stream_name":"stdout","time":183.804237626,"data":"      real: seeds 3 | epochs [13, 8, 18] | inner AP 0.3845 +/- 0.0066\n"}
+,{"stream_name":"stdout","time":184.097851494,"data":"       AP 0.4939 | ROC-AUC 0.8568 | R@0.1%FPR 25.15% | connected 0.4955 / isolated 0.3288\n"}
+,{"stream_name":"stdout","time":184.097932555,"data":"       ECE_q 0.08348 -\u003e 0.01416 | cost-rule loss $629,988 -\u003e $438,596\n"}
+,{"stream_name":"stdout","time":184.097941919,"data":"    -- variant: NULL --\n"}
+,{"stream_name":"stdout","time":297.78643207,"data":"      null: seeds 3 | epochs [17, 8, 18] | inner AP 0.3626 +/- 0.0074\n"}
+,{"stream_name":"stdout","time":298.196792112,"data":"       AP 0.4904 | ROC-AUC 0.8577 | R@0.1%FPR 25.13% | connected 0.4924 / isolated 0.3097\n"}
+,{"stream_name":"stdout","time":298.196835331,"data":"       ECE_q 0.07900 -\u003e 0.01598 | cost-rule loss $615,202 -\u003e $441,851\n"}
+,{"stream_name":"stdout","time":298.196840422,"data":"    -- variant: NO_GRAPH --\n"}
+,{"stream_name":"stdout","time":391.218107458,"data":"      no_graph: seeds 3 | epochs [13, 2, 18] | inner AP 0.3768 +/- 0.0137\n"}
+,{"stream_name":"stdout","time":391.425282051,"data":"       AP 0.5041 | ROC-AUC 0.8674 | R@0.1%FPR 26.16% | connected 0.5060 / isolated 0.2659\n"}
+,{"stream_name":"stdout","time":391.425338968,"data":"       ECE_q 0.07835 -\u003e 0.01667 | cost-rule loss $602,946 -\u003e $443,400\n"}
+,{"stream_name":"stdout","time":391.425385516,"data":"\n"}
+,{"stream_name":"stdout","time":391.425390323,"data":"--- Fold 2: train [1, 2] -\u003e validate Block 3 ---\n"}
+,{"stream_name":"stdout","time":397.797829494,"data":"    [WARNING] Representation shift (fold_2): max |mean diff| 2.336 across 47 dims | 2 dim(s) \u003e 0.75\n"}
+,{"stream_name":"stdout","time":397.797887034,"data":"    V-PCA(15) explains 69.1% | Stage-1 logit coverage: train 87.5%, val 100.0%\n"}
+,{"stream_name":"stdout","time":400.706455753,"data":"      causality audit [fold2/card]: PASSED (STRICT) 20,000 nodes sampled (requested 20,000), lookback=2592000s, seed=63, 38,892 edges checked\n"}
+,{"stream_name":"stdout","time":400.986484811,"data":"      causality audit [fold2/device]: PASSED (STRICT) 20,000 nodes sampled (requested 20,000), lookback=2592000s, seed=64, 97,571 edges checked\n"}
+,{"stream_name":"stdout","time":400.986528668,"data":"    Tie policy STRICT: 6,770 same-second edges dropped, 2,417,285 kept (0.28% of candidates)\n"}
+,{"stream_name":"stdout","time":403.645433701,"data":"    Connectivity (train): card 52.5% | device 98.6% | any 99.2%\n"}
+,{"stream_name":"stdout","time":403.645488693,"data":"    Connectivity (val): card 58.1% | device 99.0% | any 99.5%\n"}
+,{"stream_name":"stdout","time":403.645497918,"data":"    Entity overlap train-\u003eval: card 35.1% | device 96.8%\n"}
+,{"stream_name":"stdout","time":410.073140024,"data":"      causality audit [fold2/null_card]: PASSED (STRICT) 20,000 nodes sampled (requested 20,000), lookback=2592000s, seed=65, 38,703 edges checked\n"}
+,{"stream_name":"stdout","time":412.991706542,"data":"    -- variant: REAL --\n"}
+,{"stream_name":"stdout","time":585.688685041,"data":"      real: seeds 3 | epochs [8, 11, 9] | inner AP 0.5344 +/- 0.0046\n"}
+,{"stream_name":"stdout","time":586.055074308,"data":"       AP 0.4870 | ROC-AUC 0.8631 | R@0.1%FPR 23.31% | connected 0.4850 / isolated 0.6694\n"}
+,{"stream_name":"stdout","time":586.055125565,"data":"       ECE_q 0.08187 -\u003e 0.00655 | cost-rule loss $609,436 -\u003e $397,207\n"}
+,{"stream_name":"stdout","time":586.055151581,"data":"    -- variant: NULL --\n"}
+,{"stream_name":"stdout","time":757.160299259,"data":"      null: seeds 3 | epochs [8, 8, 12] | inner AP 0.5281 +/- 0.0022\n"}
+,{"stream_name":"stdout","time":757.391953203,"data":"       AP 0.4678 | ROC-AUC 0.8601 | R@0.1%FPR 21.84% | connected 0.4666 / isolated 0.6087\n"}
+,{"stream_name":"stdout","time":757.392014597,"data":"       ECE_q 0.08319 -\u003e 0.00617 | cost-rule loss $616,155 -\u003e $399,396\n"}
+,{"stream_name":"stdout","time":757.392023056,"data":"    -- variant: NO_GRAPH --\n"}
+,{"stream_name":"stdout","time":903.138333705,"data":"      no_graph: seeds 3 | epochs [4, 11, 7] | inner AP 0.5314 +/- 0.0029\n"}
+,{"stream_name":"stdout","time":903.345815211,"data":"       AP 0.4835 | ROC-AUC 0.8636 | R@0.1%FPR 22.86% | connected 0.4829 / isolated 0.6020\n"}
+,{"stream_name":"stdout","time":903.34585213,"data":"       ECE_q 0.08210 -\u003e 0.00723 | cost-rule loss $607,515 -\u003e $397,831\n"}
+,{"stream_name":"stdout","time":903.345858577,"data":"\n"}
+,{"stream_name":"stdout","time":903.345863336,"data":"--- Fold 3: train [1, 2, 3] -\u003e validate Block 4 ---\n"}
+,{"stream_name":"stdout","time":911.64204789,"data":"    [WARNING] Representation shift (fold_3): max |mean diff| 1.493 across 47 dims | 2 dim(s) \u003e 0.75\n"}
+,{"stream_name":"stdout","time":911.642102889,"data":"    V-PCA(15) explains 67.9% | Stage-1 logit coverage: train 91.7%, val 100.0%\n"}
+,{"stream_name":"stdout","time":915.551901007,"data":"      causality audit [fold3/card]: PASSED (STRICT) 20,000 nodes sampled (requested 20,000), lookback=2592000s, seed=73, 40,131 edges checked\n"}
+,{"stream_name":"stdout","time":915.850247565,"data":"      causality audit [fold3/device]: PASSED (STRICT) 20,000 nodes sampled (requested 20,000), lookback=2592000s, seed=74, 97,577 edges checked\n"}
+,{"stream_name":"stdout","time":915.850290583,"data":"    Tie policy STRICT: 8,972 same-second edges dropped, 3,246,153 kept (0.28% of candidates)\n"}
+,{"stream_name":"stdout","time":919.313990532,"data":"    Connectivity (train): card 54.3% | device 98.7% | any 99.3%\n"}
+,{"stream_name":"stdout","time":919.314033441,"data":"    Connectivity (val): card 59.9% | device 98.7% | any 99.4%\n"}
+,{"stream_name":"stdout","time":919.541666056,"data":"    Entity overlap train-\u003eval: card 41.4% | device 92.1%\n"}
+,{"stream_name":"stdout","time":927.89197211,"data":"      causality audit [fold3/null_card]: PASSED (STRICT) 20,000 nodes sampled (requested 20,000), lookback=2592000s, seed=75, 40,899 edges checked\n"}
+,{"stream_name":"stdout","time":931.810104066,"data":"    -- variant: REAL --\n"}
+,{"stream_name":"stdout","time":1093.299125524,"data":"      real: seeds 3 | epochs [5, 4, 4] | inner AP 0.4551 +/- 0.0011\n"}
+,{"stream_name":"stdout","time":1093.650112582,"data":"       AP 0.5344 | ROC-AUC 0.8894 | R@0.1%FPR 24.64% | connected 0.5341 / isolated 0.5728\n"}
+,{"stream_name":"stdout","time":1093.650160557,"data":"       ECE_q 0.09037 -\u003e 0.00281 | cost-rule loss $601,978 -\u003e $416,981\n"}
+,{"stream_name":"stdout","time":1093.650168575,"data":"    -- variant: NULL --\n"}
+,{"stream_name":"stdout","time":1267.119016136,"data":"      null: seeds 3 | epochs [7, 4, 4] | inner AP 0.4479 +/- 0.0038\n"}
+,{"stream_name":"stdout","time":1267.327427075,"data":"       AP 0.5307 | ROC-AUC 0.8887 | R@0.1%FPR 25.14% | connected 0.5305 / isolated 0.5570\n"}
+,{"stream_name":"stdout","time":1267.327466835,"data":"       ECE_q 0.09188 -\u003e 0.00260 | cost-rule loss $605,181 -\u003e $418,118\n"}
+,{"stream_name":"stdout","time":1267.327474953,"data":"    -- variant: NO_GRAPH --\n"}
+,{"stream_name":"stdout","time":1415.976107962,"data":"      no_graph: seeds 3 | epochs [2, 6, 3] | inner AP 0.4505 +/- 0.0043\n"}
+,{"stream_name":"stdout","time":1416.16534006,"data":"       AP 0.5365 | ROC-AUC 0.8903 | R@0.1%FPR 25.52% | connected 0.5365 / isolated 0.5449\n"}
+,{"stream_name":"stdout","time":1416.16540115,"data":"       ECE_q 0.09185 -\u003e 0.00267 | cost-rule loss $608,662 -\u003e $402,639\n"}
+,{"stream_name":"stdout","time":1416.197394819,"data":"\n"}
+,{"stream_name":"stdout","time":1416.197432196,"data":"[4] Generating Stage-3 scores for the remaining blocks (feature-generation pass)...\n"}
+,{"stream_name":"stdout","time":1416.39931139,"data":"    Block 1: expanding sub-folds K=4 (sizes [29527, 29527, 29527, 29527]) -\u003e 75% coverage vs. 50% under the v1 half-split.\n"}
+,{"stream_name":"stdout","time":1416.399351777,"data":"    Each sub-fold early-stops on its own disjoint tail slice (v1 stopped on its training set).\n"}
+,{"stream_name":"stdout","time":1418.29690985,"data":"      causality audit [b1_subfold1/card]: PASSED (STRICT) 20,000 nodes sampled (requested 20,000), lookback=2592000s, seed=1053, 21,505 edges checked\n"}
+,{"stream_name":"stdout","time":1418.595131449,"data":"      causality audit [b1_subfold1/device]: PASSED (STRICT) 20,000 nodes sampled (requested 20,000), lookback=2592000s, seed=1054, 96,247 edges checked\n"}
+,{"stream_name":"stdout","time":1437.7836012,"data":"      b1_subfold_1: seeds 3 | epochs [8, 3, 13] | inner AP 0.3928 +/- 0.0215\n"}
+,{"stream_name":"stdout","time":1437.783657662,"data":"      sub-fold 1: train 29,527 -\u003e score 29,527\n"}
+,{"stream_name":"stdout","time":1440.710123522,"data":"      causality audit [b1_subfold2/card]: PASSED (STRICT) 20,000 nodes sampled (requested 20,000), lookback=2592000s, seed=1063, 26,879 edges checked\n"}
+,{"stream_name":"stdout","time":1441.203336101,"data":"      causality audit [b1_subfold2/device]: PASSED (STRICT) 20,000 nodes sampled (requested 20,000), lookback=2592000s, seed=1064, 96,258 edges checked\n"}
+,{"stream_name":"stdout","time":1504.513283371,"data":"      b1_subfold_2: seeds 3 | epochs [19, 19, 17] | inner AP 0.3738 +/- 0.0231\n"}
+,{"stream_name":"stdout","time":1504.513355662,"data":"      sub-fold 2: train 59,054 -\u003e score 29,527\n"}
+,{"stream_name":"stdout","time":1508.180080026,"data":"      causality audit [b1_subfold3/card]: PASSED (STRICT) 20,000 nodes sampled (requested 20,000), lookback=2592000s, seed=1073, 30,390 edges checked\n"}
+,{"stream_name":"stdout","time":1508.481996373,"data":"      causality audit [b1_subfold3/device]: PASSED (STRICT) 20,000 nodes sampled (requested 20,000), lookback=2592000s, seed=1074, 96,738 edges checked\n"}
+,{"stream_name":"stdout","time":1576.680013134,"data":"      b1_subfold_3: seeds 3 | epochs [18, 4, 11] | inner AP 0.5304 +/- 0.0169\n"}
+,{"stream_name":"stdout","time":1576.680060644,"data":"      sub-fold 3: train 88,581 -\u003e score 29,527\n"}
+,{"stream_name":"stdout","time":1576.680069142,"data":"      slice 0 (29,527 rows) intentionally unscored — no prior data exists. Flagged, not silently NaN.\n"}
+,{"stream_name":"stdout","time":1576.680075064,"data":"      Block 1 tie policy STRICT: 4,119 same-second edges dropped.\n"}
+,{"stream_name":"stdout","time":1576.68008017,"data":"    Block 5 (sealed OOT): fitting frozen production model on Blocks 1-4...\n"}
+,{"stream_name":"stdout","time":1587.832027932,"data":"    [WARNING] Representation shift (frozen_oot): max |mean diff| 9.564 across 47 dims | 12 dim(s) \u003e 0.75\n"}
+,{"stream_name":"stdout","time":1587.832093302,"data":"    OOT Stage-1 logit coverage: 100.0%\n"}
+,{"stream_name":"stdout","time":1592.865918938,"data":"      causality audit [frozen_oot/card]: PASSED (STRICT) 20,000 nodes sampled (requested 20,000), lookback=2592000s, seed=2043, 39,570 edges checked\n"}
+,{"stream_name":"stdout","time":1593.167514604,"data":"      causality audit [frozen_oot/device]: PASSED (STRICT) 20,000 nodes sampled (requested 20,000), lookback=2592000s, seed=2044, 97,598 edges checked\n"}
+,{"stream_name":"stdout","time":1593.167564592,"data":"    Frozen-OOT tie policy STRICT: 10,821 same-second edges dropped.\n"}
+,{"stream_name":"stdout","time":1807.174133773,"data":"      frozen_oot: seeds 3 | epochs [7, 2, 5] | inner AP 0.5441 +/- 0.0039\n"}
+,{"stream_name":"stdout","time":1807.174208038,"data":"      Scored 118,108 OOT rows. OOT target NOT read; no OOT metric is computed in Stage 3.\n"}
+,{"stream_name":"stdout","time":1807.415454418,"data":"\n"}
+,{"stream_name":"stdout","time":1807.415492759,"data":"[5] Missingness policy: 29,527 unscored rows filled with seed-slice prior 0.02879 and flagged.\n"}
+,{"stream_name":"stdout","time":1807.415499592,"data":"    Never fill with 0.0 — that asserts 'certainly legitimate', which is false and would distort any downstream aggregation.\n"}
+,{"stream_name":"stdout","time":1810.631910755,"data":"    Saved: ./artifacts/stage3_oof_predictions.csv\n"}
+,{"stream_name":"stdout","time":1810.631949771,"data":"    Stage-3 score coverage by block:\n"}
+,{"stream_name":"stdout","time":1810.631957224,"data":"      Block 1: 75.0%\n"}
+,{"stream_name":"stdout","time":1810.631962438,"data":"      Block 2: 100.0%\n"}
+,{"stream_name":"stdout","time":1810.631967,"data":"      Block 3: 100.0%\n"}
+,{"stream_name":"stdout","time":1810.631972003,"data":"      Block 4: 100.0%\n"}
+,{"stream_name":"stdout","time":1810.631976472,"data":"      Block 5: 100.0% (Sealed OOT — frozen model)\n"}
+,{"stream_name":"stdout","time":1810.821164341,"data":"\n"}
+,{"stream_name":"stdout","time":1810.821222062,"data":"[6] Executing paired bootstrap hypothesis tests...\n"}
+,{"stream_name":"stdout","time":2254.97497478,"data":"Stage exit decision: DO_NOT_ADVANCE_GRAPH_ARM — delta_AP below materiality threshold\n"}
+,{"stream_name":"stdout","time":2254.975020174,"data":"\n"}
+,{"stream_name":"stdout","time":2254.975028124,"data":"============================================================================================================================================\n"}
+,{"stream_name":"stdout","time":2254.975033438,"data":"STAGE 3 FROZEN TWO-STAGE RES-GNN — EXPANDING FORWARD VALIDATION REPORT (EMBARGOED)\n"}
+,{"stream_name":"stdout","time":2254.975039288,"data":"============================================================================================================================================\n"}
+,{"stream_name":"stdout","time":2254.975045068,"data":" variant  fold  val_block  n_seeds  n_val       AP  AP_calibrated  AP_connected  AP_isolated  AP_new_entity  AP_seen_entity  connected_share  card_overlap_rate  ROC_AUC      ECE  ECE_quantile  ECE_calibrated  Recall@0.1%FPR  Recall@1.0%FPR  Prec@1.0%cap  Loss_no_model  Loss_cost_rule  Loss_cost_rule_calibrated\n"}
+,{"stream_name":"stdout","time":2254.975050938,"data":"    real     1          2        3 114488 0.493879       0.470235      0.495514     0.328837       0.517925        0.486446         0.995790           0.323517 0.856803 0.087026      0.083483        0.014320        0.251507        0.390396      0.937937  642186.539124   629987.502052              438595.820259\n"}
+,{"stream_name":"stdout","time":2254.975055936,"data":"    null     1          2        3 114488 0.490449       0.468263      0.492392     0.309691       0.517796        0.484749         0.995790           0.323517 0.857665 0.084375      0.078996        0.016003        0.251292        0.389750      0.932692  642186.539124   615202.418083              441851.013319\n"}
+,{"stream_name":"stdout","time":2254.97506098,"data":"no_graph     1          2        3 114488 0.504059       0.466251      0.506042     0.265921       0.530212        0.496029         0.995790           0.323517 0.867411 0.083118      0.078350        0.016734        0.261628        0.395349      0.944056  642186.539124   602946.275084              443400.499284\n"}
+,{"stream_name":"stdout","time":2254.975066321,"data":"    real     2          3        3 114355 0.486967       0.473533      0.485025     0.669401       0.542262        0.464009         0.994727           0.350738 0.863116 0.087110      0.081865        0.005270        0.233065        0.403837      0.891514  622400.308933   609435.765794              397207.382013\n"}
+,{"stream_name":"stdout","time":2254.975073608,"data":"    null     2          3        3 114355 0.467789       0.456858      0.466563     0.608701       0.527763        0.443451         0.994727           0.350738 0.860063 0.088411      0.083189        0.004752        0.218380        0.393415      0.870516  622400.308933   616155.497867              399396.274993\n"}
+,{"stream_name":"stdout","time":2254.975079085,"data":"no_graph     2          3        3 114355 0.483505       0.469605      0.482947     0.602034       0.539001        0.459238         0.994727           0.350738 0.863606 0.086543      0.082102        0.005536        0.228565        0.401232      0.886264  622400.308933   607514.994884              397831.144987\n"}
+,{"stream_name":"stdout","time":2254.975084558,"data":"    real     3          4        3 115420 0.534382       0.517105      0.534071     0.572804       0.559193        0.522264         0.993883           0.413859 0.889444 0.094933      0.090370        0.003933        0.246358        0.439514      0.913345  780690.530868   601977.985716              416980.686950\n"}
+,{"stream_name":"stdout","time":2254.975098392,"data":"    null     3          4        3 115420 0.530720       0.509393      0.530542     0.557037       0.554589        0.519419         0.993883           0.413859 0.888679 0.096794      0.091878        0.003854        0.251435        0.436865      0.915945  780690.530868   605181.470710              418117.586961\n"}
+,{"stream_name":"stdout","time":2254.975102998,"data":"no_graph     3          4        3 115420 0.536499       0.517856      0.536527     0.544935       0.558857        0.525498         0.993883           0.413859 0.890272 0.095873      0.091850        0.004006        0.255188        0.437307      0.920277  780690.530868   608662.188720              402638.890873\n"}
+,{"stream_name":"stdout","time":2254.97510791,"data":"\n"}
+,{"stream_name":"stdout","time":2254.975111244,"data":"--- Mean across expanding folds, by variant ---\n"}
+,{"stream_name":"stdout","time":2254.975115218,"data":" variant     AP  AP_sd_across_folds  seed_sd_within_fold  AP_calibrated  R@0.1%FPR  ECE_q  ECE_q_cal  Loss_cost_rule_cal\n"}
+,{"stream_name":"stdout","time":2254.975119489,"data":"    real 0.5051              0.0256               0.0041         0.4870     0.2436 0.0852     0.0078         417594.6297\n"}
+,{"stream_name":"stdout","time":2254.975123437,"data":"    null 0.4963              0.0319               0.0044         0.4782     0.2404 0.0847     0.0083         419788.2918\n"}
+,{"stream_name":"stdout","time":2254.975127864,"data":"no_graph 0.5080              0.0267               0.0070         0.4846     0.2485 0.0841     0.0089         414623.5117\n"}
+,{"stream_name":"stdout","time":2254.975132123,"data":"\n"}
+,{"stream_name":"stdout","time":2254.975135648,"data":"Fraud base rate (random-ranker AP floor): 0.0350\n"}
+,{"stream_name":"stdout","time":2254.975139392,"data":"Seed-to-seed inner-AP sd (REAL variant):  0.0041\n"}
+,{"stream_name":"stdout","time":2254.975143413,"data":"  Any confirmatory delta smaller than roughly this magnitude is not distinguishable from initialisation noise.\n"}
+,{"stream_name":"stdout","time":2254.975147331,"data":"\n"}
+,{"stream_name":"stdout","time":2254.975150456,"data":"Stage 2 mean AP [CROSS-RUN reference]: 0.5034\n"}
+,{"stream_name":"stdout","time":2254.975154116,"data":"Stage 3 real mean AP:                 0.5051\n"}
+,{"stream_name":"stdout","time":2254.975157739,"data":"Point-estimate difference:            +0.0017\n"}
+,{"stream_name":"stdout","time":2254.975161036,"data":"  Cross-run point estimates are NOT evidence. Use H2a/N2 for the claim.\n"}
+,{"stream_name":"stdout","time":2254.975165492,"data":"\n"}
+,{"stream_name":"stdout","time":2254.975169098,"data":"--------------------------------------------------------------------------------------------------------------------------------------------\n"}
+,{"stream_name":"stdout","time":2254.975187715,"data":"HYPOTHESIS TESTS — PAIRED BOOTSTRAP, BENJAMINI-HOCHBERG FDR @ 0.05\n"}
+,{"stream_name":"stdout","time":2254.975194344,"data":"--------------------------------------------------------------------------------------------------------------------------------------------\n"}
+,{"stream_name":"stdout","time":2254.975198396,"data":"Test                                         Scope                       N   Delta AP                 95% CI       p   p_adj  Verdict\n"}
+,{"stream_name":"stdout","time":2254.975202575,"data":"H2a Message Passing (Real - NoGraph)         fold_1                 114488    -0.0102     [-0.0133, -0.0070]  0.0025  0.0050  REAL BUT \u003c THRESH\n"}
+,{"stream_name":"stdout","time":2254.975207168,"data":"H2a Message Passing (Real - NoGraph)         fold_2                 114355    +0.0035     [+0.0005, +0.0064]  0.0150  0.0200  REAL BUT \u003c THRESH\n"}
+,{"stream_name":"stdout","time":2254.975211288,"data":"H2a Message Passing (Real - NoGraph)         fold_3                 115420    -0.0021     [-0.0044, +0.0006]  0.1150  0.1150  NOT SUPPORTED\n"}
+,{"stream_name":"stdout","time":2254.975219908,"data":"H2a Message Passing (Real - NoGraph)         pooled_dev (B2-B4)     354324    -0.0024     [-0.0043, -0.0007]  0.0050  0.0075  REAL BUT \u003c THRESH\n"}
+,{"stream_name":"stdout","time":2254.975224004,"data":"H2b Connected Nodes Only (Real - NoGraph)    fold_1                  72457    -0.0096     [-0.0138, -0.0054]  0.0025  0.0050  REAL BUT \u003c THRESH\n"}
+,{"stream_name":"stdout","time":2254.975228017,"data":"H2b Connected Nodes Only (Real - NoGraph)    fold_2                  74333    +0.0048     [+0.0010, +0.0084]  0.0050  0.0075  REAL BUT \u003c THRESH\n"}
+,{"stream_name":"stdout","time":2254.9752321,"data":"H2b Connected Nodes Only (Real - NoGraph)    fold_3                  79098    -0.0032     [-0.0070, +0.0002]  0.0550  0.0660  NOT SUPPORTED\n"}
+,{"stream_name":"stdout","time":2254.975236736,"data":"H2b Connected Nodes Only (Real - NoGraph)    pooled_dev (B2-B4)     232333    -0.0038     [-0.0061, -0.0011]  0.0025  0.0050  REAL BUT \u003c THRESH\n"}
+,{"stream_name":"stdout","time":2254.975240857,"data":"N2  Time-Matched Predecessors (Real - Null)  fold_1                 114488    +0.0034     [-0.0001, +0.0067]  0.0650  0.0709  NOT SUPPORTED\n"}
+,{"stream_name":"stdout","time":2254.975244896,"data":"N2  Time-Matched Predecessors (Real - Null)  fold_2                 114355    +0.0192     [+0.0138, +0.0250]  0.0025  0.0050  SUPPORTED\n"}
+,{"stream_name":"stdout","time":2254.975248995,"data":"N2  Time-Matched Predecessors (Real - Null)  fold_3                 115420    +0.0037     [+0.0010, +0.0063]  0.0025  0.0050  REAL BUT \u003c THRESH\n"}
+,{"stream_name":"stdout","time":2254.975253036,"data":"N2  Time-Matched Predecessors (Real - Null)  pooled_dev (B2-B4)     354324    +0.0083     [+0.0056, +0.0107]  0.0025  0.0050  SUPPORTED\n"}
+,{"stream_name":"stdout","time":2254.97525701,"data":"H2  S3 - S2 [CROSS-RUN]                      fold_1                 114488    -0.0021     [-0.0090, +0.0049]  0.5150       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":2254.975261135,"data":"H2  S3 - S2 [CROSS-RUN]                      fold_2                 114355    +0.0111     [+0.0051, +0.0176]  0.0025       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":2254.97527144,"data":"H2  S3 - S2 [CROSS-RUN]                      fold_3                 115420    -0.0040     [-0.0100, +0.0017]  0.2050       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":2254.975275753,"data":"H2  S3 - S2 [CROSS-RUN]                      pooled_dev (B2-B4)     354324    +0.0318     [+0.0275, +0.0363]  0.0025       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":2254.975280099,"data":"R1  S3 - S1 [CROSS-RUN]                      fold_1                 114488    -0.0315     [-0.0381, -0.0254]  0.0025       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":2254.975284007,"data":"R1  S3 - S1 [CROSS-RUN]                      fold_2                 114355    +0.0058     [+0.0010, +0.0106]  0.0350       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":2254.975288168,"data":"R1  S3 - S1 [CROSS-RUN]                      fold_3                 115420    +0.0014     [-0.0032, +0.0062]  0.5150       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":2254.975292156,"data":"R1  S3 - S1 [CROSS-RUN]                      pooled_dev (B2-B4)     354324    -0.0070     [-0.0102, -0.0035]  0.0025       —  EXPLORATORY\n"}
+,{"stream_name":"stdout","time":2254.975296151,"data":"\n"}
+,{"stream_name":"stdout","time":2254.975300018,"data":"Decision rule: SUPPORTED requires BH-adjusted p \u003c= 0.05 AND delta AP \u003e= 0.005.\n"}
+,{"stream_name":"stdout","time":2254.975304126,"data":"Tests marked [CROSS-RUN] are EXPLORATORY: they compare against separately\n"}
+,{"stream_name":"stdout","time":2254.975311226,"data":"executed stages and confound model family with run configuration. They are\n"}
+,{"stream_name":"stdout","time":2254.975315334,"data":"excluded from the FDR family and carry no confirmatory weight.\n"}
+,{"stream_name":"stdout","time":2254.97531917,"data":"\n"}
+,{"stream_name":"stdout","time":2254.97532247,"data":"--- Diagnostics ---\n"}
+,{"stream_name":"stdout","time":2254.975329419,"data":" fold  val_block  connectivity_train  connectivity_val  card_overlap_rate  device_overlap_rate  share_first_seen_card  stage1_logit_coverage_val  pca_explained  strict_time_causality  card_tie_edges_skipped  device_tie_edges_skipped  card_edges_kept  device_edges_kept                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   predecessor_audits  shift_max_shift  shift_n_shifted_dims\n"}
+,{"stream_name":"stdout","time":2254.975337088,"data":"    1          2            0.988223          0.995809           0.323517             0.980704               0.368696                        1.0       0.714056                   True                      11                      4048           446270            1150939 [{\"edges_checked\": 37556, \"label\": \"fold1/card\", \"lookback_seconds\": 2592000, \"mode\": \"STRICT\", \"nodes_checked\": 20000, \"requested_sample\": 20000, \"seed\": 53, \"tie_edges\": 0}, {\"edges_checked\": 97572, \"label\": \"fold1/device\", \"lookback_seconds\": 2592000, \"mode\": \"STRICT\", \"nodes_checked\": 20000, \"requested_sample\": 20000, \"seed\": 54, \"tie_edges\": 0}, {\"edges_checked\": 37338, \"label\": \"fold1/null_card\", \"lookback_seconds\": 2592000, \"mode\": \"STRICT\", \"nodes_checked\": 20000, \"requested_sample\": 20000, \"seed\": 55, \"tie_edges\": 0}]         3.652886                     2\n"}
+,{"stream_name":"stdout","time":2254.975346729,"data":"    2          3            0.992016          0.994683           0.350738             0.967606               0.348715                        1.0       0.691474                   True                      75                      6695           687381            1729904 [{\"edges_checked\": 38892, \"label\": \"fold2/card\", \"lookback_seconds\": 2592000, \"mode\": \"STRICT\", \"nodes_checked\": 20000, \"requested_sample\": 20000, \"seed\": 63, \"tie_edges\": 0}, {\"edges_checked\": 97571, \"label\": \"fold2/device\", \"lookback_seconds\": 2592000, \"mode\": \"STRICT\", \"nodes_checked\": 20000, \"requested_sample\": 20000, \"seed\": 64, \"tie_edges\": 0}, {\"edges_checked\": 38703, \"label\": \"fold2/null_card\", \"lookback_seconds\": 2592000, \"mode\": \"STRICT\", \"nodes_checked\": 20000, \"requested_sample\": 20000, \"seed\": 65, \"tie_edges\": 0}]         2.335949                     2\n"}
+,{"stream_name":"stdout","time":2254.975355254,"data":"    3          4            0.992905          0.993836           0.413859             0.920539               0.315466                        1.0       0.678725                   True                     111                      8861           940077            2306076 [{\"edges_checked\": 40131, \"label\": \"fold3/card\", \"lookback_seconds\": 2592000, \"mode\": \"STRICT\", \"nodes_checked\": 20000, \"requested_sample\": 20000, \"seed\": 73, \"tie_edges\": 0}, {\"edges_checked\": 97577, \"label\": \"fold3/device\", \"lookback_seconds\": 2592000, \"mode\": \"STRICT\", \"nodes_checked\": 20000, \"requested_sample\": 20000, \"seed\": 74, \"tie_edges\": 0}, {\"edges_checked\": 40899, \"label\": \"fold3/null_card\", \"lookback_seconds\": 2592000, \"mode\": \"STRICT\", \"nodes_checked\": 20000, \"requested_sample\": 20000, \"seed\": 75, \"tie_edges\": 0}]         1.492784                     2\n"}
+,{"stream_name":"stdout","time":2254.9753669,"data":"\n"}
+,{"stream_name":"stdout","time":2254.97537058,"data":"Artifacts written to ./artifacts/\n"}
+,{"stream_name":"stdout","time":2254.975374319,"data":"Stage 3 complete. Block 5 is scored, sealed, and unevaluated by design — reserved for the final joint-model comparison.\n"}
+,{"stream_name":"stderr","time":2260.066904895,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":2260.066940123,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":2260.212712344,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":2260.212767087,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":2260.865134098,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":2261.170611342,"data":"[NbConvertApp] Writing 158125 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":2263.608860536,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":2264.76809788,"data":"[NbConvertApp] Writing 768566 bytes to __results__.html\n"}
+]

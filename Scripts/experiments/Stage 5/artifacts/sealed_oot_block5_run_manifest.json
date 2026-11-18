@@ -1,0 +1,234 @@
+{
+  "evaluation_stage": "Sealed Out-Of-Time (OOT) Block 5 Benchmark",
+  "executed_at_utc": "2026-10-02T07:32:29+00:00",
+  "code_version": "thesis-oot-block5-refined-2.0.0",
+  "hardware_device": "cuda",
+  "oot_rows_total": 118108,
+  "oot_rows_embargoed_out": 2997,
+  "oot_rows_evaluated": 115111,
+  "fraud_prevalence_oot": 0.03413227232844819,
+  "reference_baseline_stage": "1 - Tabular GBDT",
+  "causality_audits": [
+    {
+      "label": "dev -> all OOT",
+      "time_column": "TransactionDT",
+      "operator": "<",
+      "n_train": 472432,
+      "n_score": 118108,
+      "train_max": 12192842,
+      "score_min": 12192900,
+      "status": "PASSED"
+    },
+    {
+      "label": "dev -> embargoed OOT",
+      "time_column": "TransactionDT",
+      "operator": "<=",
+      "n_train": 472432,
+      "n_score": 115111,
+      "train_max": 12192842,
+      "score_min": 12279259,
+      "status": "PASSED"
+    },
+    {
+      "label": "stage2 relational-only dev -> embargoed OOT",
+      "time_column": "TransactionDT",
+      "operator": "<=",
+      "n_train": 472432,
+      "n_score": 115111,
+      "train_max": 12192842,
+      "score_min": 12279259,
+      "status": "PASSED"
+    },
+    {
+      "label": "neural representation fit dev -> embargoed OOT",
+      "time_column": "TransactionDT",
+      "operator": "<=",
+      "n_train": 472432,
+      "n_score": 115111,
+      "train_max": 12192842,
+      "score_min": 12279259,
+      "status": "PASSED"
+    },
+    {
+      "label": "stage3 no-graph standalone dev -> embargoed OOT",
+      "time_column": "TransactionDT",
+      "operator": "<=",
+      "n_train": 472432,
+      "n_score": 115111,
+      "train_max": 12192842,
+      "score_min": 12279259,
+      "status": "PASSED"
+    },
+    {
+      "label": "stage4 no-boost standalone dev -> embargoed OOT",
+      "time_column": "TransactionDT",
+      "operator": "<=",
+      "n_train": 472432,
+      "n_score": 115111,
+      "train_max": 12192842,
+      "score_min": 12279259,
+      "status": "PASSED"
+    }
+  ],
+  "cohort_counts": {
+    "n_eval": 115111,
+    "n_connected": 114315,
+    "n_isolated": 796,
+    "n_seen_card_rows": 79914,
+    "n_first_seen_card_rows": 35197,
+    "n_slice_t1": 28778,
+    "n_slice_t2": 28778,
+    "n_slice_t3": 28777,
+    "n_slice_t4": 28778
+  },
+  "upstream_prediction_sources": {
+    "stage1": {
+      "stage": "stage1",
+      "requested_file": "stage1_oof_predictions.csv",
+      "resolved_path": "/kaggle/input/notebooks/iemanihsan/fork-of-stage-1-standalone-tabular-lightgbm-basel/artifacts/stage1_oof_predictions.csv",
+      "file": "stage1_oof_predictions.csv",
+      "bytes": 42269338,
+      "sha256": "7898b79740d38a750cb18c13dbc12a6e062358ce696c7f0279f997b8ab2d731a",
+      "selected_columns": [
+        "stage1_prob_raw",
+        "stage1_prob_calibrated"
+      ],
+      "read": true,
+      "used": true,
+      "status": "INGESTED_POSITIONALLY"
+    },
+    "stage2": {
+      "stage": "stage2",
+      "requested_file": "stage2_oof_predictions.csv",
+      "resolved_path": "/kaggle/input/notebooks/iemanihsan/fork-of-stage-2-graph-augmented-gbdt-relational/artifacts/stage2_oof_predictions.csv",
+      "file": "stage2_oof_predictions.csv",
+      "bytes": 42639291,
+      "sha256": "53f7bbc7fec361708024d67cc76e1fcebe357e3d794b45deb96eb7cefa4c3f98",
+      "selected_columns": [
+        "stage2_prob_raw",
+        "stage2_prob_calibrated"
+      ],
+      "read": true,
+      "used": true,
+      "status": "INGESTED_POSITIONALLY"
+    },
+    "stage3": {
+      "stage": "stage3",
+      "requested_file": "stage3_oof_predictions.csv",
+      "resolved_path": "/kaggle/input/notebooks/iemanihsan/fork-of-stage-3-frozen-two-stage-res-gnn-pipeline/artifacts/stage3_oof_predictions.csv",
+      "file": "stage3_oof_predictions.csv",
+      "bytes": 49135705,
+      "sha256": "c3217adbca244f9ddb08fc191c3b1ae75ae43e383f8e318b2d8f9a9ea89beb18",
+      "selected_columns": [
+        "stage3_prob_raw",
+        "stage3_prob_calibrated",
+        "stage3_no_graph_prob"
+      ],
+      "read": true,
+      "used": true,
+      "status": "INGESTED_POSITIONALLY"
+    },
+    "stage4": {
+      "stage": "stage4",
+      "requested_file": "stage4_oof_predictions.csv",
+      "resolved_path": "/kaggle/input/notebooks/iemanihsan/fork-of-stage-4-alternating-jointly-optimized-bgn/artifacts/stage4_oof_predictions.csv",
+      "file": "stage4_oof_predictions.csv",
+      "bytes": 45189261,
+      "sha256": "8b052b63f9615c5e06f351e8068afae572c3e9dcc702bf24f46932d40257f85f",
+      "selected_columns": [
+        "stage4_prob_raw",
+        "stage4_prob_calibrated",
+        "stage4_no_boost_prob"
+      ],
+      "read": true,
+      "used": true,
+      "status": "INGESTED_POSITIONALLY"
+    }
+  },
+  "best_performing_stage": "2 - Graph-Augmented GBDT",
+  "best_stage_ap": 0.5252201380978105,
+  "tabular_baseline_ap": 0.4814414582499702,
+  "hypotheses_evaluated": [
+    "H1  Relational features beat tabular baseline",
+    "H2  Learned structure beats hand-crafted [CONFOUNDED]",
+    "H2a Message passing adds signal (Identical Net Ablation)",
+    "H2b Message passing on connected nodes only",
+    "H3  Joint alternating BGNN beats frozen Res-GNN",
+    "H3a Functional boosting adds signal (Gate Fixed Ablation)",
+    "H3b Blending gate alone beats frozen pipeline",
+    "H4  Full alternating joint system beats tabular baseline",
+    "R1  Best relational stage beats tabular on seen cards only"
+  ],
+  "supported_hypotheses": [
+    "H1  Relational features beat tabular baseline"
+  ],
+  "artifacts_written": [
+    {
+      "file": "sealed_oot_block5_predictions.csv",
+      "bytes": 27307122,
+      "sha256": "7dfdb006feaf4b79dac2124fb9314008ddbc7bad0f996f823b8f9e9150be8aab"
+    },
+    {
+      "file": "sealed_oot_block5_benchmark.csv",
+      "bytes": 2732,
+      "sha256": "1eba7650ab3457a5edb4ec148f1fd13dd365a2226c889d74bd14674acaaee3de"
+    },
+    {
+      "file": "sealed_oot_block5_cohort_breakdown.csv",
+      "bytes": 2483,
+      "sha256": "2564e78cfb8a5d9e75ef0531fead1ea0ef253e2e0daae133654cbbca5e1d231c"
+    },
+    {
+      "file": "sealed_oot_block5_hypothesis_tests.csv",
+      "bytes": 2189,
+      "sha256": "69856d9726dc6f5bdd9894cd5a9b75ef12f7ee9511724d96ed705178061fd41f"
+    }
+  ],
+  "configuration": {
+    "SEED": 42,
+    "N_SEEDS": 2,
+    "TIME_COLUMN": "TransactionDT",
+    "TARGET_COLUMN": "isFraud",
+    "ID_COLUMN": "TransactionID",
+    "AMOUNT_COLUMN": "TransactionAmt",
+    "N_BLOCKS": 5,
+    "DEV_BLOCKS": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "OOT_BLOCK": 5,
+    "SECONDS_PER_DAY": 86400,
+    "EMBARGO_SECONDS": 86400,
+    "LOOKBACK_WINDOW_SECS": 2592000,
+    "C_REVIEW": 10.0,
+    "C_FRICTION": 25.0,
+    "INVESTIGATION_CAPACITY": 0.01,
+    "N_BOOTSTRAP": 1000,
+    "BOOTSTRAP_ALPHA": 0.05,
+    "ACCEPTANCE_DELTA": 0.005,
+    "FDR_ALPHA": 0.05,
+    "N_TIME_SLICES": 4,
+    "HIDDEN_DIM": 64,
+    "DROPOUT": 0.2,
+    "LR": 0.003,
+    "WEIGHT_DECAY": 0.0001,
+    "BATCH_SIZE": 4096,
+    "N_PCA": 15,
+    "BOOSTING_LR": 0.1,
+    "DISPLACEMENT_CLIP": 0.2,
+    "CARD_MAX_NEIGHBORS": 10,
+    "DEVICE_MAX_NEIGHBORS": 5,
+    "FOCAL_ALPHA": 0.25,
+    "FOCAL_GAMMA": 2.0,
+    "STRICT_TIME_CAUSALITY": true,
+    "SHIFT_TOLERANCE": 0.75,
+    "INNER_VAL_FRAC": 0.2,
+    "MIN_STOP_ROWS": 5000,
+    "MIN_STOP_POSITIVES": 50,
+    "CALIBRATION": "isotonic",
+    "OUTPUT_DIR": "./artifacts",
+    "CODE_VERSION": "thesis-oot-block5-refined-2.0.0"
+  }
+}
