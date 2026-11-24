@@ -41,11 +41,18 @@ Thumbs.db
 desktop.ini
 
 # Jupyter Notebook checkpoints
+.ipynb_checkpoints/
 .ipynb_checkpoints
 
-# Large experiment predictions and raw archives (>25MB)
+# Large experiment predictions, datasets, models, and raw archives
 *.zip
 *.tar.gz
 *.7z
+train_*.csv
+test_*.csv
+*_predictions.csv
 *oof_predictions*.csv
 *sealed_oot_block5_predictions*.csv
+*.parquet
+*.pt
+*.pkl

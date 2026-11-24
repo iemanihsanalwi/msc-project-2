@@ -4,7 +4,7 @@
 
 This empirical research design evaluates whether joint graph-tabular representation learning provides measurable, cost-effective improvements over tuned tabular models under streaming constraints. To support direct comparison across model families, the study applies a controlled Four-Stage Experimental Benchmarking Ladder.
 
-Rather than comparing models with differing feature engineering, parameter counts, or training budgets, each stage in the ladder introduces one specific algorithmic mechanism:
+Rather than comparing models with differing feature engineering, parameter counts, or training budgets, each stage in the ladder introduces one specific algorithmic mechanism (summarized formally in Table 3.1):
 
 
 +–––––––––––––––––––––––––––––––––––––––––––––––––-+
@@ -50,7 +50,7 @@ Let $\mathcal{D} = \{ (\mathbf{x}_i, y_i, t_i) \}_{i=1}^N$ denote the chronologi
    where $F_{\text{GBDT}}^{(S_1)}$ is trained solely on the 371 base tabular features.
 2. **Stage 2 (Graph-Augmented GBDT):**
    $$\hat{y}_i^{(2)} = F_{\text{GBDT}}^{(S_2)}\left( [\mathbf{x}_i \,\|\, \mathbf{r}_i^{\text{hist}}] \right) = \sum_{k=1}^{K_{\text{base}}} \eta f_k\left( [\mathbf{x}_i \,\|\, \mathbf{r}_i^{\text{hist}}] \right)$$
-   where $\mathbf{r}_i^{\text{hist}} \in \mathbb{R}^{19}$ denotes the vector of backward-looking, time-causal entity-history features extracted strictly from transactions occurring prior to $t_i$.
+   where $\mathbf{r}_i^{\text{hist}} \in \mathbb{R}^{19}$ denotes the vector of backward-looking, time-causal entity-history features extracted strictly from transactions occurring prior to $t_i$ (cataloged by group in Table 3.5).
 3. **Stage 3 (Frozen Two-Stage Res-GNN):**
    $$\hat{y}_i^{(3)} = \text{GNN}\left( \mathbf{z}_i^{(0)}, G_{<t_i}; \mathbf{\Theta}_{\text{gnn}} \right) = \sigma\left( \mathbf{w}_{\text{head}}^T \left[ \mathbf{h}_{\text{graph}, i} \,\|\, \mathbf{z}_i^{(0)} \right] + b_{\text{head}} \right)$$
    where $\mathbf{z}_i^{(0)} \in \mathbb{R}^{49}$ is the aligned continuous coordinate embedding incorporating frozen Stage 1 predictions, and $G_{<t_i}$ is the strictly causal historical graph.
@@ -74,10 +74,10 @@ To enforce scientific rigor and protect against post-hoc $p$-hacking, all statis
 ## 3.2 Dataset, Temporal Partitioning, & Leakage Controls
 
 ### 3.2.1 IEEE-CIS Benchmark Dataset Specifications
-The empirical investigation uses the benchmark IEEE-CIS Fraud Detection dataset, comprising real-world payment transactions collected by Vesta Corporation across an active 182-day continuum ($\text{TransactionDT} \in [86,400, 15,811,131]$ seconds). The unit of analysis is the individual transaction $v_i$. The ingestion pipeline ingests 432 raw attributes: 392 features from train_transaction (including ground-truth label isFraud, monetary value TransactionAmt, product code ProductCD, anonymized card proxies card1–card6, geographic coordinates addr1–addr2, distance proxies dist1–dist2, purchaser/recipient email domains, transaction velocity counts C1–C14, timedelta features D1–D15, match indicators M1–M9, and 339 proprietary behavioral features V1–V339) and 40 identity attributes from train_identity (DeviceType, DeviceInfo, and id_01–id_38, joining with a 24.42% coverage rate, N = 144,233). For the tabular pipeline (Stages 1 and 2), retaining raw attributes yields 371 base tabular features (comprising the raw V-columns, D-deltas, C-counts, and categorical encodings). For the neural pipeline (Stages 3 and 4), continuous features are transformed into an aligned coordinate matrix Z_0 in R^{N x 49}, consisting of 32 standardized continuous features, 15 orthogonal principal components from Block PCA compressing the 339 V-features (capturing 69.5% average cumulative variance across folds), 1 out-of-fold GBDT risk logit from Stage 1, and 1 logit availability indicator. Across the complete labeled dataset of $N = 590,540$ records, the global fraud prevalence is 3.4990% ($N = 20,663$).
+The empirical investigation uses the benchmark IEEE-CIS Fraud Detection dataset, comprising real-world payment transactions collected by Vesta Corporation across an active 182-day continuum ($\text{TransactionDT} \in [86,400, 15,811,131]$ seconds). The unit of analysis is the individual transaction $v_i$. The ingestion pipeline ingests 432 raw attributes: 392 features from train_transaction (including ground-truth label isFraud, monetary value TransactionAmt, product code ProductCD, anonymized card proxies card1–card6, geographic coordinates addr1–addr2, distance proxies dist1–dist2, purchaser/recipient email domains, transaction velocity counts C1–C14, timedelta features D1–D15, match indicators M1–M9, and 339 proprietary behavioral features V1–V339) and 40 identity attributes from train_identity (DeviceType, DeviceInfo, and id_01–id_38, joining on N = 144,233 rows, i.e., 24.42% coverage and 75.58% dataset-wide row-level identity missingness; Table 3.2). For the tabular pipeline (Stages 1 and 2), retaining raw attributes yields 371 base tabular features (comprising the raw V-columns, D-deltas, C-counts, and categorical encodings). For the neural pipeline (Stages 3 and 4), continuous features are transformed into an aligned coordinate matrix $Z_0 \in \mathbb{R}^{N \times 49}$, consisting of 32 standardized continuous features, 15 orthogonal principal components from Block PCA compressing the 339 V-features (capturing 69.5% average cumulative variance across folds), 1 out-of-fold GBDT risk logit from Stage 1, and 1 logit availability indicator. Across the complete labeled dataset of $N = 590,540$ records, the global fraud prevalence is 3.4990% ($N = 20,663$).
 
 ### 3.2.2 Chronological Partitioning, Embargo, and Delayed Supervision
-To reflect live production clearing pipelines and eliminate temporal look-ahead bias:
+To reflect live production clearing pipelines and eliminate temporal look-ahead bias (quantified in Table 3.3):
 1. **5-Block Chronological Slicing:** Transactions are ordered strictly by ascending TransactionDT and partitioned into five non-overlapping contiguous blocks of exactly 118,108 transactions each ($\approx 36.4$ days per block):
    * **Blocks 1 to 4 (Development Continuum):** $N = 472,432$ transactions (Days 0.00 to 140.12), dedicated to expanding chronological model fitting, internal hyperparameter selection, and probability calibration.
    * **Block 5 (Sealed Out-of-Time Test Set):** $N = 118,108$ transactions (Days 140.12 to 182.00 (spanning 41.88 days, approximately 42 days)), quarantined as a strictly sealed holdout evaluated exactly once.
@@ -104,7 +104,7 @@ To avoid cross-modality contamination and target leakage, tabular and neural fea
 * Tabular Feature Pipeline: Preserves the irregular structure of financial attributes. The 371 base features remain in native form. Continuous numerical features are not standardized; missing values remain as native NaN to allow LightGBM to compute default branch routing; categorical variables are mapped to integer indices using training dictionaries, routing unseen evaluation tokens to an UNKNOWN bin.
 * Neural Feature Pipeline: Transforms tabular attributes into a standardized format for gradient descent:
   1. Logarithmic Transformation: Skewed monetary and distance features (TransactionAmt, dist1, dist2, C1, C2, C13) are log-transformed: $x \mapsto \log(1 + \max(0, x))$.
-  2. Standard Scaling: Continuous variables are scaled to zero mean and unit variance using statistics from training folds ($\mu_{\text{train}}, \sigma_{\text{train}}$) and clipped to $[-10, 10]$ to suppress outlier gradients.
+  2. Standard Scaling: Continuous variables are standardized to zero mean and unit variance using statistics fitted strictly on training folds ($\mu_{\text{train}}, \sigma_{\text{train}}$) without input outlier clipping (explaining why large positive temporal drift propagates in Section 4.4.3, whereas Stage 4 functional boosting displacements are clipped at $\delta_R = 0.20$).
   3. Block-Wise PCA Compression: The 339 behavioral $V$-columns exhibit substantial correlation. Rather than passing unnormalized $V$-features into the neural network, unsupervised Principal Component Analysis (PCA) fitted on training data compresses the 339 columns into 15 orthogonal principal components ($\mathbf{V}_{\text{PCA-15}}$), retaining $\approx 70\%$ of cumulative variance.
 
 ### 3.2.4 Chronological Out-of-Fold (OOF) GBDT Logit Generation for Z₀
@@ -120,7 +120,7 @@ and paired with an availability indicator $\mathbb{I}_{\text{avail}, i} \in \{0,
 
 ## 3.3 Heterogeneous Temporal Graph Formulation
 
-### 3.3.1 Mathematical Definition of the Causal Graph G_{<t}
+### 3.3.1 Mathematical Definition of the Causal Graph ($G_{<t}$)
 The financial transaction stream is modeled as a time-causal, directed, heterogeneous multigraph:
 $$G_{<t} = \left( \mathcal{V}_{<t}, \mathcal{E}_{<t}, \tau, \phi, \mathcal{T} \right)$$
 where:
@@ -128,7 +128,7 @@ where:
 * $\mathcal{E}_{<t}$ is the set of directed, time-stamped relational edges.
 * $\tau: \mathcal{V} \to \{ \text{Transaction}, \text{Card}, \text{Device} \}$ is the node-type mapping.
 * $\phi: \mathcal{E} \to \{ \text{UsesCard}, \text{UsesDevice}, \text{TemporalPredecessor} \}$ is the relation-type mapping.
-* $\mathcal{T}: \mathcal{V} \cup \mathcal{E} \to \mathbb{R}^+$ maps entities and events to their continuous chronological occurrence timestamp (TransactionDT).
+* $\mathcal{T}: \mathcal{V} \cup \mathcal{E} \to \mathbb{R}^+$ maps entities and events to their continuous chronological occurrence timestamp (TransactionDT). Table 3.4 summarizes node and edge counts across development and Block 5 partitions, highlighting the distinction between dataset-wide row-level identity absence (75.58%) and Block 5 missing-device supernode routing (83.80%).
 
 
 +–––––––––––––––––––––––––––––––––––––––––––––––––-+
@@ -261,55 +261,42 @@ Algorithm 3.1 formally specifies the complete alternating training protocol:
 
 ```text
 Algorithm 3.1: Alternating Joint Optimization of Time-Causal BGNN Framework
-----------------------------------------------------------------------------------------------------
-Input:  Chronological Training Stream X_train, Targets Y_train, Timestamps TransactionDT
-        Dynamic Heterogeneous Graph G_<t, Outer Iterations M=4, Inner Epochs J=2,
-        Boosting Learning Rate eta_boost=0.1, Clipping Boundary delta_R=0.2
-Output: Optimized Monotonic Gated BGNN M*, Multi-output Boosting Trees {T_m}_{m=1}^M, Calibrator C*
-
-1.  // Step 1: Base Representation & Coordinate Matrix Initialization
-2.  Train Stage 1 Tabular LightGBM on X_train to generate out-of-fold logits L_GBDT.
-3.  Fit continuous standardizers and PCA-15 projection on continuous tabular features.
-4.  Construct initial aligned coordinate matrix:
-5.      Z_0 = [ X_cont_scaled || V_PCA-15 || L_GBDT || I_avail ] in R^{N x 49}.
-6.  Extract directed causal predecessor index sets on G_<t bounded by K_lookback = 30 days.
-7.
-8.  // Step 2: Alternating Joint Optimization Loop
-9.  For outer iteration m = 1 to M do:
-10.     Compute causal neighborhood aggregate representations over G_<t:
-11.         A_card, A_dev = NeighborMeans(Z_0, G_<t).
-12.
-13.     // Phase A: Inner Neural Parameter Gradient Descent
-14.     For inner epoch j = 1 to J do:
-15.         For each mini-batch B subset of X_train (batch size = 4,096) do:
-16.             Forward Pass:
-17.                 Logit_GNN[B], beta[B] = MonotonicGatedBGNN(Z_0[B], A_card[B], A_dev[B], L_GBDT[B]).
-18.             Decision Blending:
-19.                 Logit_final[B] = beta[B] * Logit_GNN[B] + (1 - beta[B]) * L_GBDT[B].
-20.             Compute Focal Loss:
-21.                 loss = FocalLoss(Logit_final[B], Y_train[B], gamma=2.0, alpha=0.25).
-22.             Backpropagation & Parameter Step:
-23.                 AdamW.zero_grad(); loss.backward(); AdamW.step().
-24.         End For
-25.     End For
-26.
-27.     // Phase B: Functional Coordinate Residual Displacement
-28.     If m < M then:
-29.         Compute training predictions: P_train = Sigmoid(Logit_final).
-30.         Evaluate scalar residual errors: r_i = Y_train - P_train.
-31.         Fit LightGBM Regressor T_m on raw tabular features X_train predicting r_i:
-32.             T_m = TrainLGBMRegressor(X_train, r_i, num_leaves=31, n_estimators=30).
-33.         Compute global projection vector: d = Normalize( Mean( Z_0 * r_i ) ).
-34.         Compute coordinate displacement:
-35.             R_disp = Clip( T_m.predict(X_train).reshape(-1, 1) * d, -delta_R, delta_R ).
-36.         Update continuous latent manifold:
-37.             Z_0 = Z_0 + eta_boost * R_disp.
-38.     End If
-39. End For
-40.
-41. // Step 3: Probability Calibration
-42. Fit Isotonic Regression calibrator C* on inner stopping validation probabilities.
-43. Return Optimized Model M*, Fitted Tree Ensemble {T_m}, and Calibrator C*.
+------------------------------------------------------------------------------------------------------------------------
+Input:  Chronological Training Stream X_train in R^(N x D), Targets Y_train in {0,1}^N, Timestamps T in R^N
+        Lookback Cap tau_max = 2,592,000s (30 days), Dynamic Graph G_<t, Outer Rounds M = 4, Inner Epochs J = 2
+Output: Optimized Base Ensembles F_base, Coordinate Updating Regressors {T_m}_(m=1)^(M-1), GNN Parameter Tensors Theta_gnn
+------------------------------------------------------------------------------------------------------------------------
+ 1:  Initialize representation matrix Z_0 in R^(N x 49): [32 standard continuous || 15 PCA continuous || 1 OOF logit || 1 ID flag]
+ 2:  Initialize GNN parameter tensors Theta_gnn via Xavier normal initialization (d_hidden = 64, L = 1 aggregation layer, SELU)
+ 3:  Initialize fallback blending gate parameters: w_c, w_d, b_g
+ 4:  Z_current <- Z_0
+ 5:  For outer boosting round m = 1 to M (M = 4) do:
+ 6:      // Phase A: Neural Parameter Optimization (Inner GNN Loop across J = 2 epochs)
+ 7:      For inner epoch j = 1 to J do:
+ 8:          For each mini-batch B sampled chronologically (|B| = 4096) do:
+ 9:              Extract causal 1-hop neighbours from G_<t via causal mean-pooling (K_card <= 10, K_dev <= 5, 30-day window)
+10:              Compute relation-specific message passing activations:
+11:                  h_card <- SELU( W_card * mean_{u in N_card(v)} z_u )
+12:                  h_dev  <- SELU( W_dev  * mean_{u in N_dev(v)}  z_u )
+13:                  h_v    <- proj_self(z_v) + h_card + h_dev  // Residual skip-projection
+14:              Compute connectivity indicator I(connected_i) = I(c_i + d_i > 0)
+15:              Compute adaptive blending gate: beta_i <- I(connected_i) * sigmoid( Softplus(w_c)*c_i + Softplus(w_d)*d_i + b_g )
+16:              Compute blended predictions: Logit_i <- beta_i * Head(h_i) + (1.0 - beta_i) * Z_0[i, OOF_index]
+17:              Compute Normalized Mini-Batch Focal Loss: L_focal <- -1/|B| sum_(i in B) alpha_t (1 - p_i)^gamma log(p_i)
+18:              Update neural weights: Theta_gnn <- Theta_gnn - lr_gnn * grad_(Theta)(L_focal)  (lr = 0.003, AdamW)
+19:          End For
+20:      End For
+21:      // Phase B: Rank-1 Projected Functional Coordinate Update
+22:      If m < M then:
+23:          Compute cross-entropy residuals across training nodes: r_i <- y_i - sigmoid(Logit_i)
+24:          Fit scalar regression tree T_m: X_train -> r_i to minimize squared error loss (31 leaves, max_depth=6)
+25:          Compute empirical covariance projection vector: d <- Normalize( E_{i}[ Z_0[i] * r_i ] ) in R^49
+26:          Compute rank-1 coordinate displacement: Delta_Z_i <- clip( T_m(x_i) * d, -delta_R, delta_R )  (delta_R = 0.20)
+27:          Update continuous representation matrix: Z_current <- Z_current + eta_boost * Delta_Z  (eta_boost = 0.10)
+28:      End If
+29:  End For
+30:  Fit post-hoc isotonic probability calibrator C* on validation split
+31:  Return F_base, {T_m}_(m=1)^(M-1), Theta_gnn, gate parameters (w_c, w_d, b_g), calibrator C*
 ```
 
 
@@ -317,7 +304,7 @@ Output: Optimized Monotonic Gated BGNN M*, Multi-output Boosting Trees {T_m}_{m=
 ## 3.5 Robust Inference & Inductive Cold-Start Mechanics
 
 ### 3.5.1 Monotonic Decision Blending Gate Formulation
-To regulate reliance between the neural graph representation and the standalone tabular GBDT, predictions are combined in logit space through the Monotonic Decision Blending Gate $\beta_i \in [0, 1]$:
+To regulate reliance between the neural graph representation and the standalone tabular GBDT, predictions are combined in logit space through the Monotonic Decision Blending Gate $\beta_i \in [0, 1]$, driven by an entity connectivity quality signal $q_i^{\text{hist}} = \mathbb{I}(\mathrm{card\_mask}_i + \mathrm{dev\_mask}_i > 0)$ reflecting whether entity history exists in $G_{<t}$ within the lookback window $\tau_{\max}$.
 $$\text{Logit}_{\text{blended}, i} = \beta_i \cdot \text{Logit}_{\text{GNN}, i} + (1.0 - \beta_i) \cdot \text{Logit}_{\text{GBDT}, i}^{(S_1)}$$
 where:
 $$\beta_i = \sigma\left( \text{softplus}(w_{\text{card}}) \cdot \mathrm{card\_mask}_i + \text{softplus}(w_{\text{dev}}) \cdot \mathrm{dev\_mask}_i + b_{\text{gate}} \right) \cdot \mathbb{I}(\text{connected}_i)$$
@@ -334,7 +321,9 @@ This fallback ensures that for isolated or cold-start nodes, the framework bypas
 ## 3.6 Evaluation Metrics & Uncertainty Quantification
 
 ### 3.6.1 Exact Trapezoid-Free Average Precision (AP) and Calibration Ties
-Because payment fraud exhibits severe class imbalance (3.413% in the holdout), standard ROC-AUC is inflated by the large volume of true negatives. The primary threshold-independent ranking metric is non-interpolated Average Precision (AP):
+Because payment fraud exhibits severe class imbalance (3.413% in the holdout), standard ROC-AUC is inflated by the large volume of true negatives. In this dissertation, **Raw (Uncalibrated) Average Precision serves as the primary threshold-independent metric** for assessing model discriminative rank-ordering ability across the entire precision-recall continuum. In contrast, **post-hoc calibrated probabilities are strictly reserved for operational thresholding, alert queue allocation, and dollar-denominated financial loss calculation ($L_{\text{fin}}$)** where probability fidelity directly governs operational economics.
+
+The primary ranking metric is non-interpolated, trapezoid-free Average Precision (AP):
 $$\text{AP} = \sum_{k=1}^K (R_k - R_{k-1}) P_k$$
 evaluated over all sorted prediction thresholds, where $P_k$ and $R_k$ denote precision and recall at cutoff $k$.
 
@@ -351,12 +340,12 @@ $$L_{\text{fin}} = \sum_{i=1}^N \left[ y_i (1 - a_i) c_{\text{miss}} A_i + a_i c
 where $A_i$ is the raw transaction amount, $y_i \in \{0, 1\}$ is the ground-truth fraud label, and $a_i \in \{0, 1\}$ is the binary operational alert decision. Financial loss is evaluated under two distinct operational paradigms:
 
 1. **Primary Operational Regime: Fixed 1.0% Queue Capacity Constraint ($K = 1,151$ alerts):**
-   In commercial bank clearing, fraud triage teams operate under a fixed daily review capacity. The triage engine alerts strictly on the top 1.0% highest-scoring transactions ($K = 1,151$ alerts across $N = 115,111$ holdout transactions). Under this regime, operational costs are parameterized by $c_{\text{miss}} = 1.0$, $c_{\text{review}} = \$5.00$, $c_{\text{friction}} = \$15.00$, and $c_{\text{residual}} = 0.05$. Because total alert volume is held constant at exactly 1,151 alerts for all models, review costs are fixed ($\$5,755.00$), and model differentiation is driven entirely by precision at capacity and the monetary exposure of intercepted fraud.
+   In commercial bank clearing, fraud triage teams operate under a fixed daily review capacity. The triage engine alerts strictly on the top 1.0% highest-scoring transactions ($K = 1,151$ alerts across $N = 115,111$ holdout transactions). Under this regime, operational costs are unified with Regime 2 and parameterized by $c_{\text{miss}} = 1.0$, $c_{\text{review}} = \$5.00$, $c_{\text{friction}} = \$15.00$, and $c_{\text{residual}} = 0.0$. Because total alert volume is held constant at exactly 1,151 alerts for all models, review costs are fixed (\$5,755.00), and model differentiation is driven entirely by precision at capacity and the monetary exposure of intercepted fraud.
 
 2. **Sensitivity Regime: Unconstrained Bayes Cost-Optimal Threshold Rule:**
-   Where operations permit dynamic queue sizing, transactions are alerted when the model's posterior fraud probability exceeds the cost-benefit threshold:
-   $$\tau_i^* = \frac{c_{\text{review}} + c_{\text{friction}}}{A_i(c_{\text{miss}} - c_{\text{residual}}) + c_{\text{review}} + c_{\text{friction}}} = \frac{35.0}{A_i + 25.0}$$
-   under $c_{\text{review}} = \$10.00$, $c_{\text{friction}} = \$25.00$, $c_{\text{miss}} = 1.0$, and $c_{\text{residual}} = 0.0$. This unconstrained threshold rule evaluates model calibration sensitivity, testing whether probability miscalibration under Focal Loss triggers unmanageable alert volume surges.
+   Where operations permit dynamic queue sizing, transactions are alerted when the model's posterior fraud probability exceeds the cost-optimal Bayes threshold:
+   $$\tau_i^* = \frac{c_{\text{review}} + c_{\text{friction}}}{A_i(c_{\text{miss}} - c_{\text{residual}}) + c_{\text{review}} + c_{\text{friction}}} = \frac{20.0}{A_i + 15.0}$$
+   under primary operational cost parameters $c_{\text{review}} = \$5.00$, $c_{\text{friction}} = \$15.00$, $c_{\text{miss}} = 1.0$, and $c_{\text{residual}} = 0.0$. This unconstrained threshold rule evaluates model calibration sensitivity, verifying whether probability miscalibration under Focal Loss triggers unmanageable alert volume surges and excessive false-positive friction.
 
 ### 3.6.4 Paired Stationary Block Bootstrap and FDR Control
 Statistical uncertainty is quantified using a paired, chronological 24-hour stationary block bootstrap (86,400-second blocks) with 1,000 resamples. Block bootstrapping preserves the temporal autocorrelation and entity clustering inherent in payment streams. Confidence intervals are reported at 95% coverage ($[\text{LCB}_{0.95}, \text{UCB}_{0.95}]$). Multiplicity across confirmatory hypotheses is controlled using the Benjamini-Hochberg False Discovery Rate procedure at nominal level $\alpha = 0.05$ (evaluating test-sample uncertainty conditional on trained models).

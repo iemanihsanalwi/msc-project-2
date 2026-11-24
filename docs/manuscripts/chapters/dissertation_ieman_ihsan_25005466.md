@@ -645,6 +645,7 @@ Table 4.2 summarizes the formal statistical hypothesis testing battery executed 
 | H2b: Message Passing on Connected Nodes| S3 - S3n | +0.0003  | [-0.0032, +0.0037] | 0.844   | 0.84400 | NOT SUPPORTED  |
 | H3a: Functional Boosting on Latent Z   | S4 - S4n | +0.0765  | [+0.0681, +0.0851] | 0.001   | 0.00175 | SUPPORTED (RAW)|
 | H3b: Gating Layer Alone vs. Frozen S3  | S4n - S3 | +0.0039  | [+0.0006, +0.0072] | 0.020   | 0.02800 | REAL < THRESH  |
+| H3c: S2 vs S1 Queue Loss at 1% Cap     | S2 - S1(QL) | +$13,343 | [+$3,871, +$22,682] | 0.001 | 0.00450 | SUPPORTED      |
 +------------------------------------------------------------------------------------------------------------------------+
 ```
 

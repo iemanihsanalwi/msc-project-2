@@ -92,7 +92,7 @@ In production fraud operations, models do not operate under symmetric cross-entr
 
 Second, financial institutions operate under investigation queue capacity constraints: manual review teams can typically inspect at most 1.0% of daily transaction volume. Models that achieve high theoretical recall only at loose false-positive rates (such as FPR $\ge 5.0\%$) cannot be deployed effectively.
 
-Third, standard loss formulations treat all misclassifications equally, ignoring the monetary asymmetry between undetected fraud (which results in the direct loss of transaction amount $A_i$), administrative triage costs ($c_{\text{review}} = \$5.00$), and customer friction from false positives ($c_{\text{friction}} = \$15.00$). Existing hybrid graph-tabular frameworks rarely evaluate realized, scenario-weighted economic cost metrics ($L_{\text{fin}}$).
+Third, standard loss formulations treat all misclassifications equally, ignoring the monetary asymmetry between undetected fraud (which results in the direct loss of transaction amount $A_i \cdot c_{\text{miss}}$ with $c_{\text{miss}} = 1.0$), administrative triage costs ($c_{\text{review}} = \$5.00$), and customer friction from false positives ($c_{\text{friction}} = \$15.00$, with $c_{\text{residual}} = 0.0$). Under this cost structure, transactions should only be alerted when predicted fraud probability exceeds the cost-optimal Bayes threshold $\tau_i^* = (c_{\text{review}} + c_{\text{friction}}) / [A_i(c_{\text{miss}} - c_{\text{residual}}) + c_{\text{review}} + c_{\text{friction}}] = 20.0 / (A_i + 15.0)$. Existing hybrid graph-tabular frameworks rarely evaluate realized, scenario-weighted economic cost metrics ($L_{\text{fin}}$).
 
 
 ## 1.3 Research Objectives
@@ -148,8 +148,8 @@ To ensure empirical reproducibility and operational realism, the scope of this s
 |    banned because ground-truth chargeback labels are proprietary and unverified.                  |
 |                                                                                                   |
 |  - 5-BLOCK CHRONOLOGICAL PARTITIONING:                                                            |
-|    Expanding development blocks B1-B4 (N = 472,432 rows, Days 0.00 to 140.12).                      |
-|    Quarantined sealed Out-of-Time holdout Block B5 (N = 118,108 rows total, Days 140.12 to 182.00; 115,111 evaluated post-embargo rows).       |
+|    Expanding development blocks B1-B4 (N = 472,432 rows, Days 0.00–140.12).                      |
+|    Quarantined sealed Out-of-Time holdout Block B5 (N = 118,108 rows total, Days 140.12–182.00; 115,111 evaluated post-embargo rows).       |
 |                                                                                                   |
 |  - BOUNDED TEMPORAL LOOKBACK HORIZON:                                                             |
 |    Edge insertion strictly bounded: t_prev < t_curr with lookback cap K_lookback = 30 days        |
@@ -162,7 +162,7 @@ To ensure empirical reproducibility and operational realism, the scope of this s
 
 
 1. **Exclusion of the Unlabeled Competition Holdout:** The unlabeled Kaggle competition holdout (test_transaction.csv, $N = 506,691$) is excluded entirely. Because competition test labels are private and unverified, academic studies that submit predictions to Kaggle leaderboard proxies cannot compute calibration reliability diagrams, subgroup cohort breakdowns, or financial loss metrics. All evaluation in this dissertation is conducted strictly on labeled records with verified chargeback outcomes.
-2. **Chronological 5-Block Design:** Data is partitioned into five non-overlapping contiguous chronological blocks of 118,108 transactions each ($\approx 36.4$ days per block). Blocks 1 through 4 serve as the expanding development and validation continuum. Block 5 (the final ~20% of the dataset, covering Days 140.12 to 182.00 (spanning 41.88 days, approximately 42 days)) represents the strictly sealed Out-of-Time (OOT) test set, quarantined until all preprocessing pipelines, graph extraction rules, hyperparameter spaces, and calibration parameters were frozen.
+2. **Chronological 5-Block Design:** Data is partitioned into five non-overlapping contiguous chronological blocks of 118,108 transactions each ($\approx 36.4$ days per block). Blocks 1 through 4 serve as the expanding development and validation continuum. Block 5 (the final ~20% of the dataset, covering Days 140.12–182.00 (spanning 41.88 days, approximately 42 days)) represents the strictly sealed Out-of-Time (OOT) test set, quarantined until all preprocessing pipelines, graph extraction rules, hyperparameter spaces, and calibration parameters were frozen.
 3. **Bounded Lookback Horizon ($K_{\text{lookback}}$):** To mirror production memory constraints and prevent runaway graph expansion, edge creation is strictly bounded: $t_u < t_i$ and $t_i - t_u \le 30 \text{ days} \ (2,592,000\text{ seconds})$. Historical interactions occurring beyond 30 days are purged from active message passing.
 4. **Computational Fairness:** All deep graph architectures and tree ensembles are trained within standardized CUDA environments under strict resource equality, enforcing matched tree budgets (500 maximum rounds) and neural epochs across all experimental arms.
 
@@ -178,8 +178,7 @@ From a machine learning perspective, this research delivers the first rigorous f
 For enterprise risk engineering, the research introduces an auditable framework equipped with a monotonic decision blending gate ($\beta_i$). By tying the gate directly to localized graph connectivity telemetry ($q_i^{\text{hist}}$) and enforcing monotonic constraints, the architecture provides an exact mathematical fallback to tabular GBDTs ($\beta_i \to 0$) when transaction nodes arrive as isolated or cold-start entities. This eliminates the instability of standard deep GNNs that generate unconstrained predictions in sparse graph regimes.
 
 ### 1.6.3 Methodological Value of Negative Results
-This dissertation provides an empirical evaluation of negative results in applied machine learning. By demonstrating that the alternating BGNN architecture fails to outperform feature-augmented GBDTs under out-of-time evaluation ($\Delta_{4-1} = -0.0181$ AP), this work examines the divergence between reported transductive benchmarks and temporal production reality. Documenting the specific failure modes of graph architectures under temporal distribution shift offers practical guidance for financial institutions evaluating graph neural network infrastructure.
-
+This dissertation provides an empirical investigation into the operational boundaries of joint graph-tabular learning under production clearing constraints. Rather than making a blanket assertion regarding the general viability of all possible Boost then Convolve formulations, this research specifically isolates the limitations of the **rank-1 empirical-covariance coordinate update variant** under streaming non-stationary conditions ($M=4$ outer rounds, $J=2$ inner epochs, boosting learning rate $\eta_{\text{boost}} = 0.10$, displacement clipping $\delta_R = 0.20$). The empirical finding that this specific joint configuration underperforms hand-crafted tabular feature engineering ($\Delta_{4-1} = -0.0181$ AP, $p_{\text{adj}} = 1.0$) demonstrates that unconstrained transductive benchmark success does not directly transfer to streaming environments characterized by 75.58% row-level identity join missingness (and 83.80% Block 5 routing to a missing-device proxy supernode), 30.6% cold-start card turnover, and non-linear ratio anomalies.
 
 ## 1.7 Thesis Organization Roadmap
 
@@ -214,9 +213,3 @@ The remainder of this dissertation is structured into five comprehensive chapter
 |  Results, and Concrete Future Research Vectors.                                                   |
 |                                                                                                   |
 +–––––––––––––––––––––––––––––––––––––––––––––––––-+
-
-
-* **Chapter 2 (Literature Review and Theoretical Foundations):** Examines the mathematical properties of tabular decision trees and graph neural networks, surveys existing hybrid models (Res-GNN, NODE, BGNN), details streaming vulnerabilities (temporal leakage, delayed chargeback feedback, cold-start turnover), and constructs the conceptual matrix justifying the experimental ladder.
-* **Chapter 3 (Research Methodology and System Formulation):** Formalizes the complete mathematical framework, including the time-causal graph formulation $G_{<t}$, dimensional accounting of $Z_0$, relation-aware message passing, Focal Loss optimization, functional residual displacement updates, the monotonic blending gate $\beta_i$, algorithmic pseudocode, and the scenario-weighted financial loss metric $L_{\text{fin}}$.
-* **Chapter 4 (Empirical Results and Forensic Failure Analysis):** Reports the complete empirical findings from the sealed Block 5 holdout ($N = 118,108$), evaluates pre-specified bootstrap hypothesis tests ($H_1\text{–}H_4$), validates the primary coupling uplift ($H_3$), and conducts an exhaustive forensic audit dissecting the failure modes of Stages 3 and 4 (ratio advantage, cold-start churn, continuous covariate drift, manifold displacement corruption, and probability miscalibration).
-* **Chapter 5 (Conclusion, Recommendations, and Defense Synthesis):** Synthesizes the core theoretical insights, provides actionable recommendations for banking risk teams, articulates the epistemological defense of negative empirical results, and charts future research vectors for differentiable ratio operators and true logit-space functional boosting.
